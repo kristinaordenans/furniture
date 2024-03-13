@@ -1,3 +1,9 @@
 .main {
-   background-color: #192F2D;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 500px;
+    background-color: #192F2D;
+    color: #fff;
+    font-size: 700;
 }
