@@ -1,9 +1,10 @@
 .main {
     display: flex;
+    padding-top: 230px;
     text-align: center;
     justify-content: center;
     height: 500px;
     background-color: #192F2D;
     color: #fff;
-    font-size: 700;
+    font-weight: 700;
 }
