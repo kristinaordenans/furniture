@@ -1,7 +1,312 @@
+:root {
+    --accent-green: rgb(25, 47, 45);
+    --accent-gold: rgb(229, 209, 147);
+    --background-color:rgb(64, 64, 64);
+    /* --transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms; */
+}
+
 body {
-    background-color: #404040;
+    background-color: var(--background-color);
+    color: #fff;
+} 
+
+/* reset start */
+
+.list {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+a {
+    text-decoration: none;
     color: #fff;
 }
+/* reset end */
+
+/* НАВІГАЦІЯ */
+
+.navigation {
+    display: flex;
+    padding-left: 189px;   
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    height: 72px;
+    width: 100%; 
+    z-index: 1000;
+    background-color:rgba(64, 64, 64, 0.5);
+    border-bottom: 1px solid var(--accent-gold);
+}
+
+.nav-btn {
+    background-color: var(--accent-green);
+    border-radius: 24px;
+    height: 40px;
+    font-size: 18px;
+    color: var(--accent-gold);
+    border: 2px solid var(--accent-gold);
+    outline: 4px solid var(--accent-green);
+    /* padding-top: 8px;
+    padding-bottom: 8px; */
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.nav_list {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* gap: 89px; */
+    list-style: none;
+}
+
+.logo {
+    padding: 60px;
+    background-color: var(--accent-green);
+    border: 1px solid var(--accent-gold);
+}
+
+
+/* ГЕРОЙ */
+
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 1080px;
+    position: relative;
+    padding-top: 144px;
+    margin-bottom: 132px;
+}
+
+.hero-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(25, 47, 45, 0.75), rgba(25, 47, 45, 0.75)), url('./src/img/bacground_img/bg1.jpg');
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.hero-title {
+    font-size: 72px;
+    color: var(--accent-gold);
+    margin-bottom: 24px;
+}
+
+.hero-text-conteiner {
+    width: 1920px;
+    position: relative;
+}
+
+.hero-text {
+    font-size: 32px;
+    margin-bottom: 56px;
+}
+
+.hero-text::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 35%;
+    height: 1px;
+    background-color: var(--accent-gold);
+}
+
+.hero-text::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 0;
+    width: 35%;
+    height: 1px;
+    background-color: var(--accent-gold);
+}
+
+.hero-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+    list-style: none;
+}
+
+
+/* ПРО НАС */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.about-container {
+    display: flex;
+    justify-content: center;
+    gap: 198px;
+    margin-bottom: 240px;
+}
+
+.title-line-container{
+    position: relative;
+}
+.about-title {
+    font-size: 64px;
+    color: var(--accent-gold);
+    margin-bottom: 132px;
+}
+
+.about-title::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 42%;
+    height: 1px;
+    background-color: var(--accent-gold);
+}
+
+.about-title::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 42%;
+    height: 1px;
+    background-color: var(--accent-gold);
+}
+
+.about-logo {
+    width: 240px;
+    height: 400px;
+    background-color: var(--accent-green);
+    border: 1px solid var(--accent-gold);
+    border-radius: 120px;
+}
+
+.about-text-cobtainer {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.about-text {
+    width: 560px;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.about-links-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 240px;
+    height: 400px;
+    background-color: var(--accent-green);
+    border: 1px solid var(--accent-gold);
+    border-radius: 120px;
+}
+
+.about-btn {
+    background-color: var(--accent-green);
+    border: none;
+    color: #fff ;
+}
+
+.benefits-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 640px;
+}
+
+.benefits-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(25, 47, 45, 0.5), rgba(25, 47, 45, 0.5)), url('./src/img/bacground_img/bg2.jpg');
+    filter: blur(3px);
+    z-index: -1;
+}
+
+.benefits-card {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 320px;
+    width: 1582px;
+    height: 240px;
+    border: 1px solid var(--accent-gold);
+    background-image: linear-gradient(to right, rgba(25, 47, 45, 0.75), rgba(25, 47, 45, 0.75));
+    list-style: none;
+}
+
+.benefits-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 161px;
+    height: 1px;
+    background-color: var(--accent-gold);
+}
+
+.benefits-card::after {
+    content: "";
+    position: absolute;
+    right:0;
+    width: 161px;
+    height: 1px;
+    background-color: var(--accent-gold);
+}
+
+.benefits-item {
+    position: relative;
+    color: var(--accent-gold);
+}
+
+.benefits-item:not(:last-child)::after {
+    content: '';
+    top: -50px;
+    left: 310px;
+    position: absolute;
+    width: 1px;
+    height: 144px;
+    background-color: var(--accent-gold);
+}
+
+
+
+/* ПЕРЕВАГИ */
+/* КАТАЛОГИ */
+/* ФОНМА */
+
+
 
 .nav_list {
     display: flex;
@@ -10,7 +315,7 @@ body {
 }
 
 .footer {
-    background-color: #192F2D;
+    background-color: var(--accent-green);
 }
 
 .main {
@@ -19,7 +324,201 @@ body {
     text-align: center;
     justify-content: center;
     height: 500px;
-    background-color: #192F2D;
+    /* background-color: #192F2D; */
     color: #fff;
     font-weight: 700;
+}
+
+/* МОДАЛЬНЕ СЕРТИФІКАТИ */
+
+.modal-certificates {
+    position: relative;
+    width: 1920px;
+    padding-bottom: 180px;
+
+}
+
+.line-left-bottom::before,
+.line-left-bottom::after {
+    content: "";
+    position: absolute;
+    background-color: var(--accent-gold);
+}
+
+.line-left-bottom::before {
+    top: 0;
+    left: 96px;
+    width: 1px;
+    height: 100%;
+}
+
+.line-left-bottom::after {
+    bottom: 96px;
+    left: 0;
+    width: 100%;
+    height: 1px; 
+}
+
+.line-right::before,
+.line-right:after {
+    content: "";
+    position: absolute;
+    background-color: var(--accent-gold);
+}
+
+.line-right::before {
+    top: 0;
+    left: 1824px;
+    width: 1px;
+    height: 100%;
+}
+
+.modal-title {
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #E5D193, #EBE1C2 );
+    background-clip: text;
+    color: transparent;
+    font-size: 64px;
+    margin-top: 40px;
+    margin-bottom: 56px;
+}
+
+.modal-title::before {
+    content: "";
+    position: absolute;
+    top: 96px;
+    left: 0;
+    width: 32%;
+    height: 1px;
+    background-color: var(--accent-gold);
+}
+
+.modal-title::after {
+    content: "";
+    position: absolute;
+    top: 96px;
+    right: 0;
+    width: 32%;
+    height: 1px;
+    background-color: var(--accent-gold);
+}
+
+
+.certificates-list {
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   gap: 170px;
+   list-style: none;
+   color: var(--accent-gold);
+}
+
+.certificates-card-1 {
+    background-color: var(--accent-green);
+    width: 632px;
+    padding-bottom: 64px;
+    border: 1px solid var(--accent-gold);
+    box-shadow: 4px 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.certificates-text-1 {
+    margin-bottom: 56px;
+    margin-top: 48px;
+}
+
+.certificates-card-2 {
+    background-color: var(--accent-green);
+    width: 632px;
+    padding-bottom: 159px;
+    border: 1px solid var(--accent-gold);
+    box-shadow: 4px 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.certificates-text-2 {
+    margin-bottom: 143px;
+    margin-top: 48px;
+}
+
+/* МОДАЛЬНЕ ВІКНО В НАС ВИ МОЖЕТЕ ПРИДБАТИ */
+
+.modal-furniture {
+    width: 1920px;
+    position: relative;
+    background-color: var(--accent-green);
+}
+
+.furniture-title {
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #E5D193, #EBE1C2 );
+    background-clip: text;
+    color: transparent;
+    font-size: 64px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.furniture-title::before {
+    content: "";
+    position: absolute;
+    top: 96px;
+    left: 0;
+    width: 30%;
+    height: 1px;
+    background-color: var(--accent-gold);
+}
+
+.furniture-title::after {
+    content: "";
+    position: absolute;
+    top: 96px;
+    right: 0;
+    width: 30%;
+    height: 1px;
+    background-color: var(--accent-gold);
+}
+
+.furniture-list-container {
+    display: flex;
+    justify-content: center; 
+    gap: 170px;
+    padding-bottom: 120px;
+    margin: 0;
+    list-style: none;
+    
+}
+
+.furniture-list-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 414px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: var(--background-color);
+    border: 1px solid var(--accent-gold);
+    box-shadow: 4px 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.furniture-list-card h3 {
+    text-align: center; 
+}
+
+.furnituere-list-column-container_1 {
+    display: flex;
+    gap: 48px;
+    flex-direction: column;
+}
+
+.furnituere-list-column-container_2 {
+    display: flex;
+    gap: 37px;
+    flex-direction: column;
+}
+
+.furnituere-list-column-container_3 {
+    display: flex;
+    gap: 28px;
+    flex-direction: column;
 }

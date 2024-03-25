@@ -10,12 +10,23 @@
     <!-- <include src="./src/partials/main_page.html"></include> -->
     <!-- <div class="main">Start project 13.03.24. Good luck!</div> -->
 
+    <!-- Секціі на головній для стилізаціі
+    - герой
+    - про нас
+    - перваги
+    - каталоги
+    - форма звортонього звязку
+    - галерея
+    - контакти 
+    - оплата і доставка
+    - новини -->
+
     <!-- ГОЛОВНА СТОРІНКА -->
 
     <header>
-        <nav>
+        <nav class="navigation">
             <!-- кнопка відкриття модального вікна -->
-            <button type="button">Фурнітура</button>
+            <button type="button" class="nav-btn">Фурнітура</button>
             <ul class="nav_list">
                 <li>
                     <a href="index.html">Головна</a>
@@ -27,7 +38,7 @@
                     <a href="galery_interior.html">Галерея</a> 
                 </li>
                 <li>
-                    <a href="index.html">logo</a>
+                    <a href="index.html" class="logo"></a>
                 </li>
                 <li>
                     <a href="manufacturers_page.html">Виробники</a> 
@@ -44,48 +55,75 @@
     </header>
         <main>
             <!-- HERO -->
-
-            <h1>Дверна Фурнітура на Подолі</h1>
-            <p>Допоможемо обрати саме Ваше…</p>
-            <ul>
-                <li>фото 1</li>
-                <li>Фото 2</li>
-                <li>Фото 3</li>
-            </ul>
-
+           
+            <section class="hero-container">
+                <div>
+                    <h1 class="hero-title">Дверна Фурнітура на Подолі</h1>
+                    <div class="hero-text-conteiner">
+                        <p class="hero-text">Допоможемо обрати саме Ваше…</p>
+                    </div>
+                    <ul class="hero-list">
+                        <li class="hero-list-img">
+                            <img src="./src/img/Галерея/1/10.jpg" alt="" width="400">
+                        </li>
+                        <li class="hero-list-img">
+                            <img src="./src/img/Галерея/1/12.jpg" alt="" width="560">
+                        </li>
+                        <li class="hero-list-img">
+                            <img src="./src/img/Галерея/1/19.jpg" alt="" width="400">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+                
             <!-- ПРО НАС -->
-
-            <h2>Про нас</h2>
-            <img src="" alt="logo">
-            <p>У дизайні інтер’єру ми є експертом на українському ринку ЯКІСНОЇ дверної та меблевої фурнітури вже багато років. Завдяки цьому ми обрали для наших клієнтів найкращих представників світових брендів з Європи й Америки.
-                У першу чергу ми піклуємося про клієнта, його побажання й переваги.
-                І завдяки високому професіоналізму наших спеціалістів з одного боку й широким асортиментом наших партнерів з іншого – клієнт завжди отримає бажане у відповідності зі своїми смаками та стилістикою інтер’єру. Нашою фішкою також є можливість вирішити будь-які технічні завдання.
-            </p>
-            <!-- замінити посилання на кнопку відкриття модалки -->
-            <a href="">
-                <svg></svg>
-                <h3>Сертифікати</h3>
-                <p>Дивитись сертифікати</p>
-            </a>
-            <a href="about_as_page.html">
-                <svg></svg>
-                <h3>Історія розвитку</h3>
-                <p>Дізнатися більше</p>
-            </a>
-            <ul>
-                <li>
-                    <p>15</p>
-                    <p>років досвіду</p>
-                </li>
-                <li>
-                    <p>1000 +</p>
-                    <p>варіантів фурнітури</p>
-                </li>
-                <li>
-                    <p>50k +</p>
-                    <p>задоволених клієнтів</p>
-                </li>
-            </ul>
+            <section class="about-section">
+                <div class="title-line-container">
+                    <h2 class="about-title">Про нас</h2>
+                </div>
+                <div class="about-container">
+                    <img src="" alt="logo" class="about-logo">
+                    <div class="about-text-cobtainer">
+                        <p class="about-text">
+                            У дизайні інтер’єру ми є експертом на українському ринку ЯКІСНОЇ дверної та меблевої фурнітури вже багато років. Завдяки цьому ми обрали для наших клієнтів найкращих представників світових брендів з Європи й Америки.
+                        </p>
+                        <p class="about-text">
+                            У першу чергу ми піклуємося про клієнта, його побажання й переваги.
+                        </p>
+                        <p class="about-text">
+                            І завдяки високому професіоналізму наших спеціалістів з одного боку й широким асортиментом наших партнерів з іншого – клієнт завжди отримає бажане у відповідності зі своїми смаками та стилістикою інтер’єру. Нашою фішкою також є можливість вирішити будь-які технічні завдання.
+                        </p>
+                    </div>
+                    <!-- замінити посилання на кнопку відкриття модалки -->
+                    <div class="about-links-container">
+                        <!-- <svg></svg> -->
+                        <p>Сертифікати</p>
+                        <button class="about-btn">Дивитися сертифікати</button>
+                        <a href="about_as_page.html">
+                            <!-- <svg></svg> -->
+                            <h3>Історія розвитку</h3>
+                            <p>Дізнатися більше</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="benefits-container">
+                    <ul class="benefits-card">
+                        <li class="benefits-item">
+                            <p>15</p>
+                            <p>років досвіду</p>
+                        </li>
+                        <li class="benefits-item">
+                            <p>1000 +</p>
+                            <p>варіантів фурнітури</p>
+                        </li>
+                        <li class="benefits-item">
+                            <p>50k +</p>
+                            <p>задоволених клієнтів</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
 
             <!-- КАТАЛОГИ -->
 
@@ -224,19 +262,32 @@
         <!-- FOOTER -->
         <footer class="footer">
             <nav>
-                <!-- кнопка відкриття модального вікна-->
-                <button type="button">Фурнітура</button>
-                <ul>
-                    <li>Головна</li>
-                    <li>Про нас</li>
-                    <li>Галерея</li>
-                    <li>
-                        <a href="index.html">logo</a>
-                    </li>
-                    <li>Виробники</li>
-                    <li>Контакти</li>
-                    <li>Оплата і доставка</li>
-                </ul>
+                 <!-- кнопка відкриття модального вікна -->
+            <button type="button">Фурнітура</button>
+            <ul class="nav_list">
+                <li>
+                    <a href="index.html">Головна</a>
+                </li>
+                <li>
+                    <a href="about_as_page.html">Про нас</a> 
+                </li>
+                <li>
+                    <a href="">Галерея</a> 
+                </li>
+                <li>
+                    <a href="index.html">logo</a>
+                </li>
+                <li>
+                    <a href="manufacturers_page.html">Виробники</a> 
+                </li>
+                <li>
+                    <a href="#contacts">Контакти</a> 
+                </li>
+                <li>
+                    <a href="#delivery">Оплата 
+                        і доставка</a> 
+                </li>
+            </ul>
                 <a href="">Зв’язатися</a>
             </nav>
             <ul>
@@ -282,99 +333,109 @@
 
         <!-- МОДАЛЬНЕ ВИКНО "В НАС МОЖНВ ПРИДБАТИ" -->
 
-        <div hidden>
-            <div>
+        <div> 
+            <div class="modal-furniture">
+                <div class="line-left-bottom"></div>
+                <div class="line-right"></div>
                 <button type="button">X</button>
-                <h2>У нас можна придбати</h2>
-                <ul>
+                <h2 class="furniture-title">У нас можна придбати</h2>
+                <ul class="furniture-list-container">
                     <!-- картки модалки розмищувала стовпчиками для слилізаціі -->
-                    <li>
-                        <svg></svg>
-                        <h3>Дверні ручки</h3>
-                        <ul>
-                            <li>Ручки натискні на розетці</li>
-                            <li>Дверний гарнітур на планці</li>
-                            <li>Ручки на вхідні двері</li>
-                            <li>Ручки-скоби</li>
-                            <li>Ручки-ноби</li>
-                            <li>Ручки для розсувних дверей</li>
-                            <li>Віконні ручки</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <svg></svg>
-                        <h3>Освітлення</h3>
-                    </li>
-                    <li>
-                        <svg></svg>
-                        <h3>Приладдя для каміну</h3>
-                    </li>
-                    <li>
-                        <svg></svg>
-                        <h3>Дверні механізми</h3>
-                        <ul>
-                            <li>Німецькі замки</li>
-                            <li>Завіси</li>
-                            <li>Ковпаки на петлі</li>
-                            <li>Шпінгалети</li>
-                            <li>Обмежувачі дверей</li>
-                            <li>Циліндри</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <svg></svg>
-                        <h3>Аксесуари для ванни</h3>
-                        <ul>
-                            <li>Аксесуари</li>
-                            <li>Змішувачі та крани</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <svg></svg>
-                        <h3>Карнизи та кріплення</h3>
-                    </li>
-                    <li>
-                        <svg></svg>
-                        <h3>Меблева фурнітура</h3>
-                        <ul>
-                            <li>Меблеві ручки</li>
-                            <li>Меблеві петлі</li>
-                            <li>Декори для меблів, ключі</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <svg></svg>
-                        <h3>Аксесуари</h3>
-                        <ul>
-                            <li>Аксесуари для кухні та декор</li>
-                            <li>Дзвінки, дзвони, клопфери</li>
-                            <li>Гачки</li>
-                            <li>Поштові скриньки</li>
-                            <li>Декоративні накладки під вимикачі, розетки, жалюзі</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <svg></svg>
-                        <h3>Цікавинки</h3>
-                    </li>
+                    <div class="furnituere-list-column-container_1">
+                        <li class="furniture-list-card">
+                            <img src="./src/img/svg/modal-furniture/door_hendles.svg" alt="" width="32">
+                            <h3>Дверні ручки</h3>
+                            <ul>
+                                <li>Ручки натискні на розетці</li>
+                                <li>Дверний гарнітур на планці</li>
+                                <li>Ручки на вхідні двері</li>
+                                <li>Ручки-скоби</li>
+                                <li>Ручки-ноби</li>
+                                <li>Ручки для розсувних дверей</li>
+                                <li>Віконні ручки</li>
+                            </ul>
+                        </li>
+                        <li class="furniture-list-card">
+                            <img src="./src/img/svg/modal-furniture/litining.svg" alt="" width="48">
+                            <h3>Освітлення</h3>
+                        </li>
+                        <li class="furniture-list-card">
+                            <img src="./src/img/svg/modal-furniture/accessories_fireplace.svg" alt="" width="48">
+                            <h3>Приладдя для каміну</h3>
+                        </li>
+                    </div>
+                    <div class="furnituere-list-column-container_2">
+                        <li class="furniture-list-card">
+                            <img src="./src/img/svg/modal-furniture/door_mechanism.svg" alt="" width="32">
+                            <h3>Дверні механізми</h3>
+                            <ul>
+                                <li>Німецькі замки</li>
+                                <li>Завіси</li>
+                                <li>Ковпаки на петлі</li>
+                                <li>Шпінгалети</li>
+                                <li>Обмежувачі дверей</li>
+                                <li>Циліндри</li>
+                            </ul>
+                        </li>
+                        <li class="furniture-list-card">
+                            <img src="./src/img/svg/modal-furniture/accessories_bath.svg" alt="" width="32">
+                            <h3>Аксесуари для ванни</h3>
+                            <ul>
+                                <li>Аксесуари</li>
+                                <li>Змішувачі та крани</li>
+                            </ul>
+                        </li>
+                        <li class="furniture-list-card">
+                            <img src="./src/img/svg/modal-furniture/eaves.svg" alt="" width="48">
+                            <h3>Карнизи та кріплення</h3>
+                        </li>
+                    </div>
+                    <div class="furnituere-list-column-container_3">
+                        <li class="furniture-list-card">
+                            <img src="./src/img/svg/modal-furniture/furniture_accessorise.svg" alt="" width="32">
+                            <h3>Меблева фурнітура</h3>
+                            <ul>
+                                <li>Меблеві ручки</li>
+                                <li>Меблеві петлі</li>
+                                <li>Декори для меблів, ключі</li>
+                            </ul>
+                        </li>
+                        <li class="furniture-list-card">
+                            <img src="./src/img/svg/modal-furniture/accessories.svg" alt="" width="32">
+                            <h3>Аксесуари</h3>
+                            <ul>
+                                <li>Аксесуари для кухні та декор</li>
+                                <li>Дзвінки, дзвони, клопфери</li>
+                                <li>Гачки</li>
+                                <li>Поштові скриньки</li>
+                                <li>Декоративні накладки під <br> вимикачі, розетки, жалюзі</li>
+                            </ul>
+                        </li>
+                        <li class="furniture-list-card">
+                            <img src="./src/img/svg/modal-furniture/star.svg" alt="" width="48">
+                            <h3>Цікавинки</h3>
+                        </li>
+                    </div>
                 </ul>
             </div>
         </div>
 
         <!-- МОДАЛКА СЕРТИФІКАТИ -->
 
-        <div hidden>
-            <div>
+        <div>
+            <div class="modal-certificates">
+                <div class="line-left-bottom"></div>
+                <div class="line-right"></div>
                 <button type="button">X</button>
-                <h2>Сертифікати</h2>
-                <ul>
-                    <li>
-                        Сертифікат офіційного представника фірми Mandelli в Україні
-                        <img src="" alt="сертифікат 1">
+                <h2 class="modal-title">Сертифікати</h2>
+                <ul class="certificates-list">
+                    <li class="certificates-card-1">
+                        <p class="certificates-text-1">Сертифікат офіційного представника фірми Mandelli в Україні</p>
+                        <img src="./src/img/certificats/sertifikat-Mandelli.jpg" alt="сертифікат 1" width="386">
                     </li>
-                    <li>
-                        Сертифікати офіційного представника фірми Omporro в Україні
-                        <img src="" alt="сертифікат 2">
+                    <li class="certificates-card-2">
+                        <p class="certificates-text-2">Сертифікати офіційного представника фірми Omporro в Україні</p>
+                        <img src="./src/img/certificats/sertifikat-omporro.jpg" alt="сертифікат 2" width="480">
                     </li>
                 </ul>
             </div>
