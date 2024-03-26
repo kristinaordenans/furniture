@@ -179,6 +179,7 @@ a {
 .title-line-container{
     position: relative;
 }
+
 .about-title {
     font-size: 64px;
     background-clip: text;
@@ -270,6 +271,7 @@ a {
     align-items: center;
     position: relative;
     height: 640px;
+    margin-bottom: 120px;
 }
 
 .benefits-container::before {
@@ -333,8 +335,74 @@ a {
 
 /* КАТАЛОГИ */
 
-.catalog-title {
-    
+.catalog-title-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.catalog-title{
+    font-size: 64px;
+    background-clip: text;
+    /* color: var(--accent-gold); */
+    color: transparent;
+    background-image: var(--gold-gradient);
+    margin-bottom: 132px;
+}
+
+.catalog-title::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 40%;
+    height: 1px;
+    background-color: var(--accent-gold);
+}
+
+.catalog-title::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 40%;
+    height: 1px;
+    background-color: var(--accent-gold);
+}
+
+.catalog-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 168px;
+}
+
+.catalog-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 368px;
+    height: 368px;
+    justify-content: center;
+    background-color: var(--background-color);
+    border: 1px solid var(--accent-gold);
+    padding: 24px;
+
+}
+
+.catalog-download-btn {
+    display: flex;
+    align-items: center;
+    /* перевірити висоту кнопки бо іі нема в макеті */
+    height: 38px;
+    padding:6px 32px 6px 32px;
+    background-color: var(--accent-green);
+    border: 1px solid var(--accent-gold);
+    border-radius: 26px;
+    outline: 4px solid var(--accent-green);
+}
+
+.catalog-btn-icon {
+    margin-right: 16px;
 }
 
 /* ФОНМА */
