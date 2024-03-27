@@ -44,6 +44,7 @@
                     <a href="manufacturers_page.html">Виробники</a> 
                 </li>
                 <li>
+                    <!-- додати на всіх окрім мейн сторінках посилання на html документ головноі перд # -->
                     <a href="#contacts">Контакти</a> 
                 </li>
                 <li>
@@ -57,7 +58,7 @@
             <!-- HERO -->
            
             <section class="hero-container">
-                <div>
+                <div class="hero">
                     <h1 class="hero-title">Дверна Фурнітура на Подолі</h1>
                     <div class="hero-text-conteiner">
                         <p class="hero-text">Допоможемо обрати саме Ваше…</p>
@@ -142,85 +143,133 @@
             
             <!-- в цьому розділі посилання то скачування файлу треба подивитись чи реалізація йде 
                 черз посилання чи через кнопку і де зберігаються ці документи -->
+
+            
             <ul class="catalog-list">
                 <li class="catalog-card">
-                    <img src="" alt="">
-                    <p>Вишукана дверна та меблева фурнітура Salice Paolo з Італії</p>
+                    <img src="./src/img/Виробники/ento.jpg" alt="" width="368" height="160">
+                    <p class="catalog-card-text">Вишукана дверна та меблева фурнітура <span class="catalog-card-span">Salice Paolo</span> з Італії</p>
                     <a class="catalog-download-btn" href="" download>
                         <img class="catalog-btn-icon" src="./src/img/svg/download.svg" alt="">
                         Каталог
                     </a>
                 </li>
                 <li class="catalog-card">
-                    <img src="" alt="">
-                    <p>Елегантна та сучасна дверна фурнітура Ento у стилі Modern з Італії</p>
+                    <img src="./src/img/Виробники/mestre.jpg" alt="" width="368" height="160">
+                    <p class="catalog-card-text">Елегантна та сучасна дверна фурнітура <span class="catalog-card-span">Ento</span>  у стилі Modern з Італії</p>
                     <a class="catalog-download-btn" href="" download>
                         <img class="catalog-btn-icon" src="./src/img/svg/download.svg" alt="">
                         Каталог
                     </a>
                 </li>
                 <li class="catalog-card">
-                    <img src="" alt="">
-                    <p>Фурнітура та аксесуари рівня Luxury від Mestre з Іспанії</p>
+                    <img src="./src/img/Виробники/galbusera.jpg" alt="" width="368" height="160">
+                    <p class="catalog-card-text">Фурнітура та аксесуари рівня Luxury від <span class="catalog-card-span">Mestre</span> з Іспанії</p>
                     <a class="catalog-download-btn" href="" download>
                         <img class="catalog-btn-icon" src="./src/img/svg/download.svg" alt="">
                         Каталог
                     </a>
                 </li>
             </ul>
+            <div class="catalog-swiper-container">
+                <button class="catalog-swiper">
+                    <img src="./src/img/svg/arrow-to-left.svg" alt="">
+                </button>
+                <button class="catalog-swiper">
+                    <img src="./src/img/svg/arrow-to-right.svg" alt="">
+                </button>
+            </div>
+            <a href="">
+                Каталог
+                <img src="./src/img/svg/arrow-to-right-small.svg" alt="">
+            </a>
 
             <!-- ФОРМА ЗВОРОТНЬОГО ЗВЯЗКУ -->
 
-            <h2>У вас є запитання?</h2>
-            <p>Зв’яжіться з нами зручним для вас способом. Ми завжди на зв’язку:</p>
-            <a href=""> +38 (067) 406 38 82</a>
-            <ul>
-                <li>
-                    <a href="">
-                        <svg></svg>
-                        insta
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <svg></svg>
-                        telegram
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <svg></svg>
-                        viber
-                    </a>
-                </li>
-            </ul>
-            <p>Або напишіть нам і ми обов’язково допоможемо підібрати саме Вашу фурнітуру!</p>
-            <form>
-                <label for="user_name">
-                    Як до вас звертатися?
-                    <input type="text" id="user_name">
-                </label>
-                <label for="user_contact">
-                    Як з вами зв’язатися? (E-mail, телефон)
-                    <input type="text" id="user_contact">
-                </label>
-                <label for="user_request">
-                    Ваше питання
-                    <input type="text" id="user_request">
-                </label>
-                <button type="submit">Надіслати</button>
-            </form>
+            <div class="form-container" hidden>
+                <h2>У вас є запитання?</h2>
+                <div class="form-card">
+                    
+                    <p>Зв’яжіться з нами зручним для вас способом. Ми завжди на зв’язку:</p>
+                    <a href=""> +38 (067) 406 38 82</a>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <svg></svg>
+                                insta
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg></svg>
+                                telegram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg></svg>
+                                viber
+                            </a>
+                        </li>
+                    </ul>
+                    <p>Або напишіть нам і ми обов’язково допоможемо підібрати саме Вашу фурнітуру!</p>
+                    <form>
+                        <label for="user_name">
+                            Як до вас звертатися?
+                            <input type="text" id="user_name">
+                        </label>
+                        <label for="user_contact">
+                            Як з вами зв’язатися? (E-mail, телефон)
+                            <input type="text" id="user_contact">
+                        </label>
+                        <label for="user_request">
+                            Ваше питання
+                            <input type="text" id="user_request">
+                        </label>
+                        <button type="submit">Надіслати</button>
+                    </form>
+                </div>
+            </div>
 
             <!-- ГАЛЕРЕЯ -->
 
-            <h2>Галерея</h2>
-            <ul>
-                <li><a href="galery_objects.html"><img src="" alt="">Наші вироби на об'єктах</a></li>
-                <li><a href="galery_interior.html"><img src="" alt="">Фото в інтер'єрі</a></li>
-                <li><a href="galery_advertising.html"><img src="" alt="">Наша реклама</a></li>
-            </ul>
+            <div>
+                <div class="galery-title-container">
+                    <h2 class="galery-title">Галерея</h2>
+                </div>
+                <div class="galery-container">
+                    <ul class="galery-list">
+                        <li class="galery-item">
+                            <img class="galery-link-img" src="./src/img/Галерея/1/14.jpg" alt="" width="400" height="400">
+                            <a href="galery_objects.html">
+                                Наші вироби на об'єктах
+                                <!--  активний елемент тому треба замінити на svg -->
+                                <img src="./src/img/svg/arrow-to-right-small.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="galery-item">
+                            <img class="galery-link-img" src="./src/img/Галерея/1/17.jpg" alt="" width="560" height="560">
+                            <a href="galery_interior.html">
+                                Фото в інтер'єрі
+                                <!--  активний елемент тому треба замінити на svg -->
+                                <img src="./src/img/svg/arrow-to-right-small.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="galery-item">
+                            <img class="galery-link-img" src="./src/img/Галерея/1/22.jpg" alt="" width="400" height="400">
+                            <a href="galery_advertising.html">
+                                Наша реклама
+                                <!--  активний елемент тому треба замінити на svg -->
+                                <img src="./src/img/svg/arrow-to-right-small.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
 
             <!-- КОНТАКТИ -->
+
             <section id="contacts">
                 <h2>Контакти</h2>
                 <h3>Салон “ Дверна Фурнітура на Подолі ”</h3>

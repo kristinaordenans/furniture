@@ -80,7 +80,10 @@ a {
 }
 
 .logo {
+    position: absolute;
     padding: 60px;
+    left: 900px;
+    top: 1px;
     background-color: var(--accent-green);
     border: 1px solid var(--accent-gold);
 }
@@ -93,10 +96,15 @@ a {
     display: flex;
     justify-content: center;
     text-align: center;
-    height: 1080px;
+    height: 1000px;
     position: relative;
-    padding-top: 144px;
+    /* padding-top: 144px; */
     margin-bottom: 132px;
+}
+
+.hero {
+    
+    padding-top: 144px;
 }
 
 .hero-container::before {
@@ -153,6 +161,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 38px;
+    margin: 0;
     list-style: none;
 }
 
@@ -297,6 +306,7 @@ a {
     height: 240px;
     border: 1px solid var(--accent-gold);
     background-image: linear-gradient(to right, rgba(25, 47, 45, 0.75), rgba(25, 47, 45, 0.75));
+    box-shadow: 4px 12px 24px rgba(0, 0, 0, 0.5);
     list-style: none;
 }
 
@@ -375,6 +385,7 @@ a {
     justify-content: center;
     list-style: none;
     gap: 168px;
+    margin-bottom: 120px;
 }
 
 .catalog-card {
@@ -386,7 +397,12 @@ a {
     background-color: var(--background-color);
     border: 1px solid var(--accent-gold);
     padding: 24px;
+    box-shadow: 4px 12px 24px rgba(0, 0, 0, 0.5);
+}
 
+.catalog-card-text{
+    margin-bottom: 48px;
+    margin-top: 24px;
 }
 
 .catalog-download-btn {
@@ -399,13 +415,138 @@ a {
     border: 1px solid var(--accent-gold);
     border-radius: 26px;
     outline: 4px solid var(--accent-green);
+    box-shadow: 4px 12px 24px rgba(0, 0, 0, 0.5);
 }
 
 .catalog-btn-icon {
     margin-right: 16px;
 }
 
+.catalog-card-span {
+    color: var(--accent-gold);
+}
+
+.catalog-swiper-container {
+    display: flex;
+    justify-content: center;
+    gap: 96px;
+}
+.catalog-swiper {
+    background-color: transparent;
+    border: none;
+}
+
 /* ФОНМА */
+
+.form-container{
+    position: relative;
+    /* display: flex;
+    justify-content: center; */
+    height: 640px;
+    width: 1436px;
+    border: 1px solid var(--accent-gold);
+}
+
+/* .form-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 161px;
+    height: 1px;
+    background-color: var(--accent-gold);
+}
+
+.form-card::after {
+    content: "";
+    position: absolute;
+    right:0;
+    width: 161px;
+    height: 1px;
+    background-color: var(--accent-gold);
+} */
+
+.form-card {
+    display: flex;
+    justify-content: center;
+    position: absolute;   
+}
+
+.form-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(25, 47, 45, 0.5), rgba(25, 47, 45, 0.5)), url('./src/img/bacground_img/bg2.jpg');
+    background-size: cover;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+/* ГАЛЕРЕЯ */
+
+.galery-container {
+    display: flex;
+    justify-content: center;
+    /* gap: 96px; */
+}
+
+.galery-list {
+    display: flex;
+    justify-content: center;
+    gap: 96px;
+    list-style: none;
+}
+
+.galery-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.galery-title-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.galery-title {
+    font-size: 64px;
+    background-clip: text;
+    /* color: var(--accent-gold); */
+    color: transparent;
+    background-image: var(--gold-gradient);
+    margin-bottom: 132px;
+}
+
+.galery-title::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 40%;
+    height: 1px;
+    background-color: var(--accent-gold);
+}
+
+.galery-title::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 40%;
+    height: 1px;
+    background-color: var(--accent-gold);
+}
+
+.galery-link-img {
+    border:  1px solid var(--accent-gold);
+}
+
+/* КОНТАКТИ */
+/* ОПЛАТА І ДОСТАВКА */
+/* НОВИНИ */
+
 
 
 .footer {
