@@ -700,7 +700,7 @@ a {
     border: 1px solid var(--accent-green);
     box-shadow: 4px 12px 24px rgba(0, 0, 0, 0.5);
     width: 1440px;
-    height: 400px;
+    /* height: 400px; */
 
 }
 
@@ -967,13 +967,172 @@ a {
 /* -----------PAGE MANUFACTURES------------ */
 
 .manufacturers-title-container {
+    position: relative;
     margin-top: 148px;
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-bottom: 96px;
 }
 
 .manufacturers-title {
     color: var(--accent-gold);
     font-size: 64px;
 }
+
+.manufacturers-title::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 39%;
+    height: 1px;
+    background-color: var(--accent-gold);
+}
+
+.manufacturers-title::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 39%;
+    height: 1px;
+    background-color: var(--accent-gold);
+}
+
+.manufactures-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 46px;
+    list-style: none;
+    margin-bottom: 96px;
+}
+
+.manufacture-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
+    width: 248px;
+    height: 248px;
+    background-color: var(--background-color);
+    border: 1px solid var(--accent-green);
+    box-shadow: 4px 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.manufacture-card-img {
+    margin-bottom: 24px;
+}
+
+.manufactures-card-title {
+    color: var(--accent-gold);
+    margin-bottom: 8px;
+}
+
+/* ------------- NEWS PAGE ------------- */
+
+.news-page-title-container {
+    position: relative;
+    margin-top: 148px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 96px;
+}
+
+.news-page-title {
+    color: var(--accent-gold);
+    font-size: 64px;
+}
+
+.news-page-title::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 42%;
+    height: 1px;
+    background-color: var(--accent-gold);
+}
+
+.news-page-title::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 42%;
+    height: 1px;
+    background-color: var(--accent-gold);
+}
+
+.news-page-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 80px;
+}
+
+.news-page-card {
+    /* position: relative; */
+    display: flex;
+    width: 1440px;
+    height: 400px;
+    margin-bottom: 89px;
+    background-color: var(--background-color);
+    border: 1px solid var(--accent-green);
+    box-shadow: 4px 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.news-page-card-text-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    padding: 74px 72px 74px 96px;
+}
+
+
+.news-page-card-title {
+    color: var(--accent-gold);
+    font-size: 32px;
+    margin-bottom: 96px;
+}
+
+.news-page-card-title::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    background-color: var(--accent-gold);
+    height: 1px;
+    width: 856px;
+    margin-top: 80px;
+    margin-bottom: 48px;
+
+}
+
+.news-page-card-text {
+    font-size: 24px;
+    line-height: 38px;
+    text-align: justify;
+}
+
+.scrollable-container {
+    max-height: 80px; /* Задаємо максимальну висоту контейнера, після якої почнеться прокрутка */
+    overflow-y: auto;
+    scrollbar-width: thin; /* Установлюємо тонкий стиль повзунка (для браузерів, що підтримують цю властивість) */
+    scrollbar-color: var(--accent-gold) var(--background-color);
+}
+
+.news-page-card-img {
+    width: 488px;
+    /* height: 400px; */
+    background-size: cover;
+
+}
+
+
+
+
