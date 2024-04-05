@@ -9,6 +9,9 @@
 body {
     background-color: var(--background-color);
     color: #fff;
+    font-family: "Playfair Display";
+    font-style: normal;
+	font-weight: normal;
 } 
 
 /* reset start */
@@ -1350,6 +1353,12 @@ a {
 }
 
 .about-page-card-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-size: 18px;
+    line-height: 24px;
     background-color: var(--accent-green);
     border: 1px solid var(--accent-gold);
     outline: 2px solid var(--accent-green);
