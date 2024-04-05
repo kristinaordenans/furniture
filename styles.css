@@ -9,9 +9,9 @@
 body {
     background-color: var(--background-color);
     color: #fff;
+    width: 1920px;
     font-family: "Playfair Display";
-    font-style: normal;
-	font-weight: normal;
+    font-weight: 400;
 } 
 
 /* reset start */
@@ -29,6 +29,7 @@ h5,
 h6,
 p {
     margin: 0;
+    font-weight: 400;
 }
 
 ul {
@@ -73,6 +74,7 @@ a {
     padding-right: 32px;
     margin-left: 169px;
     margin-right: 89px;
+    cursor: pointer;
 }
 
 .nav_list {
@@ -80,6 +82,7 @@ a {
     /* justify-content: center; */
     gap: 89px;
     list-style: none;
+    cursor: pointer;
 }
 
 .logo {
@@ -128,6 +131,7 @@ a {
 
 .hero-title {
     font-size: 72px;
+    font-weight: 400;
     color: var(--accent-gold);
     margin-bottom: 24px;
 }
@@ -175,6 +179,9 @@ a {
     border: 1px solid var(--accent-gold);
 }
 
+.hero-arrow {
+    cursor: pointer;
+}
 
 /* ПРО НАС */
 
@@ -187,6 +194,7 @@ a {
 .about-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 198px;
     margin-bottom: 240px;
 }
@@ -251,8 +259,14 @@ a {
     /* перевірити відступ з новим шрифтом */
     text-indent: 25px;
     width: 560px;
-    font-size: 24px;
-    margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 36px;
+    /* margin-bottom: 24px; */
+}
+
+.about-text:not(:last-child) {
+    margin-bottom: 12px ;
 }
 
 .about-links-container {
@@ -656,7 +670,8 @@ a {
 
 .delivery-list-item-text {
     text-align: justify;
-    font-size: 18px;
+    font-stretch: expanded;
+    font-size: 16px;
     line-height: 24px;
 }
 
