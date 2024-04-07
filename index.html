@@ -40,8 +40,10 @@
                 <li>
                     <a href="galery_interior.html">Галерея</a> 
                 </li>
-                <li>
-                    <a href="index.html" class="logo"></a>
+                <li class="logo">
+                    <a href="index.html" >
+                        <img  src="./src/img/svg/Vector.svg" alt="" width="44">
+                    </a>
                 </li>
                 <li>
                     <a href="manufacturers_page.html">Виробники</a> 
@@ -109,30 +111,30 @@
                     <!-- замінити посилання на кнопку відкриття модалки -->
                     <div class="about-links-container">
                         <!-- <svg></svg> -->
-                        <img src="./src/img/svg/keyhole.svg" alt="" width="32">
-                        <p>Сертифікати</p>
+                        <img src="./src/img/svg/keyhole.svg" alt="" width="48">
+                        <p class="about-links-title">Сертифікати</p>
                         <button class="about-btn">Дивитися сертифікати</button>
                         <a href="about_as_page.html">
                             <!-- <svg></svg> -->
-                            <img src="./src/img/svg/key-skeleton.svg" alt="" width="32">
-                            <h3>Історія розвитку</h3>
-                            <p>Дізнатися більше</p>
+                            <img src="./src/img/svg/key-skeleton.svg" alt="" width="48">
+                            <h3 class="about-links-title">Історія розвитку</h3>
+                            <p class="about-links-text">Дізнатися більше</p>
                         </a>
                     </div>
                 </div>
                 <div class="benefits-container">
                     <ul class="benefits-card">
                         <li class="benefits-item">
-                            <p>15</p>
-                            <p>років досвіду</p>
+                            <p class="benefits-item-numb">15</p>
+                            <p class="benefits-item-text">років досвіду</p>
                         </li>
                         <li class="benefits-item">
-                            <p>1000 +</p>
-                            <p>варіантів фурнітури</p>
+                            <p class="benefits-item-numb">1000 +</p>
+                            <p class="benefits-item-text">варіантів фурнітури</p>
                         </li>
                         <li class="benefits-item">
-                            <p>50k +</p>
-                            <p>задоволених клієнтів</p>
+                            <p class="benefits-item-numb">50k +</p>
+                            <p class="benefits-item-text">задоволених клієнтів</p>
                         </li>
                     </ul>
                 </div>
@@ -174,63 +176,64 @@
                     </a>
                 </li>
             </ul>
-            <div class="catalog-swiper-container">
-                <button class="catalog-swiper">
-                    <img src="./src/img/svg/arrow-to-left.svg" alt="">
-                </button>
-                <button class="catalog-swiper">
-                    <img src="./src/img/svg/arrow-to-right.svg" alt="">
-                </button>
+            <div class="catalog-swiper-link-container">
+                <div class="catalog-swiper-container">
+                    <button class="catalog-swiper">
+                        <img src="./src/img/svg/arrow-to-left.svg" alt="">
+                    </button>
+                    <button class="catalog-swiper">
+                        <img src="./src/img/svg/arrow-to-right.svg" alt="">
+                    </button>
+                </div>
+                <a class="catalog-link">
+                    Всі виробнии
+                    <img src="./src/img/svg/arrow-to-right-small.svg" alt="">
+                </a>
             </div>
-            <a href="">
-                Каталог
-                <img src="./src/img/svg/arrow-to-right-small.svg" alt="">
-            </a>
+            
 
             <!-- ФОРМА ЗВОРОТНЬОГО ЗВЯЗКУ -->
 
-            <div class="form-container" hidden>
-                <h2>У вас є запитання?</h2>
-                <div class="form-card">
-                    
-                    <p>Зв’яжіться з нами зручним для вас способом. Ми завжди на зв’язку:</p>
-                    <a href=""> +38 (067) 406 38 82</a>
-                    <ul>
-                        <li>
-                            <a href="">
-                                <svg></svg>
-                                insta
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <svg></svg>
-                                telegram
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <svg></svg>
-                                viber
-                            </a>
-                        </li>
-                    </ul>
-                    <p>Або напишіть нам і ми обов’язково допоможемо підібрати саме Вашу фурнітуру!</p>
-                    <form>
-                        <label for="user_name">
-                            Як до вас звертатися?
-                            <input type="text" id="user_name">
-                        </label>
-                        <label for="user_contact">
-                            Як з вами зв’язатися? (E-mail, телефон)
-                            <input type="text" id="user_contact">
-                        </label>
-                        <label for="user_request">
-                            Ваше питання
-                            <input type="text" id="user_request">
-                        </label>
-                        <button type="submit">Надіслати</button>
-                    </form>
+            <div class="form-container">
+                <div class="form-card"> 
+                    <h2>У вас є запитання?</h2>  
+                    <div class="form-card-container">
+                        <div class="form-card-text-container">
+                            <p>Зв’яжіться з нами зручним для вас способом. Ми завжди на зв’язку:</p>
+                            <a href=""> +38 (067) 406 38 82</a>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        
+                                        insta
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        telegram
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        viber
+                                    </a>
+                                </li>
+                            </ul>
+                            <p>Або напишіть нам і ми обов’язково допоможемо підібрати саме Вашу фурнітуру!</p>
+                        </div>
+                        <form class="form">
+                            <label for="user_name">
+                                <input class="form-input" type="text" id="user_name" placeholder="Як до вас звертатися?">
+                            </label>
+                            <label for="user_contact">
+                                <input class="form-input" type="text" id="user_contact" placeholder="Як з вами зв’язатися? (E-mail, телефон)">
+                            </label>
+                            <label for="user_request">
+                                <input class="form-input-request" type="text" id="user_request" placeholder="Ваше питання">
+                            </label>
+                            <button type="submit">Надіслати</button>
+                        </form>
+                    </div>
                 </div>
             </div>
 
@@ -244,7 +247,7 @@
                     <ul class="galery-list">
                         <li class="galery-item">
                             <img class="galery-link-img" src="./src/img/Галерея/1/14.jpg" alt="" width="400" height="400">
-                            <a href="galery_objects.html">
+                            <a class="galery-item-link" href="galery_objects.html">
                                 Наші вироби на об'єктах
                                 <!--  активний елемент тому треба замінити на svg -->
                                 <img src="./src/img/svg/arrow-to-right-small.svg" alt="">
@@ -252,7 +255,7 @@
                         </li>
                         <li class="galery-item">
                             <img class="galery-link-img" src="./src/img/Галерея/1/17.jpg" alt="" width="560" height="560">
-                            <a href="galery_interior.html">
+                            <a class="galery-item-link" href="galery_interior.html">
                                 Фото в інтер'єрі
                                 <!--  активний елемент тому треба замінити на svg -->
                                 <img src="./src/img/svg/arrow-to-right-small.svg" alt="">
@@ -260,7 +263,7 @@
                         </li>
                         <li class="galery-item">
                             <img class="galery-link-img" src="./src/img/Галерея/1/22.jpg" alt="" width="400" height="400">
-                            <a href="galery_advertising.html">
+                            <a class="galery-item-link" href="galery_advertising.html">
                                 Наша реклама
                                 <!--  активний елемент тому треба замінити на svg -->
                                 <img src="./src/img/svg/arrow-to-right-small.svg" alt="">
@@ -277,33 +280,36 @@
                 <div class="contact-title-container">
                     <h2 class="contact-title">Контакти</h2>
                 </div>
-                <h3>Салон “ Дверна Фурнітура на Подолі ”</h3>
-                <p>Ми працюємо кожного дня, за попередньою домовленістю</p>
-                <ul>
-                    <li>
-                        <a href="">
-                            <svg></svg>
-                            м. Київ, вул. Сковороди, 1-В
-                        </a>
-                        <p>ст. м. Контрактова Площа</p>
-                    </li>
-                    <li>
-                        <a href="">
-                            <svg></svg>
-                            +38 (067) 406-38-82
-                        </a>
-                        <p>Мобільний/Telegramm/Viber/WhatsApp</p>
-                    </li>
-                    <li>
-                        <a href="">
-                            <svg></svg>
-                            direct.furnitura@gmail.com
-                        </a>
-                    </li>
-                </ul>
-                <a href="">
-                    <img src="" alt="фото карти">
-                </a>
+                <div class="contacts-container">
+                    <h3 class="contacts-title">Салон <span class="contact-title-span">“ Дверна Фурнітура на Подолі ”</span></h3>
+                    <p class="contact-text">Ми працюємо кожного дня, за попередньою домовленістю</p>
+                    <ul class="contacts-list">
+                        <li class="contacts-list-item">
+                            <img class="contacts-list-icon" src="./src/img/svg/location-pin.svg" alt="" width="32">
+                            <a class="contact-list-link" href="">
+                                м. Київ, вул. Сковороди, 1-В
+                            </a>
+                            <p class="contact-list-text">ст. м. Контрактова Площа</p>
+                        </li>
+                        <li class="contacts-list-item">
+                            <img class="contacts-list-icon" src="./src/img/svg/telephone.svg" alt="" width="32">
+                            <a class="contact-list-link" href="">
+                                +38 (067) 406-38-82
+                            </a>
+                            <p class="contact-list-text">Мобільний/Telegramm/Viber/WhatsApp</p>
+                        </li>
+                        <li class="contacts-list-item">
+                            <img class="contacts-list-icon" src="./src/img/svg/mail.svg" alt="" width="32">
+                            <a class="contact-list-link" href="">
+                                direct.furnitura@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="">
+                        <div class="contacts-map"></div>
+                        <!-- <img  src="" alt="фото карти" width="1144"> -->
+                    </a>
+                </div>
             </section>
             
 
