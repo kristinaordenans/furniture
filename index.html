@@ -196,15 +196,17 @@
 
             <div class="form-container">
                 <div class="form-card"> 
-                    <h2>У вас є запитання?</h2>  
+                    <h2 class="form-title">У вас є запитання?</h2>  
                     <div class="form-card-container">
                         <div class="form-card-text-container">
-                            <p>Зв’яжіться з нами зручним для вас способом. Ми завжди на зв’язку:</p>
-                            <a href=""> +38 (067) 406 38 82</a>
-                            <ul>
+                            <p class="form-text">Зв’яжіться з нами зручним для вас способом. Ми завжди на зв’язку:</p>
+                            <a class="form-link-phone" href="">
+                                <img src="./src/img/svg/telephone.svg" alt="" width="32">
+                                +38 (067) 406 38 82
+                            </a>
+                            <ul class="form-socials-list">
                                 <li>
                                     <a href="">
-                                        
                                         insta
                                     </a>
                                 </li>
@@ -219,9 +221,10 @@
                                     </a>
                                 </li>
                             </ul>
-                            <p>Або напишіть нам і ми обов’язково допоможемо підібрати саме Вашу фурнітуру!</p>
+                            <p class="form-text">Або напишіть нам і ми обов’язково допоможемо підібрати саме Вашу фурнітуру!</p>
                         </div>
                         <form class="form">
+                            <img src="./src/img/svg/chat.svg" alt="" width="32">
                             <label for="user_name">
                                 <input class="form-input" type="text" id="user_name" placeholder="Як до вас звертатися?">
                             </label>
@@ -229,9 +232,9 @@
                                 <input class="form-input" type="text" id="user_contact" placeholder="Як з вами зв’язатися? (E-mail, телефон)">
                             </label>
                             <label for="user_request">
-                                <input class="form-input-request" type="text" id="user_request" placeholder="Ваше питання">
+                                <textarea class="form-input-request" rows="4" id="user_request" placeholder="Ваше питання"></textarea>
                             </label>
-                            <button type="submit">Надіслати</button>
+                            <button class="form-btn" type="submit">Надіслати</button>
                         </form>
                     </div>
                 </div>
