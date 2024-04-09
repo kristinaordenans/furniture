@@ -14,6 +14,7 @@ body {
     width: 1920px;
     font-family: "Playfair Display";
     font-weight: 400;
+    letter-spacing: 10%;
 } 
 
 /* reset start */
@@ -566,7 +567,8 @@ a {
 .form-container::after {
     content: "";
     position: absolute;
-    right: 940px;
+    /* right: 940px; */
+    right: 0;
     width: 250px;
     height: 1px;
     background-color: var(--accent-gold);
@@ -935,9 +937,10 @@ a {
 .delivery-list-item-text {
     text-align: justify;
     font-stretch: expanded;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 24px;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
+    letter-spacing: 10%;
 }
 
 /* НОВИНИ */
