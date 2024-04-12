@@ -5,7 +5,6 @@
     /* --transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms; */
     --gold-gradient: linear-gradient(161deg, #E5D193 41.81%, #EBE1C2 88.05%);
     --shadow: 4px 12px 24px rgba(0, 0, 0, 0.5);
-
 }
 
 body {
@@ -91,9 +90,11 @@ a {
     /* display: flex; */
     /* align-items: center; */
     /* justify-content: center; */
-    font-size: 18px;
+    /* font-size: 18px; */
     font-weight: 400;
-    letter-spacing: 0,5px;
+    /* ------ разобраться со шрифтом он на главной и остальніх страницах разного размера------- */
+    font-size: 20px;
+    letter-spacing: 10%;
     /* gap: 89px; */
     /* list-style: none; */
     /* cursor: pointer; */
@@ -150,7 +151,7 @@ a {
 .hero-title {
     font-size: 72px;
     font-weight: 400;
-    letter-spacing: 4px;
+    letter-spacing: 10%;
     color: var(--accent-gold);
     margin-bottom: 24px;
 }
@@ -226,7 +227,7 @@ a {
 
 .about-title {
     font-size: 64px;
-    letter-spacing: 2px;
+    -spacing: 2px;
     background-clip: text;
     /* color: var(--accent-gold); */
     color: transparent;
@@ -419,7 +420,7 @@ a {
 
 .catalog-title{
     font-size: 64px;
-    letter-spacing: 2px;
+    letter-spacing: 10%;
     background-clip: text;
     /* color: var(--accent-gold); */
     color: transparent;
@@ -717,7 +718,7 @@ a {
 
 .galery-title {
     font-size: 64px;
-    letter-spacing: 2px;
+    letter-spacing: 10%;
     background-clip: text;
     /* color: var(--accent-gold); */
     color: transparent;
@@ -768,7 +769,7 @@ a {
 
 .contact-title {
     font-size: 64px;
-    letter-spacing: 2px;
+    letter-spacing: 10%;
     background-clip: text;
     /* color: var(--accent-gold); */
     color: transparent;
@@ -880,7 +881,7 @@ a {
 
 .delivery-title {
     font-size: 64px;
-    letter-spacing: 2px;
+    letter-spacing: 10%;
     background-clip: text;
     /* color: var(--accent-gold); */
     color: transparent;
@@ -942,7 +943,6 @@ a {
     font-stretch: expanded;
     font-size: 14px;
     line-height: 24px;
-    /* letter-spacing: 1px; */
     letter-spacing: 10%;
 }
 
@@ -956,7 +956,7 @@ a {
 
 .news-title {
     font-size: 64px;
-    letter-spacing: 2px;
+    letter-spacing: 10%;
     background-clip: text;
     /* color: var(--accent-gold); */
     color: transparent;
@@ -1064,6 +1064,8 @@ a {
 /* FOOTER */
 
 .footer {
+    width: 100%;
+    left: 0;
     background-color: var(--accent-green);
     padding-top: 88px;
     padding-bottom: 100px;
@@ -1844,3 +1846,41 @@ a {
     font-size: 18px;
     letter-spacing: 10%;
 }
+
+
+/* --------------- GALERYADVERTIST ---------------- */
+
+
+.galery-advertising-title-container {
+    position: relative;
+    margin-top: 148px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.galery-advertising-title {
+    color: var(--accent-gold);
+    font-size: 64px;
+}
+
+/* .galery-advertising-title::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 40%;
+    height: 1px;
+    background-color: var(--accent-gold);
+}
+
+.galery-advertising-title::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 40%;
+    height: 1px;
+    background-color: var(--accent-gold);
+} */
