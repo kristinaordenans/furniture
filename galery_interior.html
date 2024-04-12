@@ -21,13 +21,16 @@
                 <li>
                     <a href="galery_interior.html">Галерея</a> 
                 </li>
-                <li>
-                    <a href="index.html" class="logo"></a>
+                <li class="logo">
+                    <a href="index.html" >
+                        <img  src="./src/img/svg/Vector.svg" alt="" width="44">
+                    </a>
                 </li>
                 <li>
                     <a href="manufacturers_page.html">Виробники</a> 
                 </li>
                 <li>
+                    <!-- додати на всіх окрім мейн сторінках посилання на html документ головноі перд # -->
                     <a href="#contacts">Контакти</a> 
                 </li>
                 <li>
@@ -53,74 +56,83 @@
         <img src="" alt="">
     </main>
     <footer class="footer">
-        <nav>
+        <nav class="footer-nav-container">
              <!-- кнопка відкриття модального вікна -->
-             <button type="button">Фурнітура</button>
-             <ul class="nav_list">
-                 <li>
-                     <a href="index.html">Головна</a>
-                 </li>
-                 <li>
-                     <a href="about_as_page.html">Про нас</a> 
-                 </li>
-                 <li>
-                     <a href="">Галерея</a> 
-                 </li>
-                 <li>
-                     <a href="index.html">logo</a>
-                 </li>
-                 <li>
-                     <a href="manufacturers_page.html">Виробники</a> 
-                 </li>
-                 <li>
-                     <a href="#contacts">Контакти</a> 
-                 </li>
-                 <li>
-                     <a href="#delivery">Оплата 
-                         і доставка</a> 
-                 </li>
-             </ul>
-            <a href="">Зв’язатися</a>
+            <div class="footer-nav-container_margin-top">
+                <button class="footer-furniture-btn" type="button">
+                    <img src="./src/img/svg/old-key.svg" alt="" width="24">
+                    Фурнітура
+                </button>
+                <ul class="footer-nav_list">
+                    <li>
+                        <a href="index.html">Головна</a>
+                    </li>
+                    <li>
+                        <a href="about_as_page.html">Про нас</a> 
+                    </li>
+                    <li>
+                        <a href="">Галерея</a> 
+                    </li>
+                </ul>
+            </div>
+            <a class="footer-logo" href="index.html">
+                <img src="./src/img/svg/Vector.svg" alt="" width="52">
+            </a>
+            <div class="footer-nav-container_margin-top">
+                <ul class="footer-nav_list_gap">
+                    <li>
+                        <a href="manufacturers_page.html">Виробники</a> 
+                    </li>
+                    <li>
+                        <a href="#contacts">Контакти</a> 
+                    </li>
+                    <li>
+                        <a href="#delivery">Оплата 
+                            і доставка</a> 
+                    </li>
+                </ul>
+                <a class="footer-call-btn"  href="">Зв’язатися</a>
+            </div>
         </nav>
-        <ul>
+        <ul class="footer-socials-list">
             <li>
                 <a href="">
-                    <svg></svg>
+                    <!-- <svg></svg> -->
                     insta
                 </a>
             </li>
             <li>
                 <a href="">
-                    <svg></svg>
+                    <!-- <svg></svg> -->
                     facebook
                 </a>
             </li>
             <li>
                 <a href="">
-                    <svg></svg>
+                    <!-- <svg></svg> -->
                     gmail
                 </a>
             </li>
             <li>
                 <a href="">
-                    <svg></svg>
+                    <!-- <svg></svg> -->
                     telegram
                 </a>
             </li>
             <li>
                 <a href="">
-                    <svg></svg>
+                    <!-- <svg></svg> -->
                     WhatsApp
                 </a>
             </li>
             <li>
                 <a href="">
-                    <svg></svg>
+                    <!-- <svg></svg> -->
                     viber
                 </a>
             </li>
         </ul>
-        <p>© 2023  Дверна фурнітура на Подолі.  Допоможемо обрати саме Ваше…</p>
-    </footer> 
+        <p class="footer-slogan"> &#169; 2023  Дверна фурнітура на Подолі.  Допоможемо обрати саме Ваше…</p>
+    </footer>
 </body>
 </html>
