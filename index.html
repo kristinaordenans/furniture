@@ -218,10 +218,10 @@
                         <form class="form">
                             <img src="./src/img/svg/chat.svg" alt="" width="32">
                             <label for="user_name">
-                                <input class="form-input" type="text" id="user_name" placeholder="Як до вас звертатися?">
+                                <input class="form-input" type="text" id="user_name" placeholder="Як до вас звертатися?" required>
                             </label>
                             <label for="user_contact">
-                                <input class="form-input" type="text" id="user_contact" placeholder="Як з вами зв’язатися? (E-mail, телефон)">
+                                <input class="form-input" type="text" pattern="([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,})|\+380\d{9}" id="user_contact" placeholder="Як з вами зв’язатися? (E-mail, телефон)" required>
                             </label>
                             <label for="user_request">
                                 <textarea class="form-input-request" rows="4" id="user_request" placeholder="Ваше питання"></textarea>
