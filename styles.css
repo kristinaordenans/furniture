@@ -86,6 +86,12 @@ a {
     border-bottom: 1px solid var(--accent-gold);
 }
 
+@media (min-width: 1024px) {
+ .navigation {
+    width: 1024px;
+ }
+}
+
 .nav-btn {
     background-color: var(--accent-green);
     border-radius: 24px;
