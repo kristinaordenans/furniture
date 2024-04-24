@@ -17,6 +17,12 @@ body {
     letter-spacing: 10%;
 } 
 
+@media (min-width: 1024px) {
+    .body {
+        width: 1024px;
+    }   
+}
+
 
 .background-lines {
     position: absolute;
