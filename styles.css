@@ -98,6 +98,13 @@ a {
     box-shadow: var(--shadow);
 }
 
+.nav-btn:hover {
+    background-image: linear-gradient(to bottom, rgb(229, 209, 147), rgb(235, 225, 194));
+    color: var(--accent-green);
+    border: 1px solid var(--accent-green);
+    outline:1px solid var(--accent-gold);
+}
+
 .nav_list {
     display: flex;
     list-style: none;
@@ -117,6 +124,14 @@ a {
     /* gap: 89px; */
     /* list-style: none; */
     /* cursor: pointer; */
+}
+
+.nav-link:hover {
+    color: var(--accent-gold);
+}
+
+.active {
+    color: var(--accent-gold);
 }
 
 .logo {
@@ -261,7 +276,7 @@ a {
 
 .about-title {
     font-size: 64px;
-    -spacing: 2px;
+    letter-spacing: 2px;
     background-clip: text;
     /* color: var(--accent-gold); */
     color: transparent;
@@ -356,9 +371,17 @@ a {
     margin-bottom: 48px;
 }
 
+.about-btn:hover {
+    color: var(--accent-gold);
+}
+
 .about-links-text {
     font-size: 14px;
     margin-top: 8px;
+}
+
+.about-links-text:hover {
+    color: var(--accent-gold);
 }
 
 /* ПЕРЕВАГИ */
@@ -1244,13 +1267,35 @@ a {
     /* margin-bottom: 100px; */
 }
 
+.footer-socials-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--accent-gold);
+    padding: 16px;
+    background-color: var(--accent-green);
+    border: 1px solid var(--accent-gold);
+    border-radius: 46px;
+    box-shadow: var(--shadow);
+    outline: 1px solid var(--accent-green);
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+    background-color: var(--background-color);
+    fill: #fff;
+    /* border:1px solid #fff; */
+    outline: 1px solid var(--background-color) ;
+}
+
 /* МОДАЛЬНЕ СЕРТИФІКАТИ */
 
 .modal-certificates {
     position: relative;
     width: 1920px;
     padding-bottom: 180px;
-
+    margin-top: 75px;
+    background-color: var(--background-color);
 }
 
 .line-left-bottom::before,
@@ -1356,9 +1401,22 @@ a {
 
 /* МОДАЛЬНЕ ВІКНО В НАС ВИ МОЖЕТЕ ПРИДБАТИ */
 
+.modal {
+    display: none; /* По умолчанию скрыто */
+    position: fixed; /* Позиция фиксирована, чтобы остаться на месте при прокрутке */
+    z-index: 1; /* Поверх других элементов */
+    left: 0;
+    top: 0;
+    width: 100%; /* Заполнение всей ширины */
+    height: 100%; /* Заполнение всей высоты */
+    overflow: auto; /* Добавление прокрутки, если содержимое слишком длинное */
+    background-color: rgba(0,0,0,0.5); /* Темный фон */
+  }
+
 .modal-furniture {
     width: 1920px;
     position: relative;
+    margin-top: 75px;
     background-color: var(--accent-green);
 }
 

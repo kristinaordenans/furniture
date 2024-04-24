@@ -19,16 +19,16 @@
     <header>
         <nav class="navigation">
             <!-- кнопка відкриття модального вікна -->
-            <button type="button" class="nav-btn">Фурнітура</button>
+            <button type="button" class="nav-btn openModalBtn" data-modal="modalFurniture">Фурнітура</button>
             <ul class="nav_list">
                 <li>
-                    <a href="index.html">Головна</a>
+                    <a class="nav-link active" href="index.html">Головна</a>
                 </li>
                 <li>
-                    <a href="about_as_page.html">Про нас</a> 
+                    <a class="nav-link" href="about_as_page.html">Про нас</a> 
                 </li>
                 <li>
-                    <a href="galery_interior.html">Галерея</a> 
+                    <a class="nav-link" href="galery_interior.html">Галерея</a> 
                 </li>
                 <li class="logo">
                     <a href="index.html" >
@@ -36,14 +36,14 @@
                     </a>
                 </li>
                 <li>
-                    <a href="manufacturers_page.html">Виробники</a> 
+                    <a class="nav-link" href="manufacturers_page.html">Виробники</a> 
                 </li>
                 <li>
                     <!-- додати на всіх окрім мейн сторінках посилання на html документ головноі перд # -->
-                    <a href="#contacts">Контакти</a> 
+                    <a class="nav-link" href="#contacts">Контакти</a> 
                 </li>
                 <li>
-                    <a href="#delivery">Оплата 
+                    <a class="nav-link" href="#delivery">Оплата 
                         і доставка</a> 
                 </li>
             </ul>
@@ -104,7 +104,7 @@
                         <!-- <svg></svg> -->
                         <img src="./src/img/svg/keyhole.svg" alt="" width="48">
                         <p class="about-links-title">Сертифікати</p>
-                        <button class="about-btn">Дивитися сертифікати</button>
+                        <button class="about-btn openModalBtn" data-modal="modalCertificates">Дивитися сертифікати</button>
                         <a href="about_as_page.html">
                             <!-- <svg></svg> -->
                             <img src="./src/img/svg/key-skeleton.svg" alt="" width="48">
@@ -152,7 +152,7 @@
                     </a>
                 </li>
                 <li class="catalog-card">
-                    <img class="catalog-card-img" src="./src/img/Виробники/mestre.jpg" alt="" width="368" height="160">
+                    <img class="catalog-card-img" src="" alt="" width="368" height="160">
                     <p class="catalog-card-text">Елегантна та сучасна дверна фурнітура <span class="catalog-card-span">Ento</span>  у стилі Modern з Італії</p>
                     <a class="catalog-download-btn" href="" download>
                         <img class="catalog-btn-icon" src="./src/img/svg/download.svg" alt="">
@@ -160,7 +160,7 @@
                     </a>
                 </li>
                 <li class="catalog-card">
-                    <img src="./src/img/Виробники/galbusera.jpg" alt="" width="368" height="160">
+                    <img src="" alt="" width="368" height="160">
                     <p class="catalog-card-text">Фурнітура та аксесуари рівня Luxury від <span class="catalog-card-span">Mestre</span> з Іспанії</p>
                     <a class="catalog-download-btn" href="" download>
                         <img class="catalog-btn-icon" src="./src/img/svg/download.svg" alt="">
@@ -397,33 +397,38 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <!-- <svg></svg> -->
-                        facebook
+                    <a class="footer-socials-link" href="">
+                        <svg class="footer-social-link-icon" width="24" height="24">
+                            <use href="./src/img/symbol-defs.svg#icon-facebook-icon"></use>
+                        </svg>
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <!-- <svg></svg> -->
-                        gmail
+                    <a class="footer-socials-link" href="">
+                        <svg class="footer-social-link-icon" width="24" height="24">
+                            <use href="./src/img/symbol-defs.svg#icon-gmail-icon"></use>
+                        </svg>
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <!-- <svg></svg> -->
-                        telegram
+                    <a class="footer-socials-link" href="">
+                        <svg class="footer-social-link-icon" width="24" height="24">
+                            <use href="./src/img/symbol-defs.svg#icon-telegram-icon"></use>
+                        </svg>
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <!-- <svg></svg> -->
-                        WhatsApp
+                    <a class="footer-socials-link" href="">
+                        <svg class="footer-social-link-icon" width="24" height="24">
+                            <use href="./src/img/symbol-defs.svg#icon-whatsapp-icon"></use>
+                        </svg>
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <!-- <svg></svg> -->
-                        viber
+                    <a class="footer-socials-link" href="">
+                        <svg class="footer-social-link-icon" width="24" height="24">
+                            <use href="./src/img/symbol-defs.svg#icon-viber-icon"></use>
+                        </svg>
                     </a>
                 </li>
             </ul>
@@ -432,11 +437,14 @@
 
         <!-- МОДАЛЬНЕ ВИКНО "В НАС МОЖНВ ПРИДБАТИ" -->
 
-        <div hidden> 
+        <script src="./js/modal.js"></script>
+
+        <div id="modalFurniture" class="modal"> 
+            <!-- <button class="close closeModalBtn" type="button">X</button> -->
             <div class="modal-furniture">
                 <div class="line-left-bottom"></div>
                 <div class="line-right"></div>
-                <button type="button">X</button>
+                <button class="close closeModalBtn" type="button">X</button>
                 <h2 class="furniture-title">У нас можна придбати</h2>
                 <ul class="furniture-list-container">
                     <!-- картки модалки розмищувала стовпчиками для слилізаціі -->
@@ -521,11 +529,11 @@
 
         <!-- МОДАЛКА СЕРТИФІКАТИ -->
 
-        <div hidden>
+        <div id="modalCertificates" class="modal">
             <div class="modal-certificates">
                 <div class="line-left-bottom"></div>
                 <div class="line-right"></div>
-                <button type="button">X</button>
+                <button type="button closeModalBtn">X</button>
                 <h2 class="modal-title">Сертифікати</h2>
                 <ul class="certificates-list">
                     <li class="certificates-card-1">
