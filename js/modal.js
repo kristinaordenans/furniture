@@ -15,7 +15,7 @@ openModalBtns.forEach(btn => {
         // Додаємо обробник події кліку на кнопку закриття
         closeModalBtn.addEventListener("click", function() {
           modal.style.display = "none"; // Ховаємо модальне вікно, змінюючи стиль на "none"
-          closeModalBtn.removeEventListener("click", closeModal);
+          closeModalBtn.removeEventListener("click", closeModalBtn);
         });
       }
       window.addEventListener("click", function(event) {
@@ -23,7 +23,7 @@ openModalBtns.forEach(btn => {
         modals.forEach(modal => {
           if (event.target === modal) {
             modal.style.display = "none"; // Видаліть клас для закриття модального вікна
-            window.removeEventListener("click", closeModalOutside);
+            window.removeEventListener("click", window);
           }
         });
       });
