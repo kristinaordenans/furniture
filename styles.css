@@ -2028,7 +2028,7 @@ a {
 }
 
 
-/* --------------- GALERYADVERTIST ---------------- */
+/* --------------- GALERY_ADVERTIST ---------------- */
 
 
 .galery-advertising-title-container {
@@ -2048,12 +2048,12 @@ a {
 .galery-link-list {
     position: relative;
     display: flex;
-    justify-content: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding-left: 255px;
-    padding-right: 255px;
+    width: 1582px;
+    margin-left: 169px;
+    margin-right: 169px;
     margin-bottom: 144px;
     list-style: none;
 }
@@ -2065,7 +2065,7 @@ a {
     top: 80px;
     background-color: var(--accent-gold);
     height: 1px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .galery-link {
@@ -2079,6 +2079,25 @@ a {
     font-size: 32px;
     letter-spacing: 10%;
     color: var(--accent-gold);
+}
+
+.galery-nav_left {
+    display: flex;
+    justify-content: left;
+    width: 400px;
+    text-align: center; 
+}
+.galery-nav_active {
+    display: flex; /* Зробити посилання блоковим елементом */
+    justify-content: center;
+    width: 400px; /* Задати ширину посилання */
+    text-align: center; /* Вирівняти текст посередині */
+}
+.galery-nav_right {
+    display: flex;
+    justify-content: right;
+    width: 400px;
+    text-align: center; 
 }
 
 /* .galery-advertising-title::before {
