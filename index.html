@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css"> -->
-    <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.css">
 
-    <script src="/node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
 
 </head>
 <body>
@@ -178,7 +178,7 @@
             
             <ul class="catalog-list">
                 <li class="catalog-card">
-                    <img src="./src/img/brands_logo/Salise_paolo.webp" alt="" width="368" height="100">
+                    <img src="" alt="" width="368" height="100">
                     <p class="catalog-card-text">Вишукана дверна та меблева фурнітура <span class="catalog-card-span">Salice Paolo</span> з Італії</p>
                     <a class="catalog-download-btn" href="" download>
                         <img class="catalog-btn-icon" src="./src/img/svg/download.svg" alt="">
@@ -476,37 +476,22 @@
             document.addEventListener('DOMContentLoaded', function() {
               const swiper = new Swiper('.swiper', {
                 loop: true,
-	centeredSlides: true,
-	
-	slidesPerView: 3,
-	// spaceBetween: 200,
-	pagination: {
-		el: ".swiper-pagination",
-		clickable: true,
-		speed: 1000
-	},
-	speed: 1000,
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	}
-
-                // direction: 'horizontal',
-                // slidesPerView: 3,
-                // centeredSlides: true,
-                // loop: true,
-              
-                // pagination: {
-                //   el: '.swiper-pagination',
-                // },
-              
-                // navigation: {
-                //   nextEl: '.swiper-button-next',
-                //   prevEl: '.swiper-button-prev',
-                // },
-              });
-            });
-          </script>
+	            centeredSlides: true,
+	            
+	            slidesPerView: 3,
+	            pagination: {
+	            	el: ".swiper-pagination",
+	            	clickable: true,
+	            	speed: 1000
+	            },
+	            speed: 1000,
+	            navigation: {
+	            	nextEl: '.swiper-button-next',
+	            	prevEl: '.swiper-button-prev',
+	            }
+                          });
+                        });
+        </script>
 
         <div id="modalFurniture" class="modal"> 
             <!-- <button class="close closeModalBtn" type="button">X</button> -->
