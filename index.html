@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css"> -->
-    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.css">
 
-    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="/node_modules/swiper/swiper-bundle.min.js"></script> -->
 
 </head>
 <body>
@@ -472,7 +472,8 @@
         <!-- МОДАЛЬНЕ ВИКНО "В НАС МОЖНВ ПРИДБАТИ" -->
 
         <script src="./js/modal.js"></script>
-        <script>
+        <script type="module" src="./js/swiper.js"></script>
+        <!-- <script>
             document.addEventListener('DOMContentLoaded', function() {
               const swiper = new Swiper('.swiper', {
                 loop: true,
@@ -491,7 +492,7 @@
 	            }
                           });
                         });
-        </script>
+        </script> -->
 
         <div id="modalFurniture" class="modal"> 
             <!-- <button class="close closeModalBtn" type="button">X</button> -->
