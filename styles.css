@@ -2121,7 +2121,6 @@ a {
 } */
 
 .galery-list {
-    /* width: 1584px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
