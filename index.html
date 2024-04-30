@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.css">
+
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+
 </head>
 <body>
     
@@ -59,23 +64,52 @@
                     <div class="hero-text-conteiner">
                         <p class="hero-text">Допоможемо обрати саме Ваше…</p>
                     </div>
-                    <ul class="hero-list">
-                        <li>
-                            <img class="hero-arrow" src="./src/img/svg/arrow-to-left.svg" alt="" width="48">
-                        </li>
-                        <li class="hero-list-img">
-                            <img src="./src/img/main_page/hero_1.webp" alt="" width="400" height="400" class="hero-galery-img">
-                        </li>
-                        <li class="hero-list-img">
-                            <img src="./src/img/main_page/hero_2.webp" alt="" width="560" height="560" class="hero-galery-img">
-                        </li>
-                        <li class="hero-list-img">
-                            <img src="./src/img/main_page/hero_3.webp" alt="" width="400" height="400" class="hero-galery-img">
-                        </li>
-                        <li>
-                            <img class="hero-arrow" src="./src/img/svg/arrow-to-right.svg" alt="" width="48">
-                        </li>
-                    </ul>
+                      
+                    
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="./src/img/main_page/hero_3.webp" alt=""  class="hero-galery-img">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./src/img/main_page/hero_1.webp" alt=""  class="hero-galery-img">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./src/img/main_page/hero_2.webp" alt=""  class="hero-galery-img">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./src/img/Галерея/1/18.jpg" alt=""  class="hero-galery-img">
+                          </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      </div>
+
+                    <!-- <ul class="hero-list swiper">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <li>
+                                    <img class="hero-arrow swiper-button-prev" src="./src/img/svg/arrow-to-left.svg" alt="" width="48">
+                                </li>
+                                <li class="hero-list-img swiper-slide">
+                                    <img src="./src/img/main_page/hero_1.webp" alt="" width="400" height="400" class="hero-galery-img">
+                                </li>
+                                <li class="hero-list-img swiper-slide">
+                                    <img src="./src/img/main_page/hero_2.webp" alt="" width="560" height="560" class="hero-galery-img">
+                                </li>
+                                <li class="hero-list-img swiper-slide">
+                                    <img src="./src/img/main_page/hero_3.webp" alt="" width="400" height="400" class="hero-galery-img">
+                                </li>
+                                <li class="hero-list-img swiper-slide">
+                                    <img src="./src/img/Галерея/1/18.jpg" alt="" width="400" height="400" class="hero-galery-img">
+                                </li>
+                                <li>
+                                    <img class="hero-arrow swiper-button-next" src="./src/img/svg/arrow-to-right.svg" alt="" width="48">
+                                </li>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>  
+                    </ul> -->
                 </div>
             </section>
                 
@@ -438,6 +472,41 @@
         <!-- МОДАЛЬНЕ ВИКНО "В НАС МОЖНВ ПРИДБАТИ" -->
 
         <script src="./js/modal.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const swiper = new Swiper('.swiper', {
+                loop: true,
+	centeredSlides: true,
+	
+	slidesPerView: 3,
+	// spaceBetween: 200,
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+		speed: 1000
+	},
+	speed: 1000,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	}
+
+                // direction: 'horizontal',
+                // slidesPerView: 3,
+                // centeredSlides: true,
+                // loop: true,
+              
+                // pagination: {
+                //   el: '.swiper-pagination',
+                // },
+              
+                // navigation: {
+                //   nextEl: '.swiper-button-next',
+                //   prevEl: '.swiper-button-prev',
+                // },
+              });
+            });
+          </script>
 
         <div id="modalFurniture" class="modal"> 
             <!-- <button class="close closeModalBtn" type="button">X</button> -->

@@ -182,6 +182,7 @@ a {
     position: relative;
     /* padding-top: 144px; */
     margin-bottom: 132px;
+    min-width: 0;
 }
 
 .hero { 
@@ -273,6 +274,39 @@ a {
     /* fill: var(--accent-gold); */
     cursor: pointer;
 }
+
+.swiper {
+    width: 1582px;
+}
+
+.swiper-slide img {
+	width: 400px;
+	height: 400px;
+}
+.swiper-slide {
+	transition: all 0.5s ease;
+	/* padding: 80px 0; */
+}
+.swiper-slide-active {
+	transform: scale(1.1);
+}
+.swiper-slide-active img {
+    width: 520px;
+    height: 580px;
+}
+
+.swiper-button-prev {
+    background-image: url(./src/img/svg/arrow-to-left.svg);
+    background-size: 48px 48px;
+    background-repeat: no-repeat;
+}
+
+.swiper-button-next {
+    background-image: url(./src/img/svg/arrow-to-right.svg);
+    background-size: 48px 48px;
+    background-repeat: no-repeat;
+}
+
 
 
 /* ПРО НАС */
