@@ -2146,3 +2146,10 @@ a {
     border: 1px solid var(--accent-gold);
     background-size: cover;
 }
+
+.galery-interior-svg {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 480px;
+}
