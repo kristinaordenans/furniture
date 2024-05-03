@@ -282,7 +282,11 @@ a {
     width: 1582px;
 }
 
-.swiper-slide img {
+/* .swiper.catalogs {
+   
+} */
+
+.swiper-slide-img img {
 	width: 400px;
 	height: 400px;
 }
@@ -293,7 +297,7 @@ a {
 .swiper-slide-active {
 	transform: scale(1.1);
 }
-.swiper-slide-active img {
+.swiper-slide-active.active img {
     width: 520px;
     height: 580px;
 }
@@ -563,26 +567,38 @@ a {
     background-color: var(--accent-gold);
 }
 
-.catalog-list {
+/* .catalog-slide.card {
+    width: 500px;
+} */
+.swiper-slide.card {
     display: flex;
     justify-content: center;
-    list-style: none;
-    gap: 168px;
-    margin-bottom: 120px;
+    align-items: center;
+    text-align: center;
 }
+
 
 .catalog-card {
     display: flex;
     flex-wrap: wrap;
-    width: 368px;
-    height: 368px;
+    max-width: 368px;
+    min-height: 368px;
     justify-content: center;
     align-items: center;
     background-color: var(--background-color);
     border: 1px solid var(--accent-gold);
     padding: 24px;
+    /* margin-right: 168px; */
     box-shadow: 4px 12px 24px rgba(0, 0, 0, 0.5);
 }
+
+.swiper-wrapper.swiper-wrapper_gap {
+    display: flex;
+    justify-content: center;
+    /* gap: 168px; */
+    margin-bottom: 64px;
+}
+
 
 .catalog-card-img {
     position: relative;
@@ -608,7 +624,9 @@ a {
 .catalog-download-btn {
     display: flex;
     align-items: center;
+    justify-content: center;
     /* перевірити висоту кнопки бо іі нема в макеті */
+    max-width: 110px;
     height: 38px;
     padding:6px 32px 6px 32px;
     background-color: var(--accent-green);
@@ -626,30 +644,37 @@ a {
     color: var(--accent-gold);
 }
 
-.catalog-swiper-link-container {
-    display: flex;
-    justify-content: end;
-    margin-right: 250px;
-    margin-bottom: 284px;
-}
-
-.catalog-swiper-container {
-    display: flex;
-    justify-content: center;
-    gap: 96px;
-}
-.catalog-swiper {
-    background-color: transparent;
-    border: none;
+.swiper.catalogs {
+    margin-bottom: 280px;
+    padding-bottom: 100px;
 }
 
 .catalog-link {
+    position: absolute;
+    bottom: 55px;
+    right: 0;
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-left: 437px;
     font-size: 22px;
 }
+
+.swiper-button-prev.swiper-button-card_position {
+    background-image: url(./src/img/svg/arrow-to-left.svg);
+    background-size: 36px 36px;
+    background-repeat: no-repeat;
+}
+
+.swiper-button-next.swiper-button-card_position {
+    background-image: url(./src/img/svg/arrow-to-right.svg);
+    background-size: 36px 36px;
+    background-repeat: no-repeat;
+}
+
+
+/* .swiper-wrapper.swiper-wrapper_gap {
+    width: 1000px;
+} */
 
 /* ФОНМА */
 

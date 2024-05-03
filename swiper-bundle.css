@@ -254,13 +254,13 @@
   --swiper-navigation-color: var(--swiper-theme-color);
   */
 }
-.swiper-button-prev,
-.swiper-button-next {
+.swiper-button-prev.swiper-button-img_position,
+.swiper-button-next.swiper-button-img_position {
   position: absolute;
   top: var(--swiper-navigation-top-offset, 50%);
   width: calc(var(--swiper-navigation-size) / 48 * 48);
   height: var(--swiper-navigation-size);
-  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+  /* margin-top: calc(0px - (var(--swiper-navigation-size) / 2)); */
   z-index: 10;
   cursor: pointer;
   display: flex;
@@ -269,6 +269,21 @@
   justify-content: center;
   /* color: var(--swiper-navigation-color, var(--swiper-theme-color)); */
 }
+.swiper-button-prev.swiper-button-card_position,
+.swiper-button-next.swiper-button-card_position {
+  position: absolute;
+  top:500px;
+  width: calc(var(--swiper-navigation-size) / 48 * 48);
+  height: var(--swiper-navigation-size);
+
+  /* top: var(--swiper-navigation-top-offset, 90%); */
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
   opacity: 0.35;
@@ -301,9 +316,19 @@
   left: var(--swiper-navigation-sides-offset, 10px);
   right: auto;
 }
+.swiper-button-prev.swiper-button-card_position,
+.swiper-rtl .swiper-button-next.swiper-button-card_position {
+  left: var(--swiper-navigation-sides-offset, 700px);
+  right: auto;
+}
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
   right: var(--swiper-navigation-sides-offset, 10px);
+  left: auto;
+}
+.swiper-button-next.swiper-button-card_position,
+.swiper-rtl .swiper-button-prev.swiper-button-card_position {
+  right: var(--swiper-navigation-sides-offset, 700px);
   left: auto;
 }
 .swiper-button-lock {
@@ -335,6 +360,11 @@
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
   right: var(--swiper-navigation-sides-offset, 10px);
+  left: auto;
+}
+.swiper-button-next.swiper-button-card_position,
+.swiper-rtl .swiper-button-prev.swiper-button-card_position {
+  right: var(--swiper-navigation-sides-offset, 700px);
   left: auto;
 }
 .swiper-button-next:after,
