@@ -1482,6 +1482,131 @@ a {
     margin-top: 48px;
 }
 
+/* МОДАНЛЬНЕ ФОРМА */
+
+.modal-form {
+    position: relative;
+    width: 1920px;
+    /* height: 1080px; */
+    padding-bottom: 180px;
+    margin-top: 75px;
+    background-color: var(--background-color);
+}
+
+.modal-form-content-wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 96px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    /* margin-top: 96px;
+    margin-bottom: 96px; */
+}
+
+.modal-form-text {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* text-align: center; */
+    width: 352px;
+    height: 376px;
+    padding: 32px;
+    background-color: var(--background-color);
+    border: 1px solid var(--accent-gold);
+    box-shadow: var(--shadow);
+}
+
+.modal-form-text-descriprion {
+    text-align: justify;
+    margin-bottom: 32px;
+}
+
+.modal-form-socials-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+}
+
+.modal-form-form {
+    width: 464px;
+    height: 464px;
+    padding: 48px;
+    background-color: var(--accent-green);
+    border: 1px solid var(--accent-gold);
+    box-shadow: var(--shadow);
+
+}
+
+.moda-form-img {
+    width: 416px;
+    height: 440px;
+    border: 1px solid var(--accent-gold);
+    box-shadow: var(--shadow);
+
+}
+
+.form-modal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    width: 464px;
+
+}
+
+.form-input-modal {
+    width: 448px;
+    height: 46px;
+    padding-left: 16px;
+    color: #fff;
+    background-color: var(--background-color);
+    border: none;
+    border-bottom: 1px solid var(--accent-gold);
+}
+
+
+.form-input-modal::placeholder {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+}
+
+.form-input-request-modal {
+    resize: none;
+    width: 440px;
+    height: 64px;
+    overflow-y: scroll;
+    padding: 16px;
+    color: #fff;
+    font-size: 18px;
+    word-wrap: break-word;
+    background-color: var(--background-color);
+    border: none;
+    border-bottom: 1px solid var(--accent-gold);
+}
+
+.form-input-request-modal::placeholder {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+}
+
+.form-btn-modal {
+    margin-top: 8px;
+    background-color: var(--accent-green);
+    border: 1px solid var(--accent-gold);
+    outline: 2px solid var(--accent-green);
+    border-radius: 48px;
+    color: #fff;
+    font-family: "Playfair Display";
+    font-size: 16px;
+    padding: 6px 32px 8px 32px;
+    box-shadow: var(--shadow);
+}
+
 /* МОДАЛЬНЕ ВІКНО В НАС ВИ МОЖЕТЕ ПРИДБАТИ */
 
 .modal {
