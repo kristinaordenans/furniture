@@ -594,7 +594,7 @@ a {
 
 .swiper-wrapper.swiper-wrapper_gap {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     /* gap: 168px; */
     margin-bottom: 64px;
 }
@@ -652,7 +652,7 @@ a {
 .catalog-link {
     position: absolute;
     bottom: 55px;
-    right: 0;
+    right: 80px;
     display: flex;
     align-items: center;
     gap: 10px;
