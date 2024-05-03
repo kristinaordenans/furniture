@@ -805,11 +805,13 @@ a {
 }
 
 .form-input-request {
+    resize: none;
     width: 514px;
     height: 64px;
     overflow-y: scroll;
     padding: 16px;
     color: #fff;
+    font-size: 18px;
     word-wrap: break-word;
     background-color: var(--background-color);
     border: none;
