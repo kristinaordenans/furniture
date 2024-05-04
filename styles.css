@@ -299,15 +299,27 @@ a {
 }
 
 .swiper-button-prev {
-    background-image: url(./src/img/svg/arrow-to-left.svg);
-    background-size: 48px 48px;
-    background-repeat: no-repeat;
+    /* background-image: url(./src/img/svg/symbol-defs.svg#icon-arrow-left); */
+    /* background-image: url(./src/img/svg/arrow-to-left.svg); */
+    fill: var(--accent-gold);
+    /* background-size: 48px 48px; */
+    width: 48px;
+    /* outline: 1px solid #fff; */
+    /* background-repeat: no-repeat; */
+}
+
+.swiper-button-prev:hover {
+    fill: #fff;
 }
 
 .swiper-button-next {
-    background-image: url(./src/img/svg/arrow-to-right.svg);
-    background-size: 48px 48px;
-    background-repeat: no-repeat;
+    /* background-image: url(./src/img/svg/arrow-to-right.svg); */
+    /* background-size: 48px 48px;
+    background-repeat: no-repeat; */
+    fill: var(--accent-gold);
+}
+.swiper-button-next:hover {
+    fill: #fff;
 }
 
 
