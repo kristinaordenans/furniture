@@ -1691,6 +1691,20 @@ a {
     background-color: var(--accent-green);
 }
 
+.close {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    fill: var(--accent-gold);
+    background-color: transparent;
+    border: none;
+    width: 48px;
+}
+
+.close:hover {
+    fill: #fff;
+}
+
 .furniture-title {
     text-align: center;
     background-image: linear-gradient(to bottom right, #E5D193, #EBE1C2 );
