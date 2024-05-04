@@ -5,6 +5,7 @@
     --transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     --gold-gradient: linear-gradient(161deg, #E5D193 41.81%, #EBE1C2 88.05%);
     --shadow: 4px 12px 24px rgba(0, 0, 0, 0.5);
+    --hover: #EBE1C2;
 }
 
 body {
@@ -93,6 +94,7 @@ a {
     background-color:rgba(64, 64, 64, 0.5);
     border-bottom: 1px solid var(--accent-gold);
 }
+
 
 /* @media (max-width: 1024px) {
  .navigation {
@@ -309,7 +311,7 @@ a {
 }
 
 .swiper-button-prev:hover {
-    fill: #fff;
+    fill: var(--hover);
 }
 
 .swiper-button-next {
@@ -319,7 +321,7 @@ a {
     fill: var(--accent-gold);
 }
 .swiper-button-next:hover {
-    fill: #fff;
+    fill: var(--hover);
 }
 
 
@@ -1703,7 +1705,7 @@ a {
 }
 
 .close:hover {
-    fill: #fff;
+    fill: var(--hover);
 }
 
 .furniture-title {
