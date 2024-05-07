@@ -62,9 +62,9 @@
                 </a>
             </li>
         </ul>
-        <ul class="galery-interior-container">
-            <li class="galery-interior-item"><img src="./src/img/gallery_objects/objects1.webp" alt=""></li>
-            <li class="galery-interior-item"><img src="./src/img/gallery_objects/objects2.webp" alt=""></li>
+        <ul class="galery-interior-container gallery">
+            <li class="galery-interior-item"><img class="gallery-image" src="./src/img/gallery_objects/objects1.webp" alt="" onclick="openModal('./src/img/gallery_objects/objects1.webp')"></li>
+            <li class="galery-interior-item"><img class="gallery-image" src="./src/img/gallery_objects/objects2.webp" alt="" onclick="openModal('./src/img/gallery_objects/objects2.webp')"></li>
             <li class="galery-interior-item"><img src="./src/img/gallery_objects/objects3.webp" alt=""></li>
             <li class="galery-interior-item"><img src="./src/img/gallery_objects/objects4.webp" alt=""></li>
             <li class="galery-interior-svg"><img src="./src/img/svg/Vector.svg" alt="" width="80"></li>
@@ -188,5 +188,20 @@
         </ul>
         <p class="footer-slogan"> &#169; 2023  Дверна фурнітура на Подолі.  Допоможемо обрати саме Ваше…</p>
     </footer>
+
+    <div id="modal-img" class="modal-img">
+        <div class="modal-content">
+            <div class="line-left-bottom"></div>
+            <div class="line-right"></div>
+            <button class="close closeModalBtn" type="button" onclick="closeModal()">
+                <svg width="48" height="48">
+                    <use href="./src/img/svg/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+            <img src="" id="modal-image" class="modal-gallery-image">
+        </div>
+    </div>
+    
+    <script src="./js/modal-gallery.js"></script>
 </body>
 </html>
