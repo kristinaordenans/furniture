@@ -801,6 +801,7 @@ a {
     gap: 8px;
     font-size: 20px;
     cursor: pointer;
+    transition: var(--transition);
 }
 
 .form-link-phone:hover {
@@ -882,6 +883,8 @@ a {
     font-size: 16px;
     padding: 6px 32px 8px 32px;
     box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: var(--transition);
 }
 
 .form-btn:hover {
@@ -1448,6 +1451,7 @@ a {
     border-radius: 46px;
     box-shadow: var(--shadow);
     outline: 1px solid var(--accent-green);
+    transition: var(--transition);
 }
 
 .footer-socials-link:hover,
