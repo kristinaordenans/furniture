@@ -133,7 +133,7 @@ a {
     align-items: center;
     gap: 89px;
     width: 1202px;
-    max-height: 40px;
+    /* max-height: 40px; */
     /* position: relative; */
     /* display: flex; */
     /* align-items: center; */
@@ -348,7 +348,7 @@ a {
 
 .about-title {
     font-size: 64px;
-    letter-spacing: 2px;
+    letter-spacing: 10%;
     background-clip: text;
     /* color: var(--accent-gold); */
     color: transparent;
@@ -1574,7 +1574,7 @@ a {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    /* text-align: center; */
+    text-align: center;
     width: 352px;
     height: 376px;
     padding: 32px;
@@ -1583,9 +1583,21 @@ a {
     box-shadow: var(--shadow);
 }
 
+.modal-form-link-phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 24px;
+    gap: 8px;
+}
+
 .modal-form-text-descriprion {
     text-align: justify;
     margin-bottom: 32px;
+    font-size: 18px;
+    letter-spacing: 10%;
+    line-height: 36px;
 }
 
 .modal-form-socials-list {
@@ -2190,10 +2202,6 @@ a {
     padding: 14px 32px 16px 32px;
 }
 
-/* .about-page-certificates-title-container {
-    display: flex;
-} */
-
 .about-page-certificates-title-container {
     position: relative;
     margin-top: 148px;
@@ -2241,7 +2249,6 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* align-items: center; */
     width: 536px;
     padding: 48px;
     padding-bottom: 64px;
@@ -2281,6 +2288,23 @@ a {
     margin-top: 148px;
     color: var(--accent-gold);
     font-size: 64px;
+}
+
+.galery-list-item-svg {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.galery-list-item-svg.border {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.galery-list.advert {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1640px;
+    margin-bottom: 160px;
 }
 
 .galery-link-list {
@@ -2366,6 +2390,7 @@ a {
 }
 
 .galery-list-item-img {
+    border: 1px solid var(--accent-gold);
     object-fit: cover;
 }
 
@@ -2395,6 +2420,13 @@ a {
 
 /* ------------  MODAL GALLERY ------------- */
 
+.line-top {
+    position: absolute;
+    top: 96px;
+    height: 1px;
+    width: 100%;
+    background-color: var(--accent-gold);
+}
 
 .modal-img {
     display: none;
@@ -2407,7 +2439,12 @@ a {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.modal-gallery-img {
+.modal-gallery-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: var(--shadow);
     /* display: block;
     margin: auto;
     max-width: 80%;

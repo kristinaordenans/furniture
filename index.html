@@ -22,13 +22,13 @@
             <!-- кнопка відкриття модального вікна -->
             <button type="button" class="nav-btn openModalBtn" data-modal="modalFurniture">Фурнітура</button>
             <ul class="nav_list">
-                <li>
+                <li class="nav-list-item">
                     <a class="nav-link active" href="index.html">Головна</a>
                 </li>
-                <li>
+                <li class="nav-list-item">
                     <a class="nav-link" href="about_as_page.html">Про нас</a> 
                 </li>
-                <li>
+                <li class="nav-list-item">
                     <a class="nav-link" href="galery_interior.html">Галерея</a> 
                 </li>
                 <li class="logo">
@@ -36,14 +36,14 @@
                         <img  src="./src/img/svg/Vector.svg" alt="" width="44">
                     </a>
                 </li>
-                <li>
+                <li class="nav-list-item">
                     <a class="nav-link" href="manufacturers_page.html">Виробники</a> 
                 </li>
-                <li>
+                <li class="nav-list-item">
                     <!-- додати на всіх окрім мейн сторінках посилання на html документ головноі перд # -->
                     <a class="nav-link" href="#contacts">Контакти</a> 
                 </li>
-                <li>
+                <li class="nav-list-item">
                     <a class="nav-link" href="#delivery">Оплата 
                         і доставка</a> 
                 </li>
@@ -405,18 +405,24 @@
                             </a>
                             <ul class="form-socials-list">
                                 <li>
-                                    <a href="">
-                                        insta
+                                    <a class="footer-socials-link" href="">
+                                        <svg class="footer-social-link-icon" width="24" height="24">
+                                            <use href="./src/img/symbol-defs.svg#icon-whatsapp-icon"></use>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
-                                        telegram
+                                    <a class="footer-socials-link" href="">
+                                        <svg class="footer-social-link-icon" width="24" height="24">
+                                            <use href="./src/img/symbol-defs.svg#icon-gmail-icon"></use>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
-                                        viber
+                                    <a class="footer-socials-link" href="">
+                                        <svg class="footer-social-link-icon" width="24" height="24">
+                                            <use href="./src/img/symbol-defs.svg#icon-viber-icon"></use>
+                                        </svg>
                                     </a>
                                 </li>
                             </ul>
@@ -604,9 +610,9 @@
             </nav>
             <ul class="footer-socials-list">
                 <li>
-                    <a href="">
+                    <a class="footer-socials-link" href="">
                         <!-- <svg></svg> -->
-                        insta
+                        ins
                     </a>
                 </li>
                 <li>
@@ -623,13 +629,13 @@
                         </svg>
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a class="footer-socials-link" href="">
                         <svg class="footer-social-link-icon" width="24" height="24">
                             <use href="./src/img/symbol-defs.svg#icon-telegram-icon"></use>
                         </svg>
                     </a>
-                </li>
+                </li> -->
                 <li>
                     <a class="footer-socials-link" href="">
                         <svg class="footer-social-link-icon" width="24" height="24">
@@ -807,9 +813,9 @@
                 <h2 class="modal-title">У вас є запитання?</h2>
                 <div class="modal-form-content-wraper">
                     <div class="modal-form-text">
-                       <p class="modal-form-text-descriprion">Зв’яжіться з нами зручним для вас способом і ми обов’язково допоможемо підібрати саме Вашу фурнітуру!</p>
+                        <p class="modal-form-text-descriprion">Зв’яжіться з нами зручним для вас способом і ми обов’язково допоможемо підібрати саме Вашу фурнітуру!</p>
                         <p class="modal-form-text-descriprion"> Ми завжди на зв’язку:</p>
-                        <a href="tel">
+                        <a class="modal-form-link-phone" href="tel">
                             <img src="./src/img/svg/telephone.svg" alt="" width="32" height="32">
                              +38 (067) 406 38 82
                             </a>
@@ -824,7 +830,7 @@
                             <li>
                                 <a class="footer-socials-link" href="">
                                     <svg class="footer-social-link-icon" width="24" height="24">
-                                        <use href="./src/img/symbol-defs.svg#icon-telegram-icon"></use>
+                                        <use href="./src/img/symbol-defs.svg#icon-gmail-icon"></use>
                                     </svg>
                                 </a>
                             </li>
