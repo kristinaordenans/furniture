@@ -118,6 +118,7 @@ a {
     margin-right: 90px;
     cursor: pointer;
     box-shadow: var(--shadow);
+    transition: var(--transition);
 }
 
 .nav-btn:hover {
@@ -147,6 +148,10 @@ a {
     /* gap: 89px; */
     /* list-style: none; */
     /* cursor: pointer; */
+}
+
+.nav-link {
+    transition: var(--transition);
 }
 
 .nav-link:hover {
@@ -308,6 +313,7 @@ a {
     width: 48px;
     /* outline: 1px solid #fff; */
     /* background-repeat: no-repeat; */
+    transition: var(--transition);
 }
 
 .swiper-button-prev:hover {
@@ -319,6 +325,7 @@ a {
     /* background-size: 48px 48px;
     background-repeat: no-repeat; */
     fill: var(--accent-gold);
+    transition: var(--transition);
 }
 .swiper-button-next:hover {
     fill: var(--hover);
@@ -441,6 +448,7 @@ a {
     border: none;
     color: #fff ;
     margin-bottom: 48px;
+    transition: var(--transition);
 }
 
 .about-btn:hover {
@@ -450,6 +458,7 @@ a {
 .about-links-text {
     font-size: 14px;
     margin-top: 8px;
+    transition: var(--transition);
 }
 
 .about-links-text:hover {
@@ -646,6 +655,7 @@ a {
     border-radius: 48px;
     outline: 4px solid var(--accent-green);
     box-shadow: 4px 12px 24px rgba(0, 0, 0, 0.5);
+    transition: var(--transition);
 }
 
 .catalog-download-btn svg{
@@ -679,6 +689,7 @@ a {
     align-items: center;
     gap: 10px;
     font-size: 22px;
+    transition: var(--transition);
 }
 
 .catalog-link:hover {
@@ -966,6 +977,7 @@ a {
     gap: 15px;
     font-size: 18px;
     cursor: pointer;
+    transition: var(--transition);
 }
 
 .galery-item-link:hover {
@@ -1055,6 +1067,7 @@ a {
     font-size: 22px;
     margin-bottom: 16px;
     cursor: pointer;
+    transition: var(--transition);
 }
 
 .contact-list-link:hover {
@@ -1072,6 +1085,13 @@ a {
     border: 1px solid var(--accent-gold);
     border-radius: 200px;
     box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.contacts-map:hover {
+    border: 1px solid var(--hover);
+    background-image: linear-gradient(to right, rgba(25, 47, 45, 0.3), rgba(25, 47, 45, 0.3)), url('./src/img/main_page/map.webp');
+
 }
 
 .contacts-map::before {
@@ -1086,6 +1106,7 @@ a {
     background-size: cover;
     /* filter: blur(5px); */
     z-index: -1;
+    transition: var(--transition);
 }
 
 /* ОПЛАТА І ДОСТАВКА */
@@ -1244,6 +1265,7 @@ a {
     outline: 4px solid var(--accent-green);
     box-shadow: var(--shadow);
     fill: var(--accent-gold);
+    transition: var(--transition);
 }
 
 .news-btn svg {
@@ -1349,6 +1371,7 @@ a {
     font-family: "Playfair Display";
     font-size: 18px;
     letter-spacing: 10%;
+    transition: var(--transition);
 }
 
 .footer-furniture-btn:hover {
@@ -1373,6 +1396,7 @@ a {
     color: var(--accent-gold);
     font-size: 18px;
     letter-spacing: 10%;
+    transition: var(--transition);
 }
 
 .footer-call-btn:hover {
@@ -1385,6 +1409,14 @@ a {
     display: flex;
     gap: 94px;
     list-style: none;
+}
+
+.footer-nav-link {
+    transition: var(--transition);
+}
+
+.footer-nav-link:hover {
+    color: var(--accent-gold);
 }
 
 .footer-nav_list_gap {
