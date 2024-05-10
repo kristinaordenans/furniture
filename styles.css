@@ -2416,6 +2416,11 @@ a {
     align-items: center;
     gap: 16px;
     color: inherit;
+    transition: var(--transition);
+}
+
+.galery-link:hover {
+    color: var(--accent-gold);
 }
 
 .galery-link_active {
@@ -2473,6 +2478,11 @@ a {
 .galery-list-item-img {
     border: 1px solid var(--accent-gold);
     object-fit: cover;
+    transition: var(--transition);
+}
+
+.galery-list-item-img:hover {
+    border: 1px solid var(--hover);
 }
 
 .galery-interior-container {
@@ -2489,6 +2499,11 @@ a {
     height: 480px;
     border: 1px solid var(--accent-gold);
     background-size: cover;
+    transition: var(--transition);
+}
+
+.galery-interior-item:hover {
+    border: 1px solid var(--hover);
 }
 
 .galery-interior-svg {
