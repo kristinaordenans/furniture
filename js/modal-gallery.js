@@ -1,12 +1,19 @@
-        function openModal(imageUrl) {
-        var modal = document.getElementById('modal-img');
-        var modalImg = document.getElementById('modal-image');
-    
-        modal.style.display = 'block';
-        modalImg.src = imageUrl;
-        }
+  const swiper = new Swiper('.swiper', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
 
-        function closeModal() {
-    var modal = document.getElementById('modal-img');
+function openModal(slideIndex) {
+    const modal = document.getElementById('modal-img');
+    modal.style.display = 'block';
+
+    swiper.slideTo(slideIndex);
+}
+
+function closeModal() {
+    const modal = document.getElementById('modal-img');
     modal.style.display = 'none';
 }
+
