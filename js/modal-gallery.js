@@ -1,9 +1,13 @@
-const swiper = new Swiper('.swiper', {
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-});
+var swiper;
+
+document.addEventListener('DOMContentLoaded', function() {
+    swiper = new Swiper('.swiper', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+})
 
 function openModal(slideIndex) {
     const modal = document.getElementById('modal-img');
