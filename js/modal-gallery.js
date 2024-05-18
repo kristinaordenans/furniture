@@ -1,13 +1,16 @@
-var swiper;
+// import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
 
-document.addEventListener('DOMContentLoaded', function() {
-    swiper = new Swiper('.swiper', {
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-})
+
+// var swiper;
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     window.swiper = new Swiper('.swiper', {
+//         navigation: {
+//             nextEl: '.swiper-button-next',
+//             prevEl: '.swiper-button-prev',
+//         },
+//     });
+// })
 
 function openModal(slideIndex) {
     const modal = document.getElementById('modal-img');
