@@ -76,6 +76,29 @@ a {
 }
 /* reset end */
 
+.scrollBtn {
+    /* display: flex;
+    align-items: center;
+    text-align: center; */
+    display: none;
+    position: fixed;
+    top: 888px;
+    right:12px;
+    border-radius: 48px;
+    background-color: var(--accent-green);
+    border: 1px solid var(--accent-gold);
+    padding: 16px 16px;
+    fill: var(--accent-gold);
+    z-index: 99;
+    transform: rotate(270deg);
+}
+
+.scrollToTop_svg {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
 /* НАВІГАЦІЯ */
 
 .navigation {
