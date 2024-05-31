@@ -99,6 +99,21 @@ a {
     align-items: center;
 }
 
+.responce-message{
+    display: none;
+    /* align-items: center; */
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1111;
+    right: 1px;
+    /* border: 1px solid var(--accent-gold); */
+    border-radius: 8px;
+    width: 300px;
+    height: 50px;
+    /* background-color: var(--background-color);   */
+}
+
 /* НАВІГАЦІЯ */
 
 .navigation {
