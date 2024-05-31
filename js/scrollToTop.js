@@ -14,5 +14,4 @@ function scrollFunction() {
 // Коли користувач натискає на кнопку, прокрутіть вгору до вершини документа
 mybutton.addEventListener('click', function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    console.log('ok')
 });
