@@ -274,7 +274,7 @@
 .swiper-button-prev.swiper-button-card_position,
 .swiper-button-next.swiper-button-card_position {
   position: absolute;
-  top:500px;
+  top:520px;
   width: calc(var(--swiper-navigation-size) / 48 * 48);
   height: var(--swiper-navigation-size);
   cursor: pointer;
@@ -284,6 +284,14 @@
   align-items: center;
   justify-content: center;
   z-index: 10;
+}
+
+@media screen and (max-width:1440px) {
+  .swiper-button-prev.swiper-button-card_position,
+  .swiper-button-next.swiper-button-card_position {
+    width: calc(var(--swiper-navigation-size) / 48 * 48);
+    top: 430px;
+  }
 }
 
 .swiper-button-prev.modal-swiper-prevnext,
@@ -339,6 +347,13 @@
   right: auto;
 }
 
+@media screen and (max-width:1440px) {
+  .swiper-button-prev.swiper-button-card_position,
+  .swiper-rtl .swiper-button-next.swiper-button-card_position {
+      left: var(--swiper-navigation-sides-offset, 500px);
+}
+}
+
 .swiper-button-prev.modal-swiper-prevnext,
 .swiper-rtl .swiper-button-next.modal-swiper-prevnext {
   left: var(--swiper-navigation-sides-offset, 875px);
@@ -355,6 +370,15 @@
   right: var(--swiper-navigation-sides-offset, 700px);
   left: auto;
 }
+
+@media screen and (max-width:1440px) {
+  .swiper-button-next.swiper-button-card_position,
+  .swiper-rtl .swiper-button-prev.swiper-button-card_position {
+    right: var(--swiper-navigation-sides-offset, 500px);
+    left: auto;
+  }
+}
+
 .swiper-button-next.modal-swiper-prevnext,
 .swiper-rtl .swiper-button-prev.modal-swiper-prevnext {
   right: var(--swiper-navigation-sides-offset, 875px);
@@ -395,6 +419,14 @@
 .swiper-rtl .swiper-button-prev.swiper-button-card_position {
   right: var(--swiper-navigation-sides-offset, 700px);
   left: auto;
+}
+
+@media screen and (max-width:1440px) {
+  .swiper-button-next.swiper-button-card_position,
+  .swiper-rtl .swiper-button-prev.swiper-button-card_position {
+    right: var(--swiper-navigation-sides-offset, 500px);
+    left: auto;
+  }
 }
 
 .swiper-button-next.modal-swiper-prevnext,
