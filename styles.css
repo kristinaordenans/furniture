@@ -11,6 +11,8 @@
 /* 1920 - 1440; 1440-1024;1024-760; 760 и меньше */
 
 body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     position: relative;
     background-color: var(--background-color);
     color: #fff;
