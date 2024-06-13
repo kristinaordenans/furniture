@@ -16,8 +16,7 @@
     <header>
         <nav class="navigation">
             <!-- кнопка відкриття модального вікна -->
-            <button type="button" class="nav-btn">Фурнітура</button>
-            <ul class="nav_list">
+            <button type="button" class="nav-btn openModalBtn" data-modal="modalFurniture">Фурнітура</button>            <ul class="nav_list">
                 <li>
                     <a href="index.html">Головна</a>
                 </li>
@@ -156,8 +155,7 @@
                     </li>
                 </ul>
                 <!-- <a class="footer-call-btn"  href="">Зв’язатися</a> -->
-                <button type="button" class="footer-call-btn openModalBtn" data-modal="modal-form">Зв’язатися</button>
-            </div>
+                <button type="button" class="footer-call-btn openModalBtn" data-modal="modal-form">Зв’язатися</button>            </div>
         </nav>
         <ul class="footer-socials-list">
             <li>
@@ -204,6 +202,11 @@
         </ul>
         <p class="footer-slogan"> &#169; 2023  Дверна фурнітура на Подолі.  Допоможемо обрати саме Ваше…</p>
     </footer>
+
+    
+    <script src="./js/scrollToTop.js"></script>
+    <script src="./js/form.js"></script>
+    <script src="./js/modal.js"></script>
 
     <!--  МОДАЛКА ФОРМА -->
 
@@ -273,7 +276,101 @@
         </div>
     </div>
 
-    <script src="./js/scrollToTop.js"></script>
-    <script src="./js/form.js"></script>
+       <!-- МОДАЛЬНЕ ВИКНО "В НАС МОЖНВ ПРИДБАТИ" -->
+
+
+  
+       <div id="modalFurniture" class="modal"> 
+        <!-- <button class="close closeModalBtn" type="button">X</button> -->
+        <div class="modal-furniture">
+            <div class="line-left-bottom"></div>
+            <div class="line-right"></div>
+            <button class="close closeModalBtn" type="button">
+                <svg class="close-btn-svg" width="48" height="48">
+                    <use href="./src/img/svg/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+            <h2 class="furniture-title">У нас можна придбати</h2>
+            <ul class="furniture-list-container">
+                <!-- картки модалки розмищувала стовпчиками для слилізаціі -->
+                <div class="furnituere-list-column-container_1">
+                    <li class="furniture-list-card">
+                        <img class="modal-furniture-icon_width" src="./src/img/svg/modal-furniture/door_hendles.svg" alt="" width="32">
+                        <h3 class="modal-furniture-card-title">Дверні ручки</h3>
+                        <ul class="modal-furniture-card-list">
+                            <li>Ручки натискні на розетці</li>
+                            <li>Дверний гарнітур на планці</li>
+                            <li>Ручки на вхідні двері</li>
+                            <li>Ручки-скоби</li>
+                            <li>Ручки-ноби</li>
+                            <li>Ручки для розсувних дверей</li>
+                            <li>Віконні ручки</li>
+                        </ul>
+                    </li>
+                    <li class="furniture-list-card">
+                        <img class="modal-furniture-icon_width" src="./src/img/svg/modal-furniture/litining.svg" alt="" width="48">
+                        <h3 class="modal-furniture-card-title">Освітлення</h3>
+                    </li>
+                    <li class="furniture-list-card">
+                        <img class="modal-furniture-icon_width" src="./src/img/svg/modal-furniture/accessories_fireplace.svg" alt="" width="48">
+                        <h3 class="modal-furniture-card-title">Приладдя для каміну</h3>
+                    </li>
+                </div>
+                <div class="furnituere-list-column-container_2">
+                    <li class="furniture-list-card">
+                        <img class="modal-furniture-icon_width" src="./src/img/svg/modal-furniture/door_mechanism.svg" alt="" width="32">
+                        <h3 class="modal-furniture-card-title">Дверні механізми</h3>
+                        <ul class="modal-furniture-card-list">
+                            <li>Німецькі замки</li>
+                            <li>Завіси</li>
+                            <li>Ковпаки на петлі</li>
+                            <li>Шпінгалети</li>
+                            <li>Обмежувачі дверей</li>
+                            <li>Циліндри</li>
+                        </ul>
+                    </li>
+                    <li class="furniture-list-card">
+                        <img class="modal-furniture-icon_width" src="./src/img/svg/modal-furniture/accessories_bath.svg" alt="" width="32">
+                        <h3 class="modal-furniture-card-title">Аксесуари для ванни</h3>
+                        <ul class="modal-furniture-card-list">
+                            <li>Аксесуари</li>
+                            <li>Змішувачі та крани</li>
+                        </ul>
+                    </li>
+                    <li class="furniture-list-card">
+                        <img class="modal-furniture-icon_width" src="./src/img/svg/modal-furniture/eaves.svg" alt="" width="48">
+                        <h3 class="modal-furniture-card-title">Карнизи та кріплення</h3>
+                    </li>
+                </div>
+                <div class="furnituere-list-column-container_3">
+                    <li class="furniture-list-card">
+                        <img class="modal-furniture-icon_width" src="./src/img/svg/modal-furniture/furniture_accessorise.svg" alt="" width="32">
+                        <h3 class="modal-furniture-card-title">Меблева фурнітура</h3>
+                        <ul class="modal-furniture-card-list">
+                            <li>Меблеві ручки</li>
+                            <li>Меблеві петлі</li>
+                            <li>Декори для меблів, ключі</li>
+                        </ul>
+                    </li>
+                    <li class="furniture-list-card">
+                        <img class="modal-furniture-icon_width" src="./src/img/svg/modal-furniture/accessories.svg" alt="" width="32">
+                        <h3 class="modal-furniture-card-title">Аксесуари</h3>
+                        <ul class="modal-furniture-card-list">
+                            <li>Аксесуари для кухні та декор</li>
+                            <li>Дзвінки, дзвони, клопфери</li>
+                            <li>Гачки</li>
+                            <li>Поштові скриньки</li>
+                            <li>Декоративні накладки під <br> вимикачі, розетки, жалюзі</li>
+                        </ul>
+                    </li>
+                    <li class="furniture-list-card">
+                        <img class="modal-furniture-icon_width" src="./src/img/svg/modal-furniture/star.svg" alt="" width="48">
+                        <h3 class="modal-furniture-card-title">Цікавинки</h3>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+
 </body>
 </html>
