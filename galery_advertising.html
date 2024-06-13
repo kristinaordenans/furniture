@@ -205,6 +205,74 @@
         <p class="footer-slogan"> &#169; 2023  Дверна фурнітура на Подолі.  Допоможемо обрати саме Ваше…</p>
     </footer>
 
+    <!--  МОДАЛКА ФОРМА -->
+
+
+    <div id="modal-form" class="modal">
+        <div class="modal-form">
+            <div class="line-left-bottom"></div>
+            <div class="line-right"></div>
+            <!-- <button class="closeModalBtn" type="button">X</button> -->
+            <button class="close closeModalBtn" type="button">
+                <svg class="close-btn-svg" width="48" height="48">
+                    <use href="./src/img/svg/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+            <h2 class="modal-title">У вас є запитання?</h2>
+            <div class="modal-form-content-wraper">
+                <div class="modal-form-text">
+                    <p class="modal-form-text-descriprion">Зв’яжіться з нами зручним для вас способом і ми обов’язково допоможемо підібрати саме Вашу фурнітуру!</p>
+                    <p class="modal-form-text-descriprion"> Ми завжди на зв’язку:</p>
+                    <a class="modal-form-link-phone" href="tel">
+                        <img class="form-phone-icon_width" src="./src/img/svg/telephone.svg" alt="" width="32" height="32">
+                         +38 (067) 406 38 82
+                        </a>
+                    <ul class="modal-form-socials-list">
+                        <li>
+                            <a class="footer-socials-link" href="">
+                                <svg class="footer-social-link-icon" width="24" height="24">
+                                    <use href="./src/img/symbol-defs.svg#icon-viber-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer-socials-link" href="">
+                                <svg class="footer-social-link-icon" width="24" height="24">
+                                    <use href="./src/img/symbol-defs.svg#icon-gmail-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer-socials-link" href="">
+                                <svg class="footer-social-link-icon" width="24" height="24">
+                                    <use href="./src/img/symbol-defs.svg#icon-whatsapp-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div id="modal-form" class="modal">
+                <div class="modal-form-form">
+                    <form class="form-modal" id="contact-form" action="/send" method="post">
+                        <img class="modal-form-mail-icon_width" src="./src/img/svg/chat.svg" alt="" width="32">
+                        <label for="user_name">
+                            <input class="form-input-modal" type="text" id="user_name" placeholder="Як до вас звертатися?" required>
+                        </label>
+                        <label for="user_contact">
+                            <input class="form-input-modal" type="text" pattern="([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,})|\+380\d{9}" id="user_contact" placeholder="Як з вами зв’язатися? (E-mail, телефон)" required>
+                        </label>
+                        <label for="user_request">
+                            <textarea class="form-input-request-modal" rows="4" id="user_request" placeholder="Ваше питання"></textarea>
+                        </label>
+                        <button class="form-btn-modal" type="submit">Надіслати</button>
+                    </form>
+                </div>
+                <div class="moda-form-img">
+                    <img class="modal-form-ing_width" src="./src/img/modal_form_img.webp" alt="" width="416" height="440">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="./js/scrollToTop.js"></script>
     <script src="./js/form.js"></script>
 </body>
