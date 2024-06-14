@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
       loop: true,
       centeredSlides: true,
       
-      slidesPerView: 3,
+      slidesPerView: 1,
       pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -23,6 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {
       navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
-      }
+      },
+      breakpoints: {
+        768: {
+            slidesPerView: 3,
+        },
+    },
+      
                 });
     });
