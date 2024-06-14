@@ -8,7 +8,7 @@
     --hover: #EBE1C2;
 }
 
-/* 1920 - 1440; 1440-1024;1024-760; 760 и меньше */
+/* 1920 - 1440; 1440-1024;1024-768; 760 и меньше */
 
 body {
     /* -webkit-font-smoothing: antialiased;
@@ -34,12 +34,6 @@ body {
         max-width: 1920px;
     }   
 }
-
-/* @media screen and (max-width:760px) {
-    .body {
-        max-width: 760px;
-    }
-} */
 
 
 .background-lines {
@@ -191,6 +185,18 @@ a {
      }
 }
 
+@media screen and (max-width:760px) {
+    .navigation {
+         max-width: 768px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .navigation {
+        max-width: 375px;
+   }
+}
+
 .nav-btn {
     background-color: var(--accent-green);
     border-radius: 24px;
@@ -207,17 +213,6 @@ a {
     box-shadow: var(--shadow);
     transition: var(--transition);
 }
-
-/* @media screen and (max-width:1440px) {
-    .nav-btn {
-        height: 21px;
-        font-size: 9px;
-        margin-left: 85px;
-        margin-right: 48px;
-        padding-left: 17px;
-        padding-right: 17px;
-    }
-} */
 
 @media screen and (max-width:1920px) {
     .nav-btn {
@@ -249,6 +244,19 @@ a {
         margin-right: 48px;
         padding-left: 18px;
         padding-right: 18px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .nav-btn {
+        /* color: transparent; */
+        width: 36px;
+        height: 22px;
+        font-size: 0;
+        margin-left: 8px;
+        /* margin-right: 48px; */
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -293,6 +301,12 @@ a {
         gap: 47px;
         font-size: 9px;
         letter-spacing: 10%;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .nav_list {
+        display: none;
     }
 }
 
@@ -370,6 +384,13 @@ a {
     } 
 }
 
+@media screen and (max-width:375px) {
+    .hero-container {
+        height: 640px;
+        margin-bottom: 70px;
+    } 
+}
+
 .hero { 
     width: 100%;
     padding-top: 144px;
@@ -384,6 +405,12 @@ a {
 @media screen and (max-width:1024px) {
     .hero { 
         padding-top: 76px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .hero {
+        padding-top: 60px;
     }
 }
 
@@ -417,6 +444,12 @@ a {
     border-right: solid 1px var(--accent-gold);
 }
 
+@media screen and (max-width:375px) {
+    .background-lines-grey {
+        background-size: calc(100%/3);
+    }
+}
+
 .hero-title {
     font-size: 72px;
     font-weight: 400;
@@ -436,6 +469,13 @@ a {
     .hero-title {
         font-size: 38px;
         margin-bottom: 13px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .hero-title {
+        font-size: 28px;
+        margin-bottom: 7px;
     }
 }
 
