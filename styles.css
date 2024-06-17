@@ -1807,13 +1807,13 @@ a {
     }
 }
 
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .form-card-container {
-        /* width: 200px; */
-        /* gap: 40px; */
-        /* flex-direction: column; */
+        width: 200px;
+        gap: 40px;
+        flex-direction: column;
     }
-}
+} */
 
 .form-card-text-container {
     position: relative;
