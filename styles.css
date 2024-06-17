@@ -3781,6 +3781,12 @@ a {
     }
 }
 
+.inst {
+    width: 18px;
+    height: 18px;
+    padding: 2px;
+}
+
 /* МОДАЛЬНЕ СЕРТИФІКАТИ */
 
 .modal-certificates {
@@ -5383,7 +5389,7 @@ a {
         gap: 106px;
     }
 }
-@media screen and (max-width:7687px) {
+@media screen and (max-width:768px) {
     .about-page-main-container {
         align-items: center;
         flex-direction: column;
