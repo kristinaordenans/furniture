@@ -3787,6 +3787,22 @@ a {
     padding: 2px;
 }
 
+@media screen and (max-width:1440px) {
+    .inst {
+        width: 14px;
+        height: 14px;
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .inst {
+        width: 10px;
+        height: 10px;
+        padding: 1px;
+    }
+}
+
 /* МОДАЛЬНЕ СЕРТИФІКАТИ */
 
 .modal-certificates {
