@@ -16,14 +16,20 @@
     <header>
         <nav class="navigation">
             <!-- кнопка відкриття модального вікна -->
-            <button type="button" class="nav-btn openModalBtn" data-modal="modalFurniture">Фурнітура</button>            <ul class="nav_list">
-                <li>
+            <button type="button" class="nav-btn openModalBtn" data-modal="modalFurniture">Фурнітура</button>            
+            <ul class="nav_list" id="navList">
+                <li class="logo-link-mobile">
+                    <a href="index.html">
+                        <img class="logo-menu-mobile" src="./src/img/svg/Vector.svg" alt="" width="44">
+                    </a>
+                </li>
+                <li class="nav-list-item">
                     <a href="index.html">Головна</a>
                 </li>
-                <li>
+                <li class="nav-list-item">
                     <a href="about_as_page.html">Про нас</a> 
                 </li>
-                <li>
+                <li class="nav-list-item">
                     <a href="galery_interior.html">Галерея</a> 
                 </li>
                 <li class="logo">
@@ -31,18 +37,23 @@
                         <img class="logo-img" src="./src/img/svg/Vector.svg" alt="" width="44">
                     </a>
                 </li>
-                <li>
+                <li class="nav-list-item">
                     <a href="manufacturers_page.html">Виробники</a> 
                 </li>
-                <li>
+                <li class="nav-list-item">
                     <!-- додати на всіх окрім мейн сторінках посилання на html документ головноі перд # -->
                     <a href="index.html#contacts">Контакти</a> 
                 </li>
-                <li>
+                <li class="nav-list-item">
                     <a href="index.html#delivery">Оплата 
                         і доставка</a> 
                 </li>
             </ul>
+            <div class="burger" id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </header>
     <main>
@@ -208,6 +219,8 @@
     <script src="./js/scrollToTop.js"></script>
     <script src="./js/form.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+
 
     <!--  МОДАЛКА ФОРМА -->
 
