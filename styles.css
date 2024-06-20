@@ -321,7 +321,6 @@ a {
 
 @media screen and (max-width:768px) {
     .nav_list {
-        /* display: none; */
         font-size: 18px;
         position: absolute;
         flex-direction: column;
@@ -333,11 +332,77 @@ a {
         padding-bottom: 80px;
         background-color: var(--accent-green);
         width: 100%;
-        /* height: 400px; */
-        /* z-index: 9999; */
     }
    
 }
+
+/* бургер меню */
+
+
+.burger {
+    display: none;
+    position: absolute;
+    right: 6px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--accent-green);
+    border: 1px solid var(--accent-gold);
+    border-radius: 20px;
+    padding: 5px 10px;
+    height: 10px;
+    width: 15px;
+}
+
+.burger div {
+    background-color: var(--accent-gold);
+    height: 2px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+
+@media screen and (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+    .nav_list {
+        position: fixed;
+        top: 40px;
+        left: 0;
+        /* width: 375px; */
+        /* width: 100%; */
+        /* height: calc(100vh - 40px); */
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        z-index: 1000;
+    }
+    .nav_list.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* Burger menu animation */
+.burger.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger.toggle .line2 {
+    opacity: 0;
+}
+
+.burger.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* ______________________________________________ */
 
 .logo-link-mobile {
     display: none;
