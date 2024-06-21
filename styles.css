@@ -126,6 +126,14 @@ a {
     }
 }
 
+@media screen and (max-width:768px) {
+    .scrollBtn {
+        top: 473px;
+        right: 0px;
+        padding: 9px 9px;
+    }
+}
+
 .scrollToTop_svg {
     display: flex;
     text-align: center;
