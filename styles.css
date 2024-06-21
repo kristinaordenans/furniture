@@ -353,7 +353,7 @@ a {
     border-radius: 20px;
     padding: 5px 10px;
     height: 10px;
-    width: 15px;
+    width: 12px;
 }
 
 .burger div {
@@ -393,7 +393,9 @@ a {
 
 /* Burger menu animation */
 .burger.toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    width: 16px;
+    /* opacity: 0; */
+    transform: rotate(-46deg) translate(-4px, 2px);
 }
 
 .burger.toggle .line2 {
@@ -401,7 +403,9 @@ a {
 }
 
 .burger.toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+    /* opacity: 0; */
+    width: 16px;
+    transform: rotate(46deg) translate(-4px, -1px);
 }
 
 /* ______________________________________________ */
