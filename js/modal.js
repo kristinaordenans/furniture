@@ -8,6 +8,8 @@ openModalBtns.forEach(btn => {
     const modal = document.getElementById(modalId); // Знаходимо модальне вікно за id
     if (modal) {
       modal.style.display = "block"; // Показуємо модальне вікно, змінюючи стиль на "block"
+      document.body.classList.add('lock-scroll');
+
 
       // Знаходимо кнопку закриття модального вікна всередині відповідного модального контейнера
       const closeModalBtn = modal.querySelector(".closeModalBtn");
@@ -15,6 +17,7 @@ openModalBtns.forEach(btn => {
         // Додаємо обробник події кліку на кнопку закриття
         closeModalBtn.addEventListener("click", function() {
           modal.style.display = "none"; // Ховаємо модальне вікно, змінюючи стиль на "none"
+          document.body.classList.remove('lock-scroll');
           closeModalBtn.removeEventListener("click", closeModalBtn);
         });
       }
@@ -23,6 +26,7 @@ openModalBtns.forEach(btn => {
         modals.forEach(modal => {
           if (event.target === modal) {
             modal.style.display = "none"; // Видаліть клас для закриття модального вікна
+            document.body.classList.remove('lock-scroll');
             window.removeEventListener("click", window);
           }
         });
