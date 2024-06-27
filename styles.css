@@ -3969,8 +3969,7 @@ a {
     }
 }
 
-.footer-socials-link:hover,
-.footer-socials-link:focus {
+.footer-socials-link:hover {
     background-color: var(--background-color);
     fill: #fff;
     /* border:1px solid #fff; */
