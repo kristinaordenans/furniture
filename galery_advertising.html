@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="swiper-bundle.css">
+
 </head>
 <body>
     <button id="scrollToTopBtn" class="scrollBtn">
@@ -83,49 +85,49 @@
         <!-- <img src="" alt=""> -->
         <ul class="galery-list advert">
             <li>
-                <img class="galery-list-item-img width_480" src="./src/img/galery_advert/advert1.webp" alt="" width="480" height="640">
+                <img class="galery-list-item-img width_480" src="./src/img/galery_advert/advert1.webp" alt="" width="480" height="640" onclick="openModal(0)" data-index="0">
             </li>
             <li>
-                <img class="galery-list-item-img width_480" src="./src/img/galery_advert/2.webp" alt="" width="480" height="640">
+                <img class="galery-list-item-img width_480" src="./src/img/galery_advert/2.webp" alt="" width="480" height="640" onclick="openModal(1)" data-index="1">
             </li>
             <li>
-                <img class="galery-list-item-img width_480" src="./src/img/galery_advert/3.webp" alt="" width="480" height="640">
+                <img class="galery-list-item-img width_480" src="./src/img/galery_advert/3.webp" alt="" width="480" height="640" onclick="openModal(2)" data-index="2">
             </li>
             <li>
-                <img class="galery-list-item-img width_640" src="./src/img/galery_advert/4.webp" alt="" width="640" height="480">
-            </li>
-            <li>
-                <img class="galery-list-item-svg width_svg" src="./src/img/svg/Vector.svg" alt="" width="80">
-            </li>
-            <li>
-                <img class="galery-list-item-img width_640" src="./src/img/galery_advert/5.webp" alt="" width="640" height="480">
-            </li>
-            <li>
-                <img class="galery-list-item-svg border width_svg" src="./src/img/svg/Vector.svg" alt="" width="80">
-            </li>
-            <li>
-                <img class="galery-list-item-img width_640" src="./src/img/galery_advert/6.webp" alt="" width="640" height="480">
-            </li>
-            <li>
-                <img class="galery-list-item-svg border width_svg" src="./src/img/svg/Vector.svg" alt="" width="80">
-            </li>
-            <li>
-                <img class="galery-list-item-img width_640" src="./src/img/galery_advert/7.webp" alt="" width="640" height="480">
+                <img class="galery-list-item-img width_640" src="./src/img/galery_advert/4.webp" alt="" width="640" height="480" onclick="openModal(3)" data-index="3">
             </li>
             <li>
                 <img class="galery-list-item-svg width_svg" src="./src/img/svg/Vector.svg" alt="" width="80">
             </li>
             <li>
-                <img class="galery-list-item-img width_640" src="./src/img/galery_advert/8.webp" alt="" width="640" height="480">
+                <img class="galery-list-item-img width_640" src="./src/img/galery_advert/5.webp" alt="" width="640" height="480" onclick="openModal(4)" data-index="4">
             </li>
             <li>
-                <img class="galery-list-item-img width_480" src="./src/img/galery_advert/advert9.webp" alt="" width="480" height="640">
+                <img class="galery-list-item-svg border width_svg" src="./src/img/svg/Vector.svg" alt="" width="80">
             </li>
             <li>
-                <img class="galery-list-item-img width_480" src="./src/img/galery_advert/advert10.webp" alt="" width="480" height="640">
+                <img class="galery-list-item-img width_640" src="./src/img/galery_advert/6.webp" alt="" width="640" height="480" onclick="openModal(5)" data-index="5">
             </li>
             <li>
-                <img class="galery-list-item-img width_480" src="./src/img/galery_advert/advert11.webp" alt="" width="480" height="640">
+                <img class="galery-list-item-svg border width_svg" src="./src/img/svg/Vector.svg" alt="" width="80">
+            </li>
+            <li>
+                <img class="galery-list-item-img width_640" src="./src/img/galery_advert/7.webp" alt="" width="640" height="480" onclick="openModal(6)" data-index="6">
+            </li>
+            <li>
+                <img class="galery-list-item-svg width_svg" src="./src/img/svg/Vector.svg" alt="" width="80">
+            </li>
+            <li>
+                <img class="galery-list-item-img width_640" src="./src/img/galery_advert/8.webp" alt="" width="640" height="480" onclick="openModal(7)" data-index="7">
+            </li>
+            <li>
+                <img class="galery-list-item-img width_480" src="./src/img/galery_advert/advert9.webp" alt="" width="480" height="640" onclick="openModal(8)" data-index="8">
+            </li>
+            <li>
+                <img class="galery-list-item-img width_480" src="./src/img/galery_advert/advert10.webp" alt="" width="480" height="640" onclick="openModal(9)" data-index="9">
+            </li>
+            <li>
+                <img class="galery-list-item-img width_480" src="./src/img/galery_advert/advert11.webp" alt="" width="480" height="640" onclick="openModal(10)" data-index="10">
             </li>
         </ul>
     </main>
@@ -223,6 +225,75 @@
     <script src="./js/form.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal-gallery.js"></script>
+    <script type="module" src="./js/swiper-modal.js"></script> 
+
+    <div id="modal-img" class="modal-img">
+        <div class="modal-content">
+            <div class="line-top-modal-gallery"></div>
+            <div class="line-left-modal-gallery"></div>
+            <div class="line-right-modal-gallery"></div>
+            <button class="close closeModalBtn" type="button" onclick="closeModal()">
+                <svg class="close-btn-svg" width="48" height="48">
+                    <use href="./src/img/svg/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+
+            <div class="swiper modal-gallery">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="modal-gallery-image" id="modal-image" src="./src/img/galery_advert/advert1.webp" alt="" data-index="0">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="modal-gallery-image" id="modal-image" src="./src/img/galery_advert/2.webp" alt="" data-index="1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="modal-gallery-image" id="modal-image" src="./src/img/galery_advert/3.webp" alt="" data-index="2">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="modal-gallery-image" id="modal-image" src="./src/img/galery_advert/4.webp" alt="" data-index="3">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="modal-gallery-image" id="modal-image" src="./src/img/galery_advert/5.webp" alt="" data-index="4">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="modal-gallery-image" id="modal-image" src="./src/img/galery_advert/6.webp" alt="" data-index="5">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="modal-gallery-image" id="modal-image" src="./src/img/galery_advert/7.webp" alt="" data-index="6">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="modal-gallery-image" id="modal-image" src="./src/img/galery_advert/8.webp" alt="" data-index="7">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="modal-gallery-image" id="modal-image" src="./src/img/galery_advert/advert9.webp" alt="" data-index="8">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="modal-gallery-image" id="modal-image" src="./src/img/galery_advert/advert10.webp" alt="" data-index="9">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="modal-gallery-image" id="modal-image" src="./src/img/galery_advert/advert11.webp" alt="" data-index="10">
+                  </div>
+                  <div>
+                    <img src="./src/img/Галерея/1/18.jpg" alt="">
+                  </div>
+                </div>
+            </div>
+                <div class="arrows-modal-container">
+                    <!-- змінити назву классу для позиціонування кнопок стрілочок тут і в обох css -->
+                    <div class="swiper-button-prev modal-swiper-prevnext">
+                        <svg>
+                            <use href="./src/img/svg/symbol-defs.svg#icon-arrow-left"></use>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-next modal-swiper-prevnext">
+                        <svg>
+                            <use href="./src/img/svg/symbol-defs.svg#icon-arrow-right"></use>
+                        </svg>
+                    </div>
+                </div>
+        </div>
+    </div>
 
 
     <!--  МОДАЛКА ФОРМА -->
