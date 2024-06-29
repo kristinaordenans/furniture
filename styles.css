@@ -19,7 +19,7 @@ body {
     /* max-width: 760px; */
     margin-left: auto;
     margin-right: auto;
-    width: 1920px;
+    max-width: 1920px;
     /* width: 1024px; */
     font-family: "Playfair Display";
     font-weight: 400;
@@ -189,7 +189,8 @@ a {
     /* left: 0; */
     height: 72px;
     /* width: 760px; */
-    width: 1920px;
+    width: 100%;
+    /* max-width: 1920px; */
     /* max-width: 1440px; */
     /* width: 100%;  */
     z-index: 1000;
@@ -200,14 +201,16 @@ a {
 
 @media screen and (max-width: 1440px) {
  .navigation {
-    max-width: 1440px;
+    width: 100%;
+    /* max-width: 1440px; */
     height: 54px;
  }
 }
 
 @media screen and (max-width:1024px) {
     .navigation {
-        max-width: 1024px;
+        width: 100%;
+        /* max-width: 1024px; */
         height: 38px;
      }
 }
