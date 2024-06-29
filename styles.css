@@ -22,25 +22,28 @@ body {
     /* max-width: 760px; */
     margin-left: auto;
     margin-right: auto;
+    /* width: 99.9vw; */
     max-width: 1920px;
     /* width: 1024px; */
     font-family: "Playfair Display";
     font-weight: 400;
     letter-spacing: 10%;
 } 
-@media screen and (max-width:1440px) {
+
+
+@media screen and (min-width:1440px) and (max-width:1919px) {
     body { 
         max-width:1440px;
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width:1439px) {
     body {
         max-width: 1024px;
     }   
 }
 
-@media screen and (max-width:768px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
     body {
         max-width: 768px;
     }
@@ -3296,6 +3299,8 @@ a {
     }
 }
 
+/* __________________________________________________________________________ */
+
 .news-card {
     position: relative;
     display: flex;
@@ -3306,13 +3311,13 @@ a {
     /* height: 400px; */
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (min-width:1440px) and (max-width:1919px) {
     .news-card {
         width: 1080px;
     }
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (min-width:1024px) and (max-width:1439px) {
     .news-card {
         width: 768px;
     }
@@ -3331,13 +3336,13 @@ a {
     margin-bottom: 240px;
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (min-width:1440px) and (max-width:1919px) {
     .news-card-container {
         margin-bottom: 180px;
     }
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (min-width:1024px) and (max-width:1439px)  {
     .news-card-container {
         margin-bottom: 128px;
     }
@@ -3355,14 +3360,14 @@ a {
     border: 1px solid var(--accent-gold);
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (min-width:1440px) and (max-width:1919px) {
     .news-img {
         width: 364px;
         height: 300px;
     }
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (min-width:1024px) and (max-width:1439px)  {
     .news-img {
         width: 259px;
         height: 213px;
@@ -3380,12 +3385,12 @@ a {
     padding: 52px 0px 62px 104px;
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (min-width:1440px) and (max-width:1919px) {
     .news-text {
         padding: 39px 0px 46px 78px;
     }
 }
-@media screen and (max-width:1024px) {
+@media screen and (min-width:1024px) and (max-width:1439px)  {
     .news-text {
         padding: 27px 0px 33px 55px;
     }
@@ -3415,7 +3420,7 @@ a {
     transition: var(--transition);
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (min-width:1440px) and (max-width:1919px) {
     .news-btn {
         gap: 18px;
         width: 120px;
@@ -3423,7 +3428,7 @@ a {
         font-size: 13px;
     }
 }
-@media screen and (max-width:1024px) {
+@media screen and (min-width:1024px) and (max-width:1439px)  {
     .news-btn {
         gap: 12px;
         width: 85px;
@@ -3436,12 +3441,12 @@ a {
     width: 24px;
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (min-width:1440px) and (max-width:1919px) {
     .news-btn svg {
         width: 18px;
     }
 }
-@media screen and (max-width:1024px) {
+@media screen and (min-width:1024px) and (max-width:1439px)  {
     .news-btn svg {
         width: 12px;
     }
@@ -3459,13 +3464,13 @@ a {
     margin-bottom: 32px;
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (min-width:1440px) and (max-width:1919px) {
     .news-card-title {
         font-size: 24px;
         margin-bottom: 24px;
     }
 }
-@media screen and (max-width:1024px) {
+@media screen and (min-width:1024px) and (max-width:1439px)  {
     .news-card-title {
         font-size: 17px;
         margin-bottom: 17px;
@@ -3485,14 +3490,14 @@ a {
     margin-bottom: 72px;
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (min-width:1440px) and (max-width:1919px) {
     .news-card-text {
         font-size: 15px;
         line-height: 28px;
         margin-bottom: 54px;
     }
 }
-@media screen and (max-width:1024px) {
+@media screen and (min-width:1024px) and (max-width:1439px)  {
     .news-card-text {
         font-size: 10px;
         line-height: 20px;
@@ -3518,13 +3523,13 @@ a {
     width: 856px;
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (min-width:1440px) and (max-width:1919px) {
     .news-card-text::after {
         top: 177px;
         width:634px;
     }
 }
-@media screen and (max-width:1024px) {
+@media screen and (min-width:1024px) and (max-width:1439px)  {
     .news-card-text::after {
         top: 125px;
         width: 452px;
@@ -3538,6 +3543,9 @@ a {
         width: 258px;
     }
 }
+
+/* __________________________________________________________________________ */
+
 
 
 .main {
