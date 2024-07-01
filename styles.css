@@ -41,6 +41,12 @@ body {
     letter-spacing: 10%;
 } 
 
+@media screen and (min-width:1441px) and (max-width:1920px) {
+    body {
+        width:1920px;
+    }
+}
+
 
 @media screen and (max-width:1440px) {
     body { 
