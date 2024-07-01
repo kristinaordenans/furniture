@@ -308,8 +308,8 @@ a {
     .nav-btn {
         height: 30px;
         font-size: 13px;
-        margin-left: 126px;
-        margin-right: 70px;
+        /* margin-left: 126px;
+        margin-right: 70px; */
         padding-left: 24px;
         padding-right: 24px;
     }
