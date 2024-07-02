@@ -209,9 +209,11 @@ a {
 .navigation {
     display: flex;
     align-items: center;
-    /* gap: 20px; */
+    gap: 20px;
     position: fixed;
     top: 0; 
+    left: 0;
+    right: 0;
     height: 72px;
     /* width: 760px; */
     /* width: 100%; */
@@ -221,14 +223,14 @@ a {
     z-index: 1000;
     background-color:rgba(64, 64, 64, 0.5);
     border-bottom: 1px solid var(--accent-gold);
-    border-right: 1px solid var(--accent-gold);
+    /* border-right: 1px solid var(--accent-gold); */
 }
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .navigation {
-        /* width: 100%;
-        height: 72px; */
-        width: 1915px;
+        /* width: 100%; */
+        height: 72px;
+        width: 1920px;
 
      }
 }
@@ -236,8 +238,8 @@ a {
 
 @media screen and (min-width:1025px) and (max-width:1440px) {
  .navigation {
-    width: 100%;
-    /* max-width: 1440px; */
+    /* width: 100%; */
+    max-width: 1440px;
     height: 54px;
  }
 }
@@ -258,11 +260,6 @@ a {
     }
 }
 
-/* @media screen and (max-width:768px) {
-    .navigation {
-        max-width: 768px;
-   }
-} */
 
 .nav-btn {
     background-color: var(--accent-green);
@@ -273,10 +270,10 @@ a {
     color: var(--accent-gold);
     border: 1px solid var(--accent-gold);
     outline: 2px solid var(--accent-green);
-    /* padding-left: 32px;
+    padding-left: 32px;
     padding-right: 32px;
     margin-left: 169px;
-    margin-right: 90px; */
+    margin-right: 90px;
     cursor: pointer;
     box-shadow: var(--shadow);
     transition: var(--transition);
@@ -289,8 +286,8 @@ a {
         font-size: 1.125rem;
         padding-left: 32px;
         padding-right: 32px;
-        /* margin-left: 169px;
-        margin-right: 86px; */
+        margin-left: 169px;
+        margin-right: 86px;
     }
 }
 
@@ -309,11 +306,10 @@ a {
 @media screen and (min-width:1025px) and (max-width:1440px) {
     .nav-btn {
         height: 30px;
-        font-size: 13px;
+        /* font-size: 13px; */
         font-size: 0.8125rem;
-
-        /* margin-left: 126px;
-        margin-right: 70px; */
+        margin-left: 126px;
+        margin-right: 70px;
         padding-left: 24px;
         padding-right: 24px;
     }
@@ -355,27 +351,16 @@ a {
     display: flex;
     list-style: none;
     align-items: center;
-    /* gap: 89px; */
-    /* width: 1202px; */
-    /* max-height: 40px; */
-    /* position: relative; */
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* font-size: 18px; */
-    /* font-weight: 400; */
+    gap: 89px;
     /* ------ разобраться со шрифтом он на главной и остальніх страницах разного размера------- */
     /* font-size: 18px; */
     font-size: 1.125rem;
     letter-spacing: 10%;
-    /* gap: 89px; */
-    /* list-style: none; */
-    /* cursor: pointer; */
 }
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .nav_list {
-        /* gap: 89px; */
+        gap: 89px;
         /* font-size: 18px; */
         font-size: 1.125rem;
         letter-spacing: 10%;
@@ -391,10 +376,11 @@ a {
     }
 }
 
-@media screen and (min-width:1025px) and (max-width:1024px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .nav_list {
         gap: 47px;
         /* font-size: 9px; */
+        font-size: 0.5625rem;
         letter-spacing: 10%;
     }
 }
@@ -500,26 +486,6 @@ a {
         display: flex;
         background-color: var(--accent-green);
     }
-
-    /* .logo-link-mobile::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 80px;
-        height: 1px;
-        width: 40%;
-        background-color: var(--accent-gold);
-    }
-    
-    .logo-link-mobile::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 80px;
-        height: 1px;
-        width: 40%;
-        background-color: var(--accent-gold);
-    } */
 }
 
 .logo-menu-mobile {
@@ -560,9 +526,9 @@ a {
 
 .logo {
     padding: 16px 37px;
-    /* margin-top: 54px;
+    margin-top: 54px;
     margin-left: 7px;
-    margin-right: 7px; */
+    margin-right: 7px;
     background-color: var(--accent-green);
     border: 1px solid var(--accent-gold);
     box-shadow: var(--shadow);
@@ -570,10 +536,10 @@ a {
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .logo {
-        /* margin-left: 7px;
-        margin-right: 7px; */
+        margin-left: 7px;
+        margin-right: 7px;
         margin-top: 54px;
-        /* padding: 16px 37px; */
+        padding: 16px 37px;
     }
 }
 
@@ -622,14 +588,14 @@ a {
     min-width: 0;
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .hero-container {
         height: 750px;
         margin-bottom: 99px;
     } 
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .hero-container {
         height: 533px;
         margin-bottom: 70px;
@@ -648,13 +614,13 @@ a {
     padding-top: 144px;
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .hero { 
         padding-top: 108px;
     }
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .hero { 
         padding-top: 76px;
     }
@@ -710,14 +676,14 @@ a {
     margin-bottom: 24px;
 }
 
-@media screen and (max-width:1440px){
+@media screen and (min-width:1025px) and (max-width:1440px){
     .hero-title {
         font-size: 54px;
         margin-bottom: 18px;
     }
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .hero-title {
         font-size: 38px;
         margin-bottom: 13px;
@@ -746,14 +712,14 @@ a {
     margin-bottom: 56px;
 }
 
-@media screen and (max-width:1440px){
+@media screen and (min-width:1025px) and (max-width:1440px){
     .hero-text {
         font-size: 24px;
         margin-bottom: 42px;
     }
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .hero-text {
         font-size: 17px;
         margin-bottom: 30px;
@@ -823,13 +789,13 @@ a {
     width: 1582px;
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .swiper {
         width: 1186px;
     }
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .swiper {
         width: 844px;
     }
@@ -847,14 +813,14 @@ a {
 	height: 400px;
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .swiper-slide-img img {
         width: 300px;
         height: 300px;
     }
 } 
 
-@media screen and (max-width:1024px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .swiper-slide-img img {
         width: 214px;
         height: 214px;
@@ -878,14 +844,21 @@ a {
     height: 580px;
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .swiper-slide-active.active img {
         width: 390px;
         height: 435px;
     }
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .swiper-slide-active.active img {
+        width: 278px;
+        height: 310px;
+    }
+}
+
+@media screen and (max-width:768px) {
     .swiper-slide-active.active img {
         width: 278px;
         height: 310px;
