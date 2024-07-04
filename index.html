@@ -17,6 +17,16 @@
 </head>
 <body>
 
+    <script>
+        window.onload = function() {
+            var screenWidth = window.screen.width;
+            var screenHeight = window.screen.height;
+
+            console.log("Screen Width: " + screenWidth + "px");
+            console.log("Screen Height: " + screenHeight + "px");
+        };
+    </script>
+
     <button id="scrollToTopBtn" class="scrollBtn">
         <svg class="scrollToTop_svg" width="32" height="32">
             <use href="./src/img/svg/symbol-defs.svg#icon-arrow-right"></use>
