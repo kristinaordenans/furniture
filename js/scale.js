@@ -19,21 +19,29 @@
 //     setViewport();
 // });
 
-window.onload = function() {
-    var viewport = document.querySelector("meta[name=viewport]");
+// window.onload = function() {
+//     var viewport = document.querySelector("meta[name=viewport]");
     
-    if (!viewport) {
-        viewport = document.createElement("meta");
-        viewport.setAttribute("name", "viewport");
-        document.head.appendChild(viewport);
-    }
+//     if (!viewport) {
+//         viewport = document.createElement("meta");
+//         viewport.setAttribute("name", "viewport");
+//         document.head.appendChild(viewport);
+//     }
     
-    var scale = 1.0;
+//     var scale = 1.0;
     
-    if (window.devicePixelRatio > 1.5 || screen.pixelDepth > 144) {
-        scale = 0.75;
-    }
+//     if (window.devicePixelRatio > 1.5 || screen.pixelDepth > 144) {
+//         scale = 0.75;
+//     }
 
-    viewport.setAttribute("content", "width=device-width, initial-scale=" + scale);
-    console.log("Viewport meta tag set to initial-scale=" + scale);
+//     viewport.setAttribute("content", "width=device-width, initial-scale=" + scale);
+//     console.log("Viewport meta tag set to initial-scale=" + scale);
+// };
+
+window.onload = function() {
+    var viewportWidth = window.innerWidth;
+    var viewportHeight = window.innerHeight;
+
+    console.log("Viewport Width: " + viewportWidth + "px");
+    console.log("Viewport Height: " + viewportHeight + "px");
 };

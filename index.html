@@ -19,13 +19,23 @@
 
     <script>
         window.onload = function() {
+            var viewportWidth = window.innerWidth;
+            var viewportHeight = window.innerHeight;
+
+            console.log("Viewport Width: " + viewportWidth + "px");
+            console.log("Viewport Height: " + viewportHeight + "px");
+        };
+    </script>
+
+    <!-- <script>
+        window.onload = function() {
             var screenWidth = window.screen.width;
             var screenHeight = window.screen.height;
 
             console.log("Screen Width: " + screenWidth + "px");
             console.log("Screen Height: " + screenHeight + "px");
         };
-    </script>
+    </script> -->
 
     <button id="scrollToTopBtn" class="scrollBtn">
         <svg class="scrollToTop_svg" width="32" height="32">
