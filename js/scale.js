@@ -1,25 +1,39 @@
-document.addEventListener('DOMContentLoaded', function() {
-    function setViewport() {
-        // Отримуємо поточний метатег viewport
-        var viewportMeta = document.getElementById('viewportMeta');
+// document.addEventListener('DOMContentLoaded', function() {
+//     function setViewport() {
+//         var viewportMeta = document.getElementById('viewportMeta');
 
-        // Перевіряємо, чи знайдений метатег viewport
-        if (viewportMeta) {
-            // Визначаємо роздільну здатність пристрою
-            var devicePixelRatio = window.devicePixelRatio || 1;
-            var screenResolution = Math.sqrt(screen.width * screen.width + screen.height * screen.height) / (screen.width / devicePixelRatio);
+//         if (viewportMeta) {
+//             var devicePixelRatio = window.devicePixelRatio || 1;
+//             var screenResolution = Math.sqrt(screen.width * screen.width + screen.height * screen.height) / (screen.width / devicePixelRatio);
 
-            // Змінюємо значення initial-scale залежно від роздільної здатності
-            if (devicePixelRatio > 1.5 || screenResolution >= 144) {
-                viewportMeta.setAttribute('content', 'width=device-width, initial-scale=0.75');
-            } else {
-                viewportMeta.setAttribute('content', 'width=device-width, initial-scale=1.0');
-            }
-        } else {
-            console.error('Viewport meta tag not found');
-        }
+//             if (devicePixelRatio > 1.5 || screenResolution >= 144) {
+//                 viewportMeta.setAttribute('content', 'width=device-width, initial-scale=0.75');
+//             } else {
+//                 viewportMeta.setAttribute('content', 'width=device-width, initial-scale=1.0');
+//             }
+//         } else {
+//             console.error('Viewport meta tag not found');
+//         }
+//     }
+
+//     setViewport();
+// });
+
+window.onload = function() {
+    var viewport = document.querySelector("meta[name=viewport]");
+    
+    if (!viewport) {
+        viewport = document.createElement("meta");
+        viewport.setAttribute("name", "viewport");
+        document.head.appendChild(viewport);
+    }
+    
+    var scale = 1.0;
+    
+    if (window.devicePixelRatio > 1.5 || screen.pixelDepth > 144) {
+        scale = 0.75;
     }
 
-    // Викликаємо функцію при завантаженні сторінки
-    setViewport();
-});
+    viewport.setAttribute("content", "width=device-width, initial-scale=" + scale);
+    console.log("Viewport meta tag set to initial-scale=" + scale);
+};
