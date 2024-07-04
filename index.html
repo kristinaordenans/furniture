@@ -18,13 +18,14 @@
 <body>
 
     <script>
-        window.onload = function() {
-            var viewportWidth = window.innerWidth;
-            var viewportHeight = window.innerHeight;
+      function getViewportDimensions() {
+    const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    const height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    console.log('Width: ' + width);
+    console.log('Height: ' + height);
+}
 
-            console.log("Viewport Width: " + viewportWidth + "px");
-            console.log("Viewport Height: " + viewportHeight + "px");
-        };
+getViewportDimensions();
     </script>
 
     <!-- <script>
