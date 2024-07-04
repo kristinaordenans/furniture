@@ -1,6 +1,9 @@
-html {
+/* * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-}
+    margin: 0;
+    padding: 0;
+  } */
 
 :root {
     --accent-green: rgb(25, 47, 45);
@@ -52,16 +55,18 @@ body {
     position: relative;
     background-color: var(--background-color);
     color: #fff;
+    /* max-width: 100vw; */
     margin-left: auto;
     margin-right: auto;
-    max-width: 1920px;
+    /* max-width: 1920px; */
     /* width: 99vw; */
+    /* width: 100%; */
     font-family: "Playfair Display";
     font-weight: 400;
     letter-spacing: 10%;
 } 
 
-@media screen and (min-width:1441px) and (max-width:1920px) {
+/* @media screen and (min-width:1441px) and (max-width:1920px) {
     body { 
         max-width:1920px;
     }
@@ -79,11 +84,11 @@ body {
     }   
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
+@media screen and (min-width:768px) and (max-width:1024px) {
     body {
         width: 768px;
     }
-}
+} */
 
 body.lock-scroll {
     overflow: hidden;
@@ -110,6 +115,36 @@ body.lock-scroll {
         background-size: calc(100%/3);
     }
 }
+
+.container {
+    width: 1920px;
+}
+
+@media screen and (min-width:1441px) and (max-width:1920px) {
+    .container { 
+        max-width:1920px;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width:1440px) {
+    .container { 
+        max-width:1440px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .container {
+        max-width: 1024px;
+    }   
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+
 
 /* SCROLL BUTTON */
 
@@ -3744,7 +3779,7 @@ body.lock-scroll {
     justify-content: center;
     position: relative;
 }
-
+/* ------------------------------------------------------------------ */
 .news-title {
     font-size: 64px;
     letter-spacing: 10%;
@@ -4030,7 +4065,7 @@ body.lock-scroll {
         width: 18px;
     }
 }
-@media screen and (min-width:769px) and (max-width:1024px)  {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .news-btn svg {
         width: 12px;
     }
@@ -4133,7 +4168,7 @@ body.lock-scroll {
         width:634px;
     }
 }
-@media screen and (min-width:769px) and (max-width:1024px)  {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .news-card-text::after {
         top: 125px;
         width: 452px;
@@ -4147,6 +4182,8 @@ body.lock-scroll {
         width: 258px;
     }
 }
+
+/* -------------------------------------------------------- */
 
 
 .main {
