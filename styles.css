@@ -3791,12 +3791,11 @@ body.lock-scroll {
     justify-content: center;
     position: relative;
 }
-/* ------------------------------------------------------------------ */
+
 .news-title {
     font-size: 64px;
     letter-spacing: 10%;
     background-clip: text;
-    /* color: var(--accent-gold); */
     color: transparent;
     background-image: var(--gold-gradient);
     margin-bottom: 156px;
@@ -4252,13 +4251,13 @@ body.lock-scroll {
     z-index: 1;
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .footer {
         padding-top: 66px;
         padding-bottom: 75px;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .footer {
         padding-top: 46px;
         padding-bottom: 53px;
@@ -4297,13 +4296,13 @@ body.lock-scroll {
     font-size: 14px;
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .footer-nav-container {
         margin-left: 126px;
         font-size: 11px;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .footer-nav-container {
         margin-left: 89px;
         font-size: 8px;
@@ -4323,12 +4322,12 @@ body.lock-scroll {
     margin-top: 14px;
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .footer-nav-container_margin-top {
         margin-top: 10px;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .footer-nav-container_margin-top {
         margin-top: 7px;
     }
@@ -4353,7 +4352,7 @@ body.lock-scroll {
     transition: var(--transition);
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .footer-furniture-btn {
         gap: 12px;
         padding: 6px 24px 8px 24px;
@@ -4362,7 +4361,7 @@ body.lock-scroll {
         font-size: 13px;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .footer-furniture-btn {
         gap: 8px;
         padding: 4px 17px 6px 17px;
@@ -4397,7 +4396,7 @@ body.lock-scroll {
     transition: var(--transition);
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .footer-call-btn {
         height: 27px;
         padding: 3px 13px 4px 13px;
@@ -4405,7 +4404,7 @@ body.lock-scroll {
         font-size: 13px;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .footer-call-btn {
         height: 19px;
         padding: 2px 9px 3px 9px;
@@ -4426,12 +4425,12 @@ body.lock-scroll {
     list-style: none;
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .footer-nav_list {
         gap: 70px;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .footer-nav_list {
         gap: 50px;
     }
@@ -4452,12 +4451,12 @@ body.lock-scroll {
     list-style: none;
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .footer-nav_list_gap {
         gap: 57px;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .footer-nav_list_gap {
         gap: 40px;
     }
@@ -4473,7 +4472,7 @@ body.lock-scroll {
     margin-right: 90px;
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .footer-logo {
         width: 90px;
         height: 90px;
@@ -4481,7 +4480,7 @@ body.lock-scroll {
         margin-right: 46px;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .footer-logo {
         width: 64px;
         height: 64px;
@@ -4500,13 +4499,13 @@ body.lock-scroll {
     background-color: var(--accent-gold); 
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .footer-logo::before {
         top: 120px;
         width: 657px;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .footer-logo::before {
         top: 85px;
         width: 467px;
@@ -4523,13 +4522,13 @@ body.lock-scroll {
     background-color: var(--accent-gold); 
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .footer-logo::after {
         top: 120px;
         width: 657px;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .footer-logo::after {
         top: 85px;
         width: 467px;
@@ -4539,13 +4538,13 @@ body.lock-scroll {
 .footer-logo_width {
     width: 52px;
 }
- @media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .footer-logo_width {
         width: 39px;
     }
  }
 
- @media screen and (min-width:1024px) and (max-width:1439px) {
+ @media screen and (min-width:769px) and (max-width:1024px) {
     .footer-logo_width {
         width: 27px;
     }
@@ -4560,14 +4559,14 @@ body.lock-scroll {
     margin-top: 24px;
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .footer-socials-list {
         gap: 42px;
         margin-bottom: 30px;
         /* margin-top: 18px; */
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .footer-socials-list {
         gap: 29px;
         margin-bottom: 21px;
@@ -4602,12 +4601,12 @@ body.lock-scroll {
     /* margin-bottom: 100px; */
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .footer-slogan {
         font-size: 15px;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .footer-slogan {
         font-size: 11px;
     }
@@ -4636,13 +4635,13 @@ body.lock-scroll {
     transition: var(--transition);
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .footer-socials-link {
         padding: 12px;
         font-size: 12px;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .footer-socials-link {
         padding: 8px;
         font-size: 9px;
@@ -4661,7 +4660,7 @@ body.lock-scroll {
     height: 24px;
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .footer-social-link-icon {
         width: 18px;
         height: 18px;
@@ -4681,7 +4680,7 @@ body.lock-scroll {
     padding: 2px;
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .inst {
         width: 14px;
         height: 14px;
@@ -4707,14 +4706,14 @@ body.lock-scroll {
     background-color: var(--background-color);
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .modal-certificates {
         width: 1440px;
         padding-bottom: 135px;
         margin-top: 56px;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .modal-certificates {
         width: 1024px;
         padding-bottom: 96px;
@@ -4743,12 +4742,12 @@ body.lock-scroll {
     height: 100%;
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .line-left-bottom::before {
         left: 78px;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .line-left-bottom::before {
         left: 58px;
     }
@@ -4769,12 +4768,12 @@ body.lock-scroll {
     height: 1px; 
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .line-left-bottom::after {
         bottom: 78px;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .line-left-bottom::after {
         bottom: 58px;
     }
@@ -4801,12 +4800,12 @@ body.lock-scroll {
     height: 100%;
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .line-right::before {
         left: 1362px;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .line-right::before {
         top: 50px;
         left: 353px;
@@ -4831,14 +4830,14 @@ body.lock-scroll {
     margin-bottom: 56px;
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .modal-title {
         font-size: 48px;
         padding-top: 30px;
         margin-bottom: 42px;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .modal-title {
         font-size: 34px;
         padding-top: 21px;
@@ -4856,13 +4855,13 @@ body.lock-scroll {
     background-color: var(--accent-gold);
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .modal-title::before {
         top: 72px;
         width: 24%;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .modal-title::before {
         top: 51px;
         width: 17%;
@@ -4879,13 +4878,13 @@ body.lock-scroll {
     background-color: var(--accent-gold);
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .modal-title::after {
         top: 72px;
         width: 24%;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .modal-title::after {
         top: 51px;
         width: 17%;
@@ -4901,12 +4900,12 @@ body.lock-scroll {
    color: var(--accent-gold);
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .certificates-list {
         gap: 128px;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .certificates-list {
         gap: 90px;
     }
@@ -4920,13 +4919,13 @@ body.lock-scroll {
     box-shadow: 4px 12px 24px rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .certificates-card-1 {
         width: 474px;
         padding-bottom: 48px;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .certificates-card-1 {
         width: 337px;
         padding-bottom: 34px;
@@ -4938,13 +4937,13 @@ body.lock-scroll {
     margin-top: 48px;
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .certificates-text-1 {
         margin-bottom: 42px;
         margin-top: 36px;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .certificates-text-1 {
         margin-bottom: 29px;
         margin-top: 25px;
@@ -4959,13 +4958,13 @@ body.lock-scroll {
     box-shadow: 4px 12px 24px rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .certificates-card-2 {
         width: 474px;
         padding-bottom: 119px;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .certificates-card-2 {
         width: 337px;
         padding-bottom: 84px;
@@ -4977,13 +4976,13 @@ body.lock-scroll {
     margin-top: 48px;
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .certificates-text-2 {
         margin-bottom: 107px;
         margin-top: 36px;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .certificates-text-2 {
         margin-bottom: 76px;
         margin-top: 25px;
@@ -4994,12 +4993,12 @@ body.lock-scroll {
     width: 386px;
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .certificates-img_width1 {
         width: 289px;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .certificates-img_width1 {
         width: 205px;
     }
@@ -5009,12 +5008,12 @@ body.lock-scroll {
     width: 480px;
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .certificates-img_width2 {
         width: 360px;
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .certificates-img_width2 {
         width: 256px;
     }
@@ -5024,12 +5023,12 @@ body.lock-scroll {
     width: 48px; 
 }
 
-@media screen and (min-width:1440px) and (max-width:1919px) {
+@media screen and (min-width:1025px) and (max-width:1440px) {
     .close-btn-svg {
         width: 36px; 
     }
 }
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .close-btn-svg {
         width: 25px; 
     }
