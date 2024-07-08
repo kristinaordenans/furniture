@@ -1131,7 +1131,7 @@ body.lock-scroll {
     }
 }
 
-@media screen and (min-width:1769px) and (max-width:1024px) {
+@media screen and (min-width:769px) and (max-width:1024px) {
     .about-logo-img {
         top: 42px;
         left: 32px;
@@ -1484,7 +1484,7 @@ body.lock-scroll {
 
 @media screen and (min-width:769px) and (max-width:1024px) {
     .benefits-card::before {
-        width: 82px;
+        width: calc(50% - 421px);
     }
 }
 
@@ -1517,7 +1517,7 @@ body.lock-scroll {
 
 @media screen and (min-width:769px) and (max-width:1024px) {
     .benefits-card::after {
-        width: 82px;
+        width: calc(50% - 421px);
     }
 }
 @media screen and (max-width:768px) {
@@ -1771,7 +1771,7 @@ body.lock-scroll {
 .catalog-card {
     display: flex;
     flex-wrap: wrap;
-    max-width: 368px;
+    width: 416px;
     min-height: 368px;
     justify-content: center;
     align-items: center;
@@ -1784,7 +1784,7 @@ body.lock-scroll {
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .catalog-card {
         padding: 24px;
-        width: 368px;
+        width: 416px;
         min-height: 368px;
     }
 }
@@ -1792,7 +1792,7 @@ body.lock-scroll {
 @media screen and (min-width:1025px) and (max-width:1440px) {
     .catalog-card {
         padding: 18px;
-        width: 276px;
+        width: 312px;
         min-height: 276px;
     }
 }
@@ -1800,7 +1800,7 @@ body.lock-scroll {
 @media screen and (min-width:769px) and (max-width:1024px) {
     .catalog-card {
         padding: 12px;
-        width: 196px;
+        width: 221px;
         min-height: 196px;
     }
 }
@@ -1908,8 +1908,8 @@ body.lock-scroll {
     justify-content: center;
     fill: var(--accent-gold);
     /* перевірити висоту кнопки бо іі нема в макеті */
-    max-width: 110px;
-    height: 38px;
+    max-width: 171px;
+    height: 48px;
     padding:2px 32px 6px 32px;
     font-size: 18px;
     background-color: var(--accent-green);
@@ -1918,15 +1918,15 @@ body.lock-scroll {
     outline: 4px solid var(--accent-green);
     box-shadow: 4px 12px 24px rgba(0, 0, 0, 0.5);
     transition: var(--transition);
-    margin-bottom: 48px;
+    margin-bottom: 24px;
 }
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .catalog-download-btn {
         /* max-width: 82px; */
-        height: 38px;
+        /* height: 38px; */
         padding:2px 32px 6px 32px;
-        margin-bottom: 48px;
+        margin-bottom: 24px;
         font-size: 18px;
     }
 }
@@ -1934,9 +1934,9 @@ body.lock-scroll {
 @media screen and (min-width:1025px) and (max-width:1440px) {
     .catalog-download-btn {
         /* max-width: 82px; */
-        height: 28px;
+        height: 38px;
         padding: 2px 24px 4px 24px;
-        margin-bottom: 30px;
+        margin-bottom: 18px;
         font-size: 14px;
     }
 }
@@ -1944,9 +1944,9 @@ body.lock-scroll {
 @media screen and (min-width:769px) and (max-width:1024px) {
     .catalog-download-btn {
         /* max-width: 82px; */
-        height: 20px;
+        height: 28px;
         padding: 2px 17px 4px 17px;
-        margin-bottom: 25px;
+        margin-bottom: 12px;
         font-size: 9px;
     }
 }
@@ -2156,7 +2156,7 @@ body.lock-scroll {
 @media screen and (min-width:769px) and (max-width:1024px) {
     .form-card {
         width: 765px;
-        height: 324px;
+        height: 366px;
         padding-top: 17px;
     }
 }
@@ -2212,7 +2212,7 @@ body.lock-scroll {
 
 @media screen and (min-width:769px) and (max-width:1024px) {
     .form-container::before  {
-        width: 121px;
+        width: calc(50% - 382px);
     }
 }
 
@@ -2246,7 +2246,7 @@ body.lock-scroll {
 
 @media screen and (min-width:769px) and (max-width:1024px) {
     .form-container::after {
-        width: 121px;
+        width: calc(50% - 382px);
     }
 }
 
@@ -2792,7 +2792,7 @@ body.lock-scroll {
     }
 }
 
-.galery-list {
+.galery-list-main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2801,24 +2801,24 @@ body.lock-scroll {
 }
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
-    .galery-list {
+    .galery-list-main {
         gap: 96px;
     }
 }
 
 @media screen and (min-width:1025px) and (max-width:1440px) {
-    .galery-list {
+    .galery-list-main {
         gap: 72px;
     }
 }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
-    .galery-list {
+    .galery-list-main {
         gap: 51px;
     }
 }
 
-.galery-item {
+.galery-item-main {
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -2826,19 +2826,19 @@ body.lock-scroll {
 }
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
-    .galery-item {
+    .galery-item-main {
         gap: 32px;
     }
 }
 
 @media screen and (min-width:1025px) and (max-width:1440px) {
-    .galery-item {
+    .galery-item-main {
         gap: 24px;
     }
 }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
-    .galery-item {
+    .galery-item-main {
         gap: 17px;
     }
 }
@@ -3819,6 +3819,13 @@ body.lock-scroll {
 @media screen and (min-width:769px) and (max-width:1024px) {
     .news-title {
         font-size: 34px;
+        margin-bottom: 77px;
+    }
+}
+
+@media screen and (max-width:769px) {
+    .news-title {
+        /* font-size: 34px; */
         margin-bottom: 40px;
     }
 }
@@ -4025,7 +4032,8 @@ body.lock-scroll {
     /* text-align: center; */
     justify-content: center;
     gap: 24px;
-    width: 160px;
+    /* white-space: nowrap; */
+    max-width: 204px;
     padding: 14px 24px 16px 29px;
     font-size: 18px;
     background-color: var(--accent-green);
@@ -4040,7 +4048,7 @@ body.lock-scroll {
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .news-btn {
         gap: 24px;
-        width: 160px;
+        /* max-width: 160px; */
         padding: 14px 24px 16px 29px;
         font-size: 18px;
     }
@@ -4049,7 +4057,7 @@ body.lock-scroll {
 @media screen and (min-width:1025px) and (max-width:1440px) {
     .news-btn {
         gap: 18px;
-        width: 120px;
+        max-width: 154px;
         padding: 10px 18px 12px 22px;
         font-size: 13px;
     }
@@ -4057,7 +4065,7 @@ body.lock-scroll {
 @media screen and (min-width:769px) and (max-width:1024px)  {
     .news-btn {
         gap: 12px;
-        width: 85px;
+        max-width: 109px;
         padding: 5px 12px 6px 15px;
         font-size: 9px;
     }
@@ -4660,12 +4668,12 @@ body.lock-scroll {
     }
 }
 
-/* @media screen and (max-width:1024px) {
+@media screen and (max-width:1024px) {
     .footer-social-link-icon {
         width: 12px;
         height: 12px;
     }
-} */
+}
 
 .inst {
     width: 18px;
@@ -4681,13 +4689,13 @@ body.lock-scroll {
     }
 }
 
-/* @media screen and (max-width:1024px) {
+@media screen and (max-width:1024px) {
     .inst {
         width: 10px;
         height: 10px;
         padding: 1px;
     }
-} */
+}
 
 /* МОДАЛЬНЕ СЕРТИФІКАТИ */
 
@@ -7649,8 +7657,10 @@ body.lock-scroll {
 .galery-list {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
     gap: 72px;
+    list-style: none;
 }
 
 @media screen and (max-width:1440px) {
