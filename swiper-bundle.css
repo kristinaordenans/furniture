@@ -39,9 +39,23 @@
   overflow: hidden;
   list-style: none;
   padding: 0;
+  padding-left: 25px;
+  padding-right: 25px;
   /* Fix of Webkit flickering */
   z-index: 1;
   display: block;
+}
+@media screen and (max-width:1440px) {
+  .swiper {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+@media screen and (max-width:1024px) {
+  .swiper {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
 }
 .swiper-vertical > .swiper-wrapper {
   flex-direction: column;
@@ -435,11 +449,13 @@
 
 .swiper-button-prev.swiper-button-card_position,
 .swiper-rtl .swiper-button-next.swiper-button-card_position {
-  left: var(--swiper-navigation-sides-offset, 700px);
+  /* left: var(--swiper-navigation-sides-offset, 700px); */
+  left: var(--swiper-navigation-sides-offset, 36.45vw);
+
   right: auto;
 }
 
-@media screen and (max-width:1440px) {
+/* @media screen and (max-width:1440px) {
   .swiper-button-prev.swiper-button-card_position,
   .swiper-rtl .swiper-button-next.swiper-button-card_position {
       left: var(--swiper-navigation-sides-offset, 500px);
@@ -451,7 +467,7 @@
   .swiper-rtl .swiper-button-next.swiper-button-card_position {
       left: var(--swiper-navigation-sides-offset, 373px);
 }
-}
+} */
 
 @media screen and (max-width:768px) {
   .swiper-button-prev.swiper-button-card_position,
@@ -462,11 +478,13 @@
 
 .swiper-button-prev.modal-swiper-prevnext,
 .swiper-rtl .swiper-button-next.modal-swiper-prevnext {
-  left: var(--swiper-navigation-sides-offset, 875px);
+  /* left: var(--swiper-navigation-sides-offset, 875px); */
+  left: var(--swiper-navigation-sides-offset, 45.57vw);
+
   right: auto;
 }
 
-@media screen and (max-width:1440px) {
+/* @media screen and (max-width:1440px) {
   .swiper-button-prev.modal-swiper-prevnext,
   .swiper-rtl .swiper-button-next.modal-swiper-prevnext {
     left: var(--swiper-navigation-sides-offset, 650px);
@@ -478,7 +496,7 @@
   .swiper-rtl .swiper-button-next.modal-swiper-prevnext {
     left: var(--swiper-navigation-sides-offset, 456px);
   }
-}
+} */
 @media screen and (max-width:768px) {
   .swiper-button-prev.modal-swiper-prevnext,
   .swiper-rtl .swiper-button-next.modal-swiper-prevnext {
@@ -516,11 +534,12 @@
 
 .swiper-button-next.swiper-button-card_position,
 .swiper-rtl .swiper-button-prev.swiper-button-card_position {
-  right: var(--swiper-navigation-sides-offset, 700px);
+  /* right: var(--swiper-navigation-sides-offset, 700px); */
+  right: var(--swiper-navigation-sides-offset, 36.45vw);
   left: auto;
 }
 
-@media screen and (max-width:1440px) {
+/* @media screen and (max-width:1440px) {
   .swiper-button-next.swiper-button-card_position,
   .swiper-rtl .swiper-button-prev.swiper-button-card_position {
     right: var(--swiper-navigation-sides-offset, 500px);
@@ -534,7 +553,7 @@
     right: var(--swiper-navigation-sides-offset, 373px);
     left: auto;
   }
-}
+} */
 
 @media screen and (max-width:768px) {
   .swiper-button-next.swiper-button-card_position,
@@ -545,11 +564,13 @@
 
 .swiper-button-next.modal-swiper-prevnext,
 .swiper-rtl .swiper-button-prev.modal-swiper-prevnext {
-  right: var(--swiper-navigation-sides-offset, 875px);
+  /* right: var(--swiper-navigation-sides-offset, 875px); */
+  right: var(--swiper-navigation-sides-offset, 45.57vw);
+
   left: auto;
 }
 
-@media screen and (max-width:1440px) {
+/* @media screen and (max-width:1440px) {
   .swiper-button-next.modal-swiper-prevnext,
   .swiper-rtl .swiper-button-prev.modal-swiper-prevnext {
     right: var(--swiper-navigation-sides-offset, 650px);
@@ -561,7 +582,7 @@
   .swiper-rtl .swiper-button-prev.modal-swiper-prevnext {
     right: var(--swiper-navigation-sides-offset, 456px);
   }
-}
+} */
 
 @media screen and (max-width:768px) {
   .swiper-button-next.modal-swiper-prevnext,
@@ -626,11 +647,12 @@
 
 .swiper-button-next.swiper-button-card_position,
 .swiper-rtl .swiper-button-prev.swiper-button-card_position {
-  right: var(--swiper-navigation-sides-offset, 700px);
+  /* right: var(--swiper-navigation-sides-offset, 700px); */
+  right: var(--swiper-navigation-sides-offset, 36.45vw);
   left: auto;
 }
 
-@media screen and (max-width:1440px) {
+/* @media screen and (max-width:1440px) {
   .swiper-button-next.swiper-button-card_position,
   .swiper-rtl .swiper-button-prev.swiper-button-card_position {
     right: var(--swiper-navigation-sides-offset, 500px);
@@ -644,11 +666,13 @@
     right: var(--swiper-navigation-sides-offset, 373px);
     left: auto;
   }
-}
+} */
 
 .swiper-button-next.modal-swiper-prevnext,
 .swiper-rtl .swiper-button-prev.modal-swiper-prevnext {
-  right: var(--swiper-navigation-sides-offset, 875px);
+  /* right: var(--swiper-navigation-sides-offset, 875px); */
+  right: var(--swiper-navigation-sides-offset, 45.57vw);
+
   left: auto;
 }
 
@@ -660,7 +684,7 @@
   }
 }
 
-@media screen and (max-width:1440px) {
+/* @media screen and (max-width:1440px) {
   .swiper-button-next.modal-swiper-prevnext,
   .swiper-rtl .swiper-button-prev.modal-swiper-prevnext {
     right: var(--swiper-navigation-sides-offset, 650px);
@@ -672,7 +696,7 @@
   .swiper-rtl .swiper-button-prev.modal-swiper-prevnext {
     right: var(--swiper-navigation-sides-offset, 456px);
   }
-}
+} */
 
 @media screen and (max-width:768px) {
   .swiper-button-next.modal-swiper-prevnext,

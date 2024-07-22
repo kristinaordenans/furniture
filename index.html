@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" id="viewportMeta" content="width=device-width, initial-scale=1.0">
     <title>Furniture</title>
-    <!-- <script src="./js/scale.js"></script> -->
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -15,86 +14,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="swiper-bundle.css">
 </head>
-<body>
-    <!-- <script src="./js/scale.js"></script> -->
+    <body>
+        <!-- SCROLL BTN -->
+        <button id="scrollToTopBtn" class="scrollBtn">
+            <svg class="scrollToTop_svg" width="32" height="32">
+                <use href="./src/img/svg/symbol-defs.svg#icon-arrow-right"></use>
+            </svg>
+        </button>
+        <!-- BACGROUND LINES -->
+        <div class="responce-message" id="responseMessage">Ваше повідомлення успішно відправлено.</div>
+        <div class="background-lines"></div>
+        
+<!-- ГОЛОВНА СТОРІНКА -->
 
-    <script>
-        function getViewportDimensions() {
-            const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-            const height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-            console.log('Width: ' + width);
-            console.log('Height: ' + height);
-        }
-    
-        function logViewportDimensions() {
-            const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-            const height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-            console.log('Viewport Width: ' + width);
-            console.log('Viewport Height: ' + height);
-        }
-    
-        getViewportDimensions();
-        logViewportDimensions();
-    
-        window.addEventListener('resize', logViewportDimensions);
-        window.addEventListener('load', logViewportDimensions);
-    </script>
-        
-            <button id="scrollToTopBtn" class="scrollBtn">
-                <svg class="scrollToTop_svg" width="32" height="32">
-                    <use href="./src/img/svg/symbol-defs.svg#icon-arrow-right"></use>
-                </svg>
-            </button>
-        
-            <div class="responce-message" id="responseMessage">Ваше повідомлення успішно відправлено.</div>
-            <div class="background-lines"></div>
-            <!-- <div class="main">Start project 13.03.24. Good luck!</div> -->
-        
-            <!-- ГОЛОВНА СТОРІНКА -->
-        
-            <header class="nav-container">
-                <nav class="navigation">
-                    <!-- кнопка відкриття модального вікна -->
-                    <button type="button" class="nav-btn openModalBtn" data-modal="modalFurniture">Фурнітура</button>
-                    <a href="index.html" class="logo-link-mobile">
-                        <img class="logo-menu-mobile" src="./src/img/svg/Vector.svg" alt="" width="44">
-                    </a>
-                    <ul class="nav_list" id="navList">
-                        <li class="nav-list-item">
-                            <a class="nav-link active" href="index.html">Головна</a>
-                        </li>
-                        <li class="nav-list-item">
-                            <a class="nav-link" href="about_as_page.html">Про нас</a> 
-                        </li>
-                        <li class="nav-list-item">
-                            <a class="nav-link" href="galery_interior.html">Галерея</a> 
-                        </li>
-                        <li class="logo">
-                            <a href="index.html">
-                                <img class="logo-img" src="./src/img/svg/Vector.svg" alt="" width="44">
-                            </a>
-                        </li>
-                        <li class="nav-list-item">
-                            <a class="nav-link" href="manufacturers_page.html">Виробники</a> 
-                        </li>
-                        <li class="nav-list-item">
-                            <!-- додати на всіх окрім мейн сторінках посилання на html документ головноі перд # -->
-                            <a class="nav-link" href="#contacts">Контакти</a> 
-                        </li>
-                        <li class="nav-list-item">
-                            <a class="nav-link" href="#delivery">Оплата 
-                                і доставка</a> 
-                        </li>
-                    </ul>
-                    <div class="burger" id="burger">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
-                    </div>
-                </nav>
-            </header>
+    <!-- НАВІГАЦВЯ -->
+
+                <header class="nav-container">
+                    <nav class="navigation">
+                        <button type="button" class="nav-btn openModalBtn" data-modal="modalFurniture">Фурнітура</button>
+                        <a href="index.html" class="logo-link-mobile">
+                            <img class="logo-menu-mobile" src="./src/img/svg/Vector.svg" alt="" width="44">
+                        </a>
+                        <ul class="nav_list" id="navList">
+                            <li class="nav-list-item">
+                                <a class="nav-link active" href="index.html">Головна</a>
+                            </li>
+                            <li class="nav-list-item">
+                                <a class="nav-link" href="about_as_page.html">Про нас</a> 
+                            </li>
+                            <li class="nav-list-item">
+                                <a class="nav-link" href="galery_interior.html">Галерея</a> 
+                            </li>
+                            <li class="logo">
+                                <a href="index.html">
+                                    <img class="logo-img" src="./src/img/svg/Vector.svg" alt="" width="44">
+                                </a>
+                            </li>
+                            <li class="nav-list-item">
+                                <a class="nav-link" href="manufacturers_page.html">Виробники</a> 
+                            </li>
+                            <li class="nav-list-item">
+                                <a class="nav-link" href="#contacts">Контакти</a> 
+                            </li>
+                            <li class="nav-list-item">
+                                <a class="nav-link" href="#delivery">Оплата 
+                                    і доставка</a> 
+                            </li>
+                        </ul>
+                        <div class="burger" id="burger">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
+                    </nav>
+                </header>
                 <main>
-                    <!-- HERO -->
+
+    <!-- HERO -->
                    
                     <section class="hero-container">
                         <div class="background-lines-grey "></div>
@@ -105,36 +81,39 @@
                             </div>
                               
                             
-                            <div class="swiper">
-                                <div class="swiper-wrapper">
-                                  <div class="swiper-slide swiper-slide-img active">
-                                    <img src="./src/img/main_page/hero_3.webp" alt=""  class="hero-galery-img">
-                                  </div>
-                                  <div class="swiper-slide swiper-slide-img active">
-                                    <img src="./src/img/main_page/hero_1.webp" alt=""  class="hero-galery-img">
-                                  </div>
-                                  <div class="swiper-slide swiper-slide-img active">
-                                    <img src="./src/img/main_page/hero_2.webp" alt=""  class="hero-galery-img">
-                                  </div>
-                                  <div class="swiper-slide swiper-slide-img active">
-                                    <img src="./src/img/Галерея/1/18.jpg" alt=""  class="hero-galery-img">
-                                  </div>
+                           <div class="swiper-wrap_padding">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide swiper-slide-img active">
+                                        <img src="./src/img/main_page/hero_3.webp" alt=""  class="hero-galery-img">
+                                      </div>
+                                      <div class="swiper-slide swiper-slide-img active">
+                                        <img src="./src/img/main_page/hero_1.webp" alt=""  class="hero-galery-img">
+                                      </div>
+                                      <div class="swiper-slide swiper-slide-img active">
+                                        <img src="./src/img/main_page/hero_2.webp" alt=""  class="hero-galery-img">
+                                      </div>
+                                      <div class="swiper-slide swiper-slide-img active">
+                                        <img src="./src/img/Галерея/1/18.jpg" alt=""  class="hero-galery-img">
+                                      </div>
+                                    </div>
+                                    <div class="swiper-button-prev swiper-button-img_position">
+                                        <svg>
+                                            <use href="./src/img/svg/symbol-defs.svg#icon-arrow-left"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="swiper-button-next swiper-button-img_position">
+                                        <svg>
+                                            <use href="./src/img/svg/symbol-defs.svg#icon-arrow-right"></use>
+                                        </svg>
+                                    </div>
                                 </div>
-                                <div class="swiper-button-prev swiper-button-img_position">
-                                    <svg>
-                                        <use href="./src/img/svg/symbol-defs.svg#icon-arrow-left"></use>
-                                    </svg>
-                                </div>
-                                <div class="swiper-button-next swiper-button-img_position">
-                                    <svg>
-                                        <use href="./src/img/svg/symbol-defs.svg#icon-arrow-right"></use>
-                                    </svg>
-                                </div>
-                            </div>
+                           </div>
                         </div>
                     </section>
                         
-                    <!-- ПРО НАС -->
+    <!-- ПРО НАС -->
+
                     <section class="about-section">
                         <div class="title-line-container">
                             <h2 class="about-title">Про нас</h2>
@@ -187,20 +166,13 @@
                         </div>
                     </section>
                     
-        
-                    <!-- КАТАЛОГИ -->
+    <!-- КАТАЛОГИ -->
+
                     <div class="catalog-title-container">
                         <h2 class="catalog-title">Каталоги</h2>
                     </div>
-                    
-                    <!-- в цьому розділі посилання то скачування файлу треба подивитись чи реалізація йде 
-                        черз посилання чи через кнопку і де зберігаються ці документи -->
-        
-        
                         <div class="swiper catalogs">
-                            <!-- Additional required wrapper -->
                             <div class="swiper-wrapper swiper-wrapper_gap">
-                              <!-- Slides -->
                               <div class="swiper-slide card">
                                 <div class="catalog-card">
                                     <img class="catalog-card-img" src="./src/img/manufactures_main_page/ento.webp" alt="">
@@ -313,8 +285,6 @@
                                   </div>
                               </div>
                             </div>
-                          
-                            <!-- If we need navigation buttons -->
                             <div class="swiper-button-prev swiper-button-card_position">
                                 <svg>
                                     <use href="./src/img/svg/symbol-defs.svg#icon-arrow-left"></use>
@@ -330,9 +300,8 @@
                                 <img class="catalog-link-svg" src="./src/img/svg/arrow-to-right-small.svg" alt="">
                             </a>
                         </div>
-                    
         
-                    <!-- ФОРМА ЗВОРОТНЬОГО ЗВЯЗКУ -->
+    <!-- ФОРМА ЗВОРОТНЬОГО ЗВЯЗКУ -->
         
                     <div class="form-container">
                         <div class="form-card"> 
@@ -376,7 +345,7 @@
                                         <input class="form-input" type="text" id="user_name" name="user_name" placeholder="Як до вас звертатися?" required>
                                     </label>
                                     <label for="user_contact">
-                                        <input class="form-input" name="user_contact" type="text" pattern="([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,})|\+380\d{9}" id="user_contact" placeholder="Як з вами зв’язатися? (E-mail, телефон)" required>
+                                        <input class="form-input" name="user_contact" type="text" id="user_contact" placeholder="Як з вами зв’язатися? (E-mail, телефон)" required>
                                     </label>
                                     <label for="user_request">
                                         <textarea class="form-input-request" name="user_request" rows="4" id="user_request" placeholder="Ваше питання"></textarea>
@@ -387,7 +356,7 @@
                         </div>
                     </div>
         
-                    <!-- ГАЛЕРЕЯ -->
+     <!-- ГАЛЕРЕЯ -->
         
                     <div>
                         <div class="galery-title-container">
@@ -399,32 +368,28 @@
                                     <img class="galery-link-img" src="./src/img/main_page/galery_link-1.webp" alt="">
                                     <a class="galery-item-link" href="galery_objects.html">
                                         Наші вироби на об'єктах
-                                        <!--  активний елемент тому треба замінити на svg -->
                                         <img class="gallery-link-svg" src="./src/img/svg/arrow-to-right-small.svg" alt="">
                                     </a>
                                 </li>
-                                <li class="galery-item">
+                                <li class="galery-item-main">
                                     <img class="galery-link-img_central" src="./src/img/main_page/galery_link-2.webp" alt="">
                                     <a class="galery-item-link" href="galery_interior.html">
                                         Фото в інтер'єрі
-                                        <!--  активний елемент тому треба замінити на svg -->
                                         <img class="gallery-link-svg" src="./src/img/svg/arrow-to-right-small.svg" alt="">
                                     </a>
                                 </li>
-                                <li class="galery-item">
+                                <li class="galery-item-main">
                                     <img class="galery-link-img" src="./src/img/main_page/galery_link-3.webp" alt="">
                                     <a class="galery-item-link" href="galery_advertising.html">
                                         Наша реклама
-                                        <!--  активний елемент тому треба замінити на svg -->
                                         <img class="gallery-link-svg" src="./src/img/svg/arrow-to-right-small.svg" alt="">
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    
+                    </div>       
         
-                    <!-- КОНТАКТИ -->
+    <!-- КОНТАКТИ -->
         
                     <section id="contacts">
                         <div class="contact-title-container">
@@ -457,13 +422,12 @@
                             </ul>
                             <a href="https://maps.app.goo.gl/mrcDqp37L778t6fEA" target="_blank">
                                 <div class="contacts-map"></div>
-                                <!-- <img  src="" alt="фото карти" width="1144"> -->
                             </a>
                         </div>
                     </section>
                     
         
-                    <!-- ОПЛАТА І ДОСТАВКА -->
+    <!-- ОПЛАТА І ДОСТАВКА -->
         
                     <div class="delivery-title-container">
                         <h2 class="delivery-title" id="delivery">Оплата і Доставка</h2>
@@ -483,7 +447,7 @@
                         </li>
                     </ul>
         
-                    <!-- НОВИНИ -->
+    <!-- НОВИНИ -->
         
                         <div class="news-title-container">
                             <h2 class="news-title">Новини</h2>
@@ -498,7 +462,6 @@
                                         <svg width="24" height="24">
                                             <use href="./src/img/svg/symbol-defs.svg#icon-book"></use>
                                         </svg>
-                                        <!-- <img src="./src/img/svg/library.svg" alt="" width="32"> -->
                                         Усі новини
                                     </a>
                                 </div>
@@ -506,16 +469,12 @@
                         </div>
                 </main>
         
-                <!-- FOOTER -->
+    <!-- FOOTER -->
+
                 <footer class="footer">
                     <div class="background-lines-grey-footer "></div>
                     <nav class="footer-nav-container">
-                         <!-- кнопка відкриття модального вікна -->
-                        <div class="footer-nav-container_margin-top">
-                            <!-- <button type="button" class="nav-btn openModalBtn" data-modal="modalFurniture">Фурнітура</button> -->
-        
                             <button class="footer-furniture-btn openModalBtn" type="button" data-modal="modalFurniture">
-                                <!-- <img src="./src/img/svg/old-key.svg" alt="" width="24"> -->
                                 Фурнітура
                             </button>
                             <ul class="footer-nav_list">
@@ -528,13 +487,11 @@
                                 <li>
                                     <a class="footer-nav-link" href="galery_interior.html">Галерея</a> 
                                 </li>
-                            </ul>
-                        </div>
-                        <a class="footer-logo" href="index.html">
-                            <img class="footer-logo_width" src="./src/img/svg/Vector.svg" alt="" width="52">
-                        </a>
-                        <div class="footer-nav-container_margin-top">
-                            <ul class="footer-nav_list_gap">
+                                <li> 
+                                    <a class="footer-logo" href="index.html">
+                                        <img class="footer-logo_width" src="./src/img/svg/Vector.svg" alt="" width="52">
+                                    </a>
+                                </li>
                                 <li>
                                     <a class="footer-nav-link" href="manufacturers_page.html">Виробники</a> 
                                 </li>
@@ -546,9 +503,7 @@
                                         і доставка</a> 
                                 </li>
                             </ul>
-                            <!-- <a class="footer-call-btn"  href="">Зв’язатися</a> -->
                             <button type="button" class="footer-call-btn openModalBtn" data-modal="modal-form">Зв’язатися</button>
-                        </div>
                     </nav>
                     <ul class="footer-socials-list">
                         <li>
@@ -572,13 +527,6 @@
                                 </svg>
                             </a>
                         </li>
-                        <!-- <li>
-                            <a class="footer-socials-link" href="">
-                                <svg class="footer-social-link-icon" width="24" height="24">
-                                    <use href="./src/img/symbol-defs.svg#icon-telegram-icon"></use>
-                                </svg>
-                            </a>
-                        </li> -->
                         <li>
                             <a class="footer-socials-link" href="https://wa.me/380674063882" target="_blank">
                                 <svg class="footer-social-link-icon">
@@ -596,17 +544,12 @@
                     </ul>
                     <p class="footer-slogan"> &#169; 2023  Дверна фурнітура на Подолі.  Допоможемо обрати саме Ваше…</p>
                 </footer>
+
+<!-- MODALS -->
         
-                <!-- МОДАЛЬНЕ ВИКНО "В НАС МОЖНВ ПРИДБАТИ" -->
-        
-                <script src="./js/modal.js"></script>
-                <script type="module" src="./js/swiper.js"></script>
-                <script src="./js/scrollToTop.js"></script>
-                <script src="./js/form.js"></script>
-                <script src="./js/mobile-menu.js"></script>
+    <!-- МОДАЛЬНЕ ВИКНО "В НАС МОЖНВ ПРИДБАТИ" -->
         
                 <div id="modalFurniture" class="modal"> 
-                    <!-- <button class="close closeModalBtn" type="button">X</button> -->
                     <div class="modal-furniture">
                         <div class="line-left-bottom"></div>
                         <div class="line-right"></div>
@@ -617,7 +560,6 @@
                         </button>
                         <h2 class="furniture-title">У нас можна придбати</h2>
                         <ul class="furniture-list-container">
-                            <!-- картки модалки розмищувала стовпчиками для слилізаціі -->
                             <div class="furnituere-list-column-container_1">
                                 <li class="furniture-list-card">
                                     <img class="modal-furniture-icon_width" src="./src/img/svg/modal-furniture/door_hendles.svg" alt="" width="32">
@@ -697,13 +639,12 @@
                     </div>
                 </div>
         
-                <!-- МОДАЛКА СЕРТИФІКАТИ -->
+    <!-- МОДАЛКА СЕРТИФІКАТИ -->
         
                 <div id="modalCertificates" class="modal">
                     <div class="modal-certificates">
                         <div class="line-left-bottom"></div>
                         <div class="line-right"></div>
-                        <!-- <button class="closeModalBtn" type="button">X</button> -->
                         <button class="close closeModalBtn" type="button">
                             <svg class="close-btn-svg" width="48" height="48">
                                 <use href="./src/img/svg/symbol-defs.svg#icon-close"></use>
@@ -723,14 +664,12 @@
                     </div>
                 </div>
         
-                <!--  МОДАЛКА ФОРМА -->
-        
+    <!--  МОДАЛКА ФОРМА -->
         
                 <div id="modal-form" class="modal">
                     <div class="modal-form">
                         <div class="line-left-bottom"></div>
                         <div class="line-right"></div>
-                        <!-- <button class="closeModalBtn" type="button">X</button> -->
                         <button class="close closeModalBtn" type="button">
                             <svg class="close-btn-svg" width="48" height="48">
                                 <use href="./src/img/svg/symbol-defs.svg#icon-close"></use>
@@ -768,20 +707,20 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </div id="modal-form" class="modal">
+                            </div class="modal">
                             <div class="modal-form-form">
                                 <form class="form-modal" id="contact-form" action="/send" method="post">
-                                    <img class="modal-form-mail-icon_width" src="./src/img/svg/chat.svg" alt="" width="32">
+                                    <img class="form-mail-icon_width" src="./src/img/svg/chat.svg" alt="" width="32">
                                     <label for="user_name">
-                                        <input class="form-input-modal" type="text" id="user_name" placeholder="Як до вас звертатися?" required>
+                                        <input class="form-input-modal" type="text" id="user_name" name="user_name" placeholder="Як до вас звертатися?" required>
                                     </label>
                                     <label for="user_contact">
-                                        <input class="form-input-modal" type="text" pattern="([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,})|\+380\d{9}" id="user_contact" placeholder="Як з вами зв’язатися? (E-mail, телефон)" required>
+                                        <input class="form-input-modal" name="user_contact" type="text" id="user_contact" placeholder="Як з вами зв’язатися? (E-mail, телефон)" required>
                                     </label>
                                     <label for="user_request">
-                                        <textarea class="form-input-request-modal" rows="4" id="user_request" placeholder="Ваше питання"></textarea>
+                                        <textarea class="form-input-request-modal" name="user_request" rows="4" id="user_request" placeholder="Ваше питання"></textarea>
                                     </label>
-                                    <button class="form-btn-modal" type="submit">Надіслати</button>
+                                    <button class="form-btn" type="submit">Надіслати</button>
                                 </form>
                             </div>
                             <div class="moda-form-img">
@@ -790,6 +729,14 @@
                         </div>
                     </div>
                 </div>
+        
 
-</body>
+<!-- SCRIPTS -->
+
+                <script src="./js/modal.js"></script>
+                <script type="module" src="./js/swiper.js"></script>
+                <script src="./js/scrollToTop.js"></script>
+                <script src="./js/form.js"></script>
+                <script src="./js/mobile-menu.js"></script>
+    </body>
 </html>

@@ -28,6 +28,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 // Serve static files from the root directory
 app.use(express.static(__dirname));
@@ -35,9 +36,17 @@ app.use(express.static(__dirname));
 app.post('/send', (req, res) => {
     const { user_name, user_contact, user_request } = req.body;
 
+    console.log("user_name:", user_name);
+    console.log("user_contact:", user_contact);
+    console.log("user_request:", user_request);
+
+    if (!user_name || !user_contact || !user_request) {
+        return res.status(400).send('All fields are required.');
+    }
+
     const mailOptions = {
         from: EMAIL,
-        to: "comfortsafetykiev@ukr.net",
+        to: "ordenanskristina@gmail.com",
         subject: "New Form Submission",
         html: `<strong>Name:</strong> ${user_name}<br>
                <strong>Contact:</strong> ${user_contact}<br>
@@ -46,7 +55,10 @@ app.post('/send', (req, res) => {
 
     transporter.sendMail(mailOptions)
         .then(() => res.send('Ваше повідомлення успішно відправлено.'))
-        .catch(error => res.status(500).send(error.message));
+        .catch(error => {
+            console.error('Error sending email:', error);
+            res.status(500).send('Error sending email.');
+        });
 });
 
 app.listen(PORT, () => {

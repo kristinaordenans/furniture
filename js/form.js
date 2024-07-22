@@ -9,10 +9,10 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     })
     .then(response => response.text())
     .then(data => {
+        console.log("Server Response: ", data);
         const responseMessage = document.getElementById('responseMessage');
         responseMessage.style.display = 'block';
         responseMessage.style.backgroundColor = 'rgba(0, 255, 0, 0.7)';
-        // responseMessage.style.color = 'green';
         responseMessage.style.color = 'white';
         responseMessage.innerText = 'Ваше повідомлення успішно відправлено.';
         this.reset(); // Скидаємо форму
