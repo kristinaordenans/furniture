@@ -15,7 +15,7 @@
         </svg>
     </button>
     <div class="background-lines"></div>
-    <header>
+    <header class="nav-container">
         <nav class="navigation">
             <!-- кнопка відкриття модального вікна -->
             <button type="button" class="nav-btn openModalBtn" data-modal="modalFurniture">Фурнітура</button>  
@@ -416,16 +416,16 @@
                     </ul>
                 </div class="modal">
                 <div class="modal-form-form">
-                    <form class="form" id="contact-form" action="/send" method="post">
+                    <form class="form-modal form_submit" id="contact-form" action="/send" method="post">
                         <img class="form-mail-icon_width" src="./src/img/svg/chat.svg" alt="" width="32">
                         <label for="user_name">
-                            <input class="form-input" type="text" id="user_name" name="user_name" placeholder="Як до вас звертатися?" required>
+                            <input class="form-input-modal" type="text" id="user_name" name="user_name" placeholder="Як до вас звертатися?" required>
                         </label>
                         <label for="user_contact">
-                            <input class="form-input" name="user_contact" type="text" id="user_contact" placeholder="Як з вами зв’язатися? (E-mail, телефон)" required>
+                            <input class="form-input-modal" name="user_contact" type="text" id="user_contact" placeholder="Як з вами зв’язатися? (E-mail, телефон)" required>
                         </label>
                         <label for="user_request">
-                            <textarea class="form-input-request" name="user_request" rows="4" id="user_request" placeholder="Ваше питання"></textarea>
+                            <textarea class="form-input-request-modal" name="user_request" rows="4" id="user_request" placeholder="Ваше питання"></textarea>
                         </label>
                         <button class="form-btn" type="submit">Надіслати</button>
                     </form>
