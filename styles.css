@@ -289,7 +289,7 @@ body.lock-scroll {
 /* LOGO NAVIGATION MOBILE */
 
 .logo-link-mobile {
-    display: flex;
+    display: none;
     width: 30px;
     /* display: none; */
 }
