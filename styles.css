@@ -7309,8 +7309,8 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .about-page-call-to-action-card {
         padding: 17px;
-        width: 260px;
-        height: 200px;
+        /* width: 260px; */
+        /* height: 200px; */
     }
 }
 
@@ -7341,7 +7341,7 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .about-page-call-to-action-card::before {
         top: 158px;
-        width: calc(50% - 149px);
+        width: calc(50% - 41.14vw);
     }
 }
 
@@ -7372,7 +7372,7 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .about-page-call-to-action-card::after {
         top: 158px;
-        width: calc(50% - 149px);
+        width: calc(50% - 41.14vw);
     }
 }
 
@@ -7756,7 +7756,7 @@ body.lock-scroll {
 }
 @media screen and (max-width:768px) {
     .about-page-certificates-card {
-        /* width: 240px; */
+        width: 260px;
         padding: 25px;
         padding-bottom: 34px;
         margin-bottom: 0px;
@@ -7800,6 +7800,12 @@ body.lock-scroll {
     }
 }
 
+@media screen and (max-width:768px) {
+    .about-page-certeficate-img_1 {
+        width: 205px;
+    }
+}
+
 .about-page-certificates-card-title-2 {
     color: var(--accent-gold);
     margin-bottom: 80px;
@@ -7833,10 +7839,10 @@ body.lock-scroll {
         /* height: 258px; */
     }    
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:768px) {
     .about-page-certeficate-img_2 {
-        /* width: 256px; */
-        /* height: 184px; */
+        width: 205px;
+        height: 164px;
     }  
 }
 
@@ -8272,6 +8278,14 @@ body.lock-scroll {
         margin-bottom: 85px;
     }
 }
+@media screen and (max-width:768px) {
+    .galery-interior-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 38px;
+        margin-bottom: 85px;
+    }
+}
 
 .galery-interior-item {
     width: 25.22vw;
@@ -8294,6 +8308,15 @@ body.lock-scroll {
     .galery-interior-item {
         /* width: 256px;
         height: 256px; */
+    }
+}
+
+@media screen and (max-width:768px) {
+    .galery-interior-item {
+        /* width: 256px;
+        height: 256px; */
+        width: 60vw;
+        height: 60vw;
     }
 }
 
@@ -8367,6 +8390,12 @@ body.lock-scroll {
 @media screen and (max-width:1024px) {
     .galery-interior-img_size {
         /* width: 256px; */
+    }
+}
+@media screen and (max-width:768px) {
+    .galery-interior-img_size {
+        /* width: 256px; */
+        width: 59.5vw;
     }
 }
 
