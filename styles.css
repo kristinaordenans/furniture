@@ -921,6 +921,13 @@ body.lock-scroll {
     }
 }
 
+@media screen and (max-width:768px) {
+    .swiper-wrap_padding  {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 .swiper-slide-img img {
 	max-width: 400px;
 	max-height: 400px;
@@ -996,12 +1003,12 @@ body.lock-scroll {
     }
 } */
 
-@media screen and (min-width:769px) and (max-width:1024px) {
+/* @media screen and (min-width:769px) and (max-width:1024px) {
     .swiper-slide-active.active img {
         width: 278px;
         height: 310px;
     }
-}
+} */
 
 @media screen and (max-width:768px) {
     .swiper-slide-active.active img {
@@ -1530,6 +1537,7 @@ body.lock-scroll {
 
 @media screen and (max-width:768px) {
     .benefits-container {
+        padding: 0;
         height: 250px;
         margin-bottom: 40px;
     }
@@ -1594,8 +1602,9 @@ body.lock-scroll {
 
 @media screen and (max-width:768px) {
     .benefits-card {
-        gap: 30px;
-        width: 300px;
+        width: 80vw;
+        padding-left: 8.8vw;
+        padding-right: 8.8vw;
         height: 128px;
     }
 }
@@ -1631,7 +1640,7 @@ body.lock-scroll {
 
 @media screen and (max-width:768px) {
     .benefits-card::before {
-        width: calc(50% - 151px);
+        width: calc(50% - 40vw);
     }
 }
 
@@ -1665,7 +1674,7 @@ body.lock-scroll {
 }
 @media screen and (max-width:768px) {
     .benefits-card::after {
-        width: calc(50% - 151px);
+        width: calc(50% - 40vw);
     }
 }
 
@@ -1903,7 +1912,7 @@ body.lock-scroll {
 
 @media screen and (max-width:768px) {
     .swiper.catalogs {
-        height: 300px;
+        height: 500px;
     }
 }
 
@@ -1950,6 +1959,14 @@ body.lock-scroll {
         padding: 12px;
         max-width: 221px;
         min-height: 221px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .catalog-card {
+        padding: 20px;
+        width: 312px;
+        height: 360px;
     }
 }
 
@@ -2008,6 +2025,13 @@ body.lock-scroll {
     }
 } */
 
+@media screen and (max-width:768px) {
+    .catalog-card-img {
+        height: 120px;
+        width: 276px;
+    }
+}
+
 .catalog-card-img::after {
     position: absolute;
     width: 368px;
@@ -2051,7 +2075,12 @@ body.lock-scroll {
         line-height: 12px;
     }
 }
-
+@media screen and (max-width:768px) {
+    .catalog-card-text {
+        margin-top: 17px;
+        margin-bottom: 20px;
+    }
+}
 .catalog-download-btn {
     display: flex;
     align-items: center;
@@ -2280,6 +2309,8 @@ body.lock-scroll {
 
 @media screen and (max-width:768px) {
     .form-container {
+        padding-left: 7.6vw;
+        padding-right: 7.6vw;
         margin-bottom: 80px;
     }
 }
@@ -2290,8 +2321,9 @@ body.lock-scroll {
     flex-direction: column;
     /* justify-content: center; */
     padding-top: 32px;
+    padding-bottom: 5vw;
     width: 100%;
-    height: 608px;
+    /* height: 608px; */
     max-width: 1436px;
     padding-left: 5vw;
     padding-right: 5vw;
@@ -2301,6 +2333,7 @@ body.lock-scroll {
 
 @media screen and (min-width:1921px) {
     .form-card {
+        padding-bottom: 96px;
         padding-left: 96px;
         padding-right: 96px;
     }
@@ -2309,31 +2342,31 @@ body.lock-scroll {
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .form-card {
         /* width: 1436px; */
-        height: 608px;
+        /* height: 608px; */
         padding-top: 32px;
     }
 }
 
 @media screen and (min-width:1025px) and (max-width:1440px) {
     .form-card {
-        width: 1077px;
-        height: 516px;
+        /* width: 1077px; */
+        /* height: 516px; */
         padding-top: 24px;
     }
 }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
     .form-card {
-        width: 765px;
-        height: 366px;
+        /* width: 765px; */
+        /* height: 366px; */
         padding-top: 17px;
     }
 }
 
 @media screen and (max-width:768px) {
     .form-card {
-        width: 300px;
-        height: 320px;
+        /* width: 300px; */
+        /* height: 320px; */
         padding-top: 24px;
     }
 }
@@ -2713,6 +2746,12 @@ body.lock-scroll {
     }
 }
 
+@media screen and (max-width:768px) {
+    .form-mail-icon_width {
+        width: 24px;
+    }
+}
+
 .form {
     display: flex;
     /* flex-wrap: wrap; */
@@ -2748,7 +2787,8 @@ body.lock-scroll {
 
 @media screen and (max-width:768px) {
     .form {
-        width: 260px;
+        /* width: 260px; */
+        width: 100%;
     }
 }
 
@@ -2790,7 +2830,8 @@ body.lock-scroll {
 
 @media screen and (max-width:768px) {
     .form-input {
-        width: 254px;
+        width: 100%;
+        /* width: 254px; */
         height: 24px;
     }
 }
@@ -2822,6 +2863,12 @@ body.lock-scroll {
 @media screen and (min-width:769px) and (max-width:1024px) {
     .form-input::placeholder {
         font-size: 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .form-input::placeholder {
+        font-size: 12px;
     }
 }
 
@@ -2870,10 +2917,11 @@ body.lock-scroll {
 
 @media screen and (max-width:768px) {
     .form-input-request {
-        width: 244px;
+        /* width: 244px; */
+        width: 100%;
         height: 34px;
         padding: 8px;
-        font-size: 9px;
+        font-size: 8px;
     }
 }
 
@@ -4048,7 +4096,7 @@ body.lock-scroll {
 
 @media screen and (max-width:769px) {
     .news-title {
-        /* font-size: 34px; */
+        font-size: 34px;
         margin-bottom: 40px;
     }
 }
@@ -4298,6 +4346,16 @@ body.lock-scroll {
         max-width: 109px;
         padding: 5px 12px 6px 15px;
         font-size: 9px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .news-btn {
+        gap: 12px;
+        margin: 20px auto 0 auto;
+        max-width: 154px;
+        padding: 5px 12px 6px 15px;
+        font-size: 14px;
     }
 }
 

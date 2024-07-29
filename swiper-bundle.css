@@ -333,7 +333,7 @@
   .swiper-button-next.swiper-button-card_position {
     width: 25px;
     height: 25px;
-    top: 300px;
+    top: 430px;
   }
 }
 
@@ -469,12 +469,12 @@
 }
 } */
 
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
   .swiper-button-prev.swiper-button-card_position,
   .swiper-rtl .swiper-button-next.swiper-button-card_position {
       left: var(--swiper-navigation-sides-offset, 100px);
 }
-}
+} */
 
 .swiper-button-prev.modal-swiper-prevnext,
 .swiper-rtl .swiper-button-next.modal-swiper-prevnext {
@@ -497,12 +497,12 @@
     left: var(--swiper-navigation-sides-offset, 456px);
   }
 } */
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
   .swiper-button-prev.modal-swiper-prevnext,
   .swiper-rtl .swiper-button-next.modal-swiper-prevnext {
     left: var(--swiper-navigation-sides-offset, 130px);
   }
-}
+} */
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
@@ -555,12 +555,12 @@
   }
 } */
 
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
   .swiper-button-next.swiper-button-card_position,
   .swiper-rtl .swiper-button-prev.swiper-button-card_position {
     right: var(--swiper-navigation-sides-offset, 100px);
   }
-}
+} */
 
 .swiper-button-next.modal-swiper-prevnext,
 .swiper-rtl .swiper-button-prev.modal-swiper-prevnext {
@@ -584,12 +584,12 @@
   }
 } */
 
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
   .swiper-button-next.modal-swiper-prevnext,
   .swiper-rtl .swiper-button-prev.modal-swiper-prevnext {
     right: var(--swiper-navigation-sides-offset, 130px);
   }
-}
+} */
 
 .swiper-button-lock {
   display: none;
@@ -676,13 +676,13 @@
   left: auto;
 }
 
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
   .swiper-button-next.swiper-button-card_position,
   .swiper-rtl .swiper-button-prev.swiper-button-card_position {
     right: var(--swiper-navigation-sides-offset, 100px);
     left: auto;
   }
-}
+} */
 
 /* @media screen and (max-width:1440px) {
   .swiper-button-next.modal-swiper-prevnext,
@@ -698,12 +698,12 @@
   }
 } */
 
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
   .swiper-button-next.modal-swiper-prevnext,
   .swiper-rtl .swiper-button-prev.modal-swiper-prevnext {
     right: var(--swiper-navigation-sides-offset, 130px);
   }
-}
+} */
 
 /* .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {

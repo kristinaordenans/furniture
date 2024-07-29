@@ -14,11 +14,17 @@ document.addEventListener('DOMContentLoaded', function() {
       centeredSlides: true,
       
       slidesPerView: 1,
-      spaceBetween: -10,
-      pagination: {
+      spaceBetween: 30,
+      _pagination: {
           el: ".swiper-pagination",
           clickable: true,
           speed: 1000
+      },
+      get pagination() {
+          return this._pagination;
+      },
+      set pagination(value) {
+          this._pagination = value;
       },
       speed: 1000,
       navigation: {
@@ -28,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
       breakpoints: {
         768: {
             slidesPerView: 3,
+            spaceBetween: -10,
         },
     },
       
