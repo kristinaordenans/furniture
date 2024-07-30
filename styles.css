@@ -1226,6 +1226,7 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .about-title::after {
         width: 28%;
+        top: 23px;
     }
  }
 
@@ -2445,7 +2446,8 @@ body.lock-scroll {
 
 @media screen and (max-width:768px) {
     .form-container::before  {
-        width: calc(50% - 151px);
+        /* width: calc(50% - 151px); */
+        width: 10vw;
     }
 }
 
@@ -5181,6 +5183,7 @@ body.lock-scroll {
     .line-right::before {
         /* display: none; */
         top: 50px;
+        height: calc(100% - 50px);
         /* left: 966px; */
     }
 }
