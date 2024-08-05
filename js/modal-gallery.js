@@ -4,6 +4,8 @@ function openModal(slideIndex) {
     document.body.classList.add('lock-scroll');
 
     swiper.slideTo(slideIndex);
+
+    console.log(slideIndex);
 }
 
 function closeModal() {
