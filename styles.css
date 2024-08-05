@@ -876,8 +876,8 @@ body.lock-scroll {
     cursor: pointer;
 }
 
-/* .swiper {
-    outline: 1px solid red;
+.swiper {
+    /* outline: 1px solid red; */
     width: 90vw;
     padding-left: 73px;
     padding-right: 73px;
@@ -904,16 +904,16 @@ body.lock-scroll {
 
 @media screen and (min-width:769px) and (max-width:1024px) {
     .swiper {
-        width: 844px;
-    }
-} */
-
-@media screen and (max-width:768px) {
-    .swiper {
-        height: 400px;
-        width: 300px;
+        max-width: 844px;
     }
 }
+
+/* @media screen and (max-width:768px) {
+    .swiper {
+        max-height: 400px;
+        max-width: 300px;
+    }
+} */
 
 .swiper-wrap_padding {
     /* outline: 1px solid red; */
@@ -944,12 +944,12 @@ body.lock-scroll {
     }
 }
 
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .swiper-wrap_padding  {
         padding-left: 0;
         padding-right: 0;
     }
-}
+} */
 
 .swiper-slide-img img {
 	max-width: 400px;
@@ -986,12 +986,12 @@ body.lock-scroll {
     }
 } */
 
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .swiper-slide-img img {
         width: 278px;
         height: 310px;
     }
-}
+} */
 
 
 .swiper-slide {
@@ -1033,12 +1033,12 @@ body.lock-scroll {
     }
 } */
 
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .swiper-slide-active.active img {
         width: 278px;
         height: 310px;
     }
-}
+} */
 
 .swiper-button-prev {
     fill: var(--accent-gold);
@@ -8515,7 +8515,8 @@ body.lock-scroll {
 }
 @media screen and (max-width:768px) {
     .modal-gallery-image {
-        width: 100%;
+        width: 60vw;
+
         height: auto;
         object-fit: cover;
     }
