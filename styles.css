@@ -8316,7 +8316,8 @@ body.lock-scroll {
 }
 
 .galery-list-item-img:hover {
-    border: 2px solid var(--hover);
+    border: 1px solid var(--hover);
+    cursor: pointer;
 }
 
 .galery-interior-container {
@@ -8357,7 +8358,7 @@ body.lock-scroll {
     height: 25.22vw;
     max-width: 480px;
     max-height: 480px;
-    border: 1px solid var(--accent-gold);
+    /* border: 1px solid var(--accent-gold); */
     background-size: cover;
     box-shadow: var(--shadow);
     transition: var(--transition);
@@ -8385,9 +8386,9 @@ body.lock-scroll {
     }
 }
 
-.galery-interior-item:hover {
+/* .galery-interior-item:hover {
     border: 1px solid var(--hover);
-}
+} */
 
 .galery-interior-svg {
     display: flex;
@@ -8443,8 +8444,13 @@ body.lock-scroll {
 }
 
 .galery-interior-img_size {
+    border: 1px solid var(--accent-gold);
     width: 25vw;
     max-width: 480px;
+}
+.galery-interior-img_size:hover {
+    border: 1px solid var(--hover);
+    cursor: pointer;
 }
 
 @media screen and (max-width:1440px) {
