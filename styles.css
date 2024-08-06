@@ -943,12 +943,12 @@ body.lock-scroll {
     }
 }
 
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .swiper-wrap_padding  {
         padding-left: 0;
         padding-right: 0;
     }
-} */
+}
 
 .swiper-slide-img img {
 	max-width: 400px;
@@ -2426,7 +2426,8 @@ body.lock-scroll {
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .form-container::before  {
-        width: 242px;
+        /* width: 242px; */
+        width: 148px;
     }
 }
 
