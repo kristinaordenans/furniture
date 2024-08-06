@@ -5898,6 +5898,7 @@ body.lock-scroll {
     .modal-furniture {
         width: 100%;
         height: calc(100% - 40px);
+        min-height: 684px;
     }
 }
 
@@ -8533,6 +8534,7 @@ body.lock-scroll {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
 }
 
 
@@ -8589,10 +8591,11 @@ body.lock-scroll {
     }
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:768px) {
     .modal-content {
         width: 100%;
         height: calc(100% - 40px);
+        /* height: 690px; */
         margin-top: 38px;
     }
 }
@@ -8678,10 +8681,12 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .line-right-modal-gallery::before  {
         /* display: none; */
+        height: calc(100% - 50px);
         top: 50px;
         right: 4.8vw;
     }
 }
+
 
 .arrows-modal-container:before {
     content: "";

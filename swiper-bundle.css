@@ -374,7 +374,9 @@
 @media screen and (max-width:768px) {
   .swiper-button-prev.modal-swiper-prevnext,
   .swiper-button-next.modal-swiper-prevnext {
-    top: 560px;
+    /* top: 560px; */
+    top: auto;
+    bottom: 90px;
   }
 }
 
