@@ -3893,6 +3893,7 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .delivery-title::before  {
         top: 43px;
+        width: calc(50% - 3em);
         /* width: 28%; */
     }
 }
@@ -3930,6 +3931,8 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .delivery-title::after  {
         top: 43px;
+        width: calc(50% - 3em);
+
         /* width: 28%; */
     }
 }
@@ -6016,7 +6019,8 @@ body.lock-scroll {
     position: absolute;
     top: 96px;
     left: 0;
-    width: 30%;
+    /* width: 30%; */
+    width: calc(50% - 6em);
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -6034,7 +6038,7 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .furniture-title::before {
         top: 59px;
-        width: 13%;
+        /* width: 13%; */
     }
 }
 
@@ -6043,7 +6047,9 @@ body.lock-scroll {
     position: absolute;
     top: 96px;
     right: 0;
-    width: 30%;
+    /* width: 30%; */
+    width: calc(50% - 6em);
+
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -6061,7 +6067,7 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .furniture-title::after {
         top: 59px;
-        width: 13%;
+        /* width: 13%; */
     }
 }
 
@@ -6931,6 +6937,7 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .about-page-title::before {
         /* width: 10%; */
+        width: calc(50% - 4em);
         top: 120px;
     }
 }
@@ -6960,6 +6967,8 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .about-page-title::after {
         /* width: 10%; */
+        width: calc(50% - 4em);
+
         top: 120px;
     }
 }
