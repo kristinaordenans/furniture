@@ -830,15 +830,17 @@ body.lock-scroll {
     position: absolute;
     top: 16px;
     left: 0;
-    width: 35%;
+    /* width: 35%; */
+    width: calc(50% - 9em);
+
     height: 1px;
     background-color: var(--accent-gold);
 }
 
 @media screen and (max-width:768px) {
     .hero-text::before {
-        top: 14px;
-        width: 11%;
+        top: 12px;
+        /* width: 11%; */
     }
 } 
 
@@ -847,15 +849,17 @@ body.lock-scroll {
     position: absolute;
     top: 16px;
     right: 0;
-    width: 35%;
+    /* width: 35%; */
+    width: calc(50% - 9em);
+
     height: 1px;
     background-color: var(--accent-gold);
 }
 
 @media screen and (max-width:768px) {
     .hero-text::after {
-        top: 14px;
-        width: 11%;
+        top: 12px;
+        /* width: 11%; */
     }
 } 
 
@@ -1164,7 +1168,8 @@ body.lock-scroll {
     position: absolute;
     top: 40px;
     left: 0;
-    width: 42%;
+    /* width: 42%; */
+    width: calc(50% - 2.5em);
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -1189,7 +1194,7 @@ body.lock-scroll {
 
 @media screen and (max-width:768px) {
     .about-title::before {
-        width: 28%;
+        /* width: 28%; */
         top: 23px;
     }
  }
@@ -1199,7 +1204,9 @@ body.lock-scroll {
     position: absolute;
     top: 40px;
     right: 0;
-    width: 42%;
+    /* width: 42%; */
+    width: calc(50% - 2.5em);
+
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -1224,7 +1231,7 @@ body.lock-scroll {
 
 @media screen and (max-width:768px) {
     .about-title::after {
-        width: 28%;
+        /* width: 28%; */
         top: 23px;
     }
  }
@@ -1862,7 +1869,9 @@ body.lock-scroll {
     position: absolute;
     top: 40px;
     left: 0;
-    width: 40%;
+    /* width: 40%; */
+    width: calc(50% - 3em);
+
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -1888,7 +1897,7 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .catalog-title::before  {
         top: 23px;
-        width: 25%;
+        /* width: 25%; */
     }
 }
 
@@ -1897,7 +1906,9 @@ body.lock-scroll {
     position: absolute;
     top: 40px;
     right: 0;
-    width: 40%;
+    /* width: 40%; */
+    width: calc(50% - 3em);
+
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -1923,7 +1934,7 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .catalog-title::after  {
         top: 23px;
-        width: 25%;
+        /* width: 25%; */
     }
 }
 
@@ -2338,6 +2349,84 @@ body.lock-scroll {
     }
 }
 
+.form-container::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: calc(50% - 718px);
+    /* width: 242px; */
+    height: 1px;
+    background-color: var(--accent-gold);
+}
+
+@media screen and (min-width:1441px) and (max-width:1920px) {
+    .form-container::before  {
+        /* width: 242px; */
+        width: 146px;
+        width: calc(5% + 146px);
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width:1440px) {
+    .form-container::before  {
+        width: calc(5% + 109px);
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .form-container::before  {
+        /* width: 129px; */
+        /* width: calc(50% - 382px); */
+        width: calc(5% + 78px);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .form-container::before  {
+        /* width: calc(50% - 151px); */
+        /* width: 10vw; */
+        width: calc(5% + 7.6vw);
+    }
+}
+
+.form-container::after {
+    content: "";
+    position: absolute;
+    /* right: 940px; */
+    right: 0;
+    width: calc(50% - 718px);
+    /* width: 242px; */
+    height: 1px;
+    background-color: var(--accent-gold);
+}
+
+@media screen and (min-width:1441px) and (max-width:1920px) {
+    .form-container::after {
+        /* width: 242px; */
+        width: calc(5% + 146px);
+
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width:1440px) {
+    .form-container::after {
+        width: calc(5% + 109px);
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .form-container::after {
+        width: calc(5% + 78px);
+        /* width: calc(50% - 382px); */
+    }
+}
+
+@media screen and (max-width:768px) {
+    .form-container::after {
+        width: calc(5% + 7.6vw);
+    }
+}
+
 .form-card {
     position: relative;
     display: flex;
@@ -2411,79 +2500,6 @@ body.lock-scroll {
     .form-card::before {
         background-position: right;
         background-image: linear-gradient(to right, rgba(64, 64, 64, 0.9), rgba(64, 64, 64, 0.9)), url('./src/img/main_page/form_bakground.webp');
-    }
-}
-
-.form-container::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: calc(50% - 718px);
-    /* width: 242px; */
-    height: 1px;
-    background-color: var(--accent-gold);
-}
-
-@media screen and (min-width:1441px) and (max-width:1920px) {
-    .form-container::before  {
-        /* width: 242px; */
-        width: 148px;
-    }
-}
-
-@media screen and (min-width:1025px) and (max-width:1440px) {
-    .form-container::before  {
-        width: 181px;
-    }
-}
-
-@media screen and (min-width:769px) and (max-width:1024px) {
-    .form-container::before  {
-        width: 129px;
-        /* width: calc(50% - 382px); */
-    }
-}
-
-@media screen and (max-width:768px) {
-    .form-container::before  {
-        /* width: calc(50% - 151px); */
-        width: 10vw;
-    }
-}
-
-.form-container::after {
-    content: "";
-    position: absolute;
-    /* right: 940px; */
-    right: 0;
-    width: calc(50% - 718px);
-    /* width: 242px; */
-    height: 1px;
-    background-color: var(--accent-gold);
-}
-
-@media screen and (min-width:1441px) and (max-width:1920px) {
-    .form-container::after {
-        width: 242px;
-    }
-}
-
-@media screen and (min-width:1025px) and (max-width:1440px) {
-    .form-container::after {
-        width: 181px;
-    }
-}
-
-@media screen and (min-width:769px) and (max-width:1024px) {
-    .form-container::after {
-        width: 129px;
-        /* width: calc(50% - 382px); */
-    }
-}
-
-@media screen and (max-width:768px) {
-    .form-container::after {
-        width: calc(50% - 151px);
     }
 }
 
@@ -3168,7 +3184,8 @@ body.lock-scroll {
     position: absolute;
     top: 40px;
     left: 0;
-    width: 40%;
+    /* width: 40%; */
+    width: calc(50% - 2.5em);
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -3194,7 +3211,7 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .galery-title::before  {
         top: 25px;
-        width: 30%;
+        /* width: 30%; */
     }
 }
 
@@ -3203,7 +3220,8 @@ body.lock-scroll {
     position: absolute;
     top: 40px;
     right: 0;
-    width: 40%;
+    /* width: 40%; */
+    width: calc(50% - 2.5em);
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -3229,7 +3247,7 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .galery-title::after  {
         top: 25px;
-        width: 30%;
+        /* width: 30%; */
     }
 }
 
@@ -3404,7 +3422,8 @@ body.lock-scroll {
     position: absolute;
     top: 40px;
     left: 0;
-    width: 40%;
+    /* width: 40%; */
+    width: calc(50% - 3em);
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -3430,7 +3449,7 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .contact-title::before  {
         top: 26px;
-        width: 27%;
+        /* width: 27%; */
     }
 }
 
@@ -3439,7 +3458,8 @@ body.lock-scroll {
     position: absolute;
     top: 40px;
     right: 0;
-    width: 40%;
+    /* width: 40%; */
+    width: calc(50% - 3em);
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -3465,7 +3485,7 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .contact-title::after  {
         top: 25px;
-        width: 26%;
+        /* width: 26%; */
     }
 }
 
@@ -3831,7 +3851,8 @@ body.lock-scroll {
     position: absolute;
     top: 40px;
     left: 0;
-    width: 33%;
+    /* width: 33%; */
+    width: calc(50% - 5em);
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -3857,7 +3878,7 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .delivery-title::before  {
         top: 43px;
-        width: 28%;
+        /* width: 28%; */
     }
 }
 
@@ -3867,7 +3888,8 @@ body.lock-scroll {
     position: absolute;
     top: 40px;
     right: 0;
-    width: 33%;
+    /* width: 33%; */
+    width: calc(50% - 5em);
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -3893,7 +3915,7 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .delivery-title::after  {
         top: 43px;
-        width: 28%;
+        /* width: 28%; */
     }
 }
 
@@ -4131,7 +4153,8 @@ body.lock-scroll {
     position: absolute;
     top: 40px;
     left: 0;
-    width: 41%;
+    /* width: 41%; */
+    width: calc(50% - 2.5em);
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -4157,7 +4180,7 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .news-title::before  {
         top: 23px;
-        width: 30%;
+        /* width: 30%; */
     }
 }
 
@@ -4166,7 +4189,8 @@ body.lock-scroll {
     position: absolute;
     top: 40px;
     right: 0;
-    width: 41%;
+    /* width: 41%; */
+    width: calc(50% - 2.5em);
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -4192,7 +4216,7 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .news-title::after  {
         top: 23px;
-        width: 30%;
+        /* width: 30%; */
     }
 }
 
@@ -6257,7 +6281,8 @@ body.lock-scroll {
     position: absolute;
     top: 188px;
     left: 0;
-    width: 39%;
+    /* width: 39%; */
+    width: calc(50% - 3em);
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -6277,7 +6302,7 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .manufacturers-title::before  {
         top: 100px;
-        width: 20%;
+        /* width: 20%; */
     }
 }
 
@@ -6286,7 +6311,8 @@ body.lock-scroll {
     position: absolute;
     top: 188px;
     right: 0;
-    width: 39%;
+    /* width: 39%; */
+    width: calc(50% - 3em);
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -6306,7 +6332,7 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .manufacturers-title::after  {
         top: 100px;
-        width: 20%;
+        /* width: 20%; */
     }
 }
 
@@ -6527,7 +6553,8 @@ body.lock-scroll {
     position: absolute;
     top: 188px;
     left: 0;
-    width: 42%;
+    /* width: 42%; */
+    width: calc(50% - 2.5em);
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -6546,7 +6573,7 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .news-page-title::before {
         top: 100px;
-        width: 30%;
+        /* width: 30%; */
     }
 }
 
@@ -6555,7 +6582,8 @@ body.lock-scroll {
     position: absolute;
     top: 188px;
     right: 0;
-    width: 42%;
+    /* width: 42%; */
+    width: calc(50% - 2.5em);
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -6574,7 +6602,7 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .news-page-title::after {
         top: 100px;
-        width: 30%;
+        /* width: 30%; */
     }
 }
 
@@ -6860,7 +6888,8 @@ body.lock-scroll {
     position: absolute;
     top: 188px;
     left: 0;
-    width: 28%;
+    /* width: 28%; */
+    width: calc(50% - 6em);
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -6878,7 +6907,7 @@ body.lock-scroll {
 
 @media screen and (max-width:768px) {
     .about-page-title::before {
-        width: 10%;
+        /* width: 10%; */
         top: 120px;
     }
 }
@@ -6888,7 +6917,8 @@ body.lock-scroll {
     position: absolute;
     top: 188px;
     right: 0;
-    width: 28%;
+    /* width: 28%; */
+    width: calc(50% - 6em);
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -6906,7 +6936,7 @@ body.lock-scroll {
 
 @media screen and (max-width:768px) {
     .about-page-title::after {
-        width: 10%;
+        /* width: 10%; */
         top: 120px;
     }
 }
@@ -7706,40 +7736,43 @@ body.lock-scroll {
 .about-page-certificates-title::before {
     content: "";
     position: absolute;
-    top: 40px;
+    top: 30px;
     left: 0;
-    width: 35%;
+    /* width: 35%; */
+    width: calc(50% - 3.5em);
     height: 1px;
     background-color: var(--accent-gold);
 }
 
-@media screen and (max-width:1440px) {
-    /*  */
-}
+/* @media screen and (max-width:1440px) {
+} */
 @media screen and (max-width:768px) {
     .about-page-certificates-title::before {
         top: 25px;
-        width: 18%;
+        /* width: 18%; */
     }
 }
 
 .about-page-certificates-title::after {
     content: "";
     position: absolute;
-    top: 40px;
+    top: 30px;
     right: 0;
-    width: 35%;
+    /* width: 35%; */
+    width: calc(50% - 3.5em);
+
     height: 1px;
     background-color: var(--accent-gold);
 }
 
-@media screen and (max-width:1440px) {
-    /*  */
-}
+/* @media screen and (max-width:1440px) {
+    .about-page-certificates-title::after  {
+    }
+} */
 @media screen and (max-width:768px) {
     .about-page-certificates-title::after {
         top: 25px;
-        width: 18%;
+        /* width: 18%; */
     }
 }
 
