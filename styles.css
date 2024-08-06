@@ -877,7 +877,6 @@ body.lock-scroll {
 }
 
 .swiper {
-    /* outline: 1px solid red; */
     width: 90vw;
     padding-left: 73px;
     padding-right: 73px;
@@ -986,12 +985,12 @@ body.lock-scroll {
     }
 } */
 
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .swiper-slide-img img {
         width: 278px;
         height: 310px;
     }
-} */
+}
 
 
 .swiper-slide {
@@ -1033,12 +1032,12 @@ body.lock-scroll {
     }
 } */
 
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .swiper-slide-active.active img {
         width: 278px;
         height: 310px;
     }
-} */
+}
 
 .swiper-button-prev {
     fill: var(--accent-gold);
@@ -4962,6 +4961,7 @@ body.lock-scroll {
 }
 
 .footer-socials-link {
+    /* box-sizing: content-box; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -5029,9 +5029,10 @@ body.lock-scroll {
 }
 
 .inst {
-    width: 18px;
-    height: 18px;
-    padding: 2px;
+    box-sizing: content-box;
+    width: 16px;
+    height: 16px;
+    padding: 4px;
 }
 
 @media screen and (min-width:1025px) and (max-width:1440px) {
@@ -7373,7 +7374,8 @@ body.lock-scroll {
     position: absolute;
     top: 240px;
     left: 0;
-    width: calc(50% - 39.53vw);
+    /* width: 50%; */
+    width: calc(50% - 759px);
     /* width: 161px; */
     height: 1px;
     background-color: var(--accent-gold);
@@ -7405,7 +7407,8 @@ body.lock-scroll {
     top: 240px;
     right:0;
     /* width: 161px; */
-    width: calc(50% - 39.53vw);
+    /* width: calc(50% - 39.53vw); */
+    width: calc(50% - 759px);
     height: 1px;
     background-color: var(--accent-gold);
 }
