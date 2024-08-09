@@ -76,6 +76,11 @@
     height: 500px;
   }
 }
+
+.modal-gallery .swiper-wrapper {
+  height: 670px;
+}
+
 .swiper-android .swiper-slide,
 .swiper-ios .swiper-slide,
 .swiper-wrapper {
