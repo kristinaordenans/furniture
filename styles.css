@@ -55,60 +55,13 @@ body {
     position: relative;
     background-color: var(--background-color);
     color: #fff;
-    /* max-width: 100vw; */
     margin-left: auto;
     margin-right: auto;
-    /* max-width: 1920px; */
-    /* width: 100%; */
     font-family: "Playfair Display";
     font-weight: 400;
     letter-spacing: 10%;
-    /* overflow-x: hidden; */
-    /* overflow: hidden; Щоб уникнути прокрутки при масштабуванні */
-
 } 
 
-/* @media screen and (min-width:1441px) and (max-width:1920px) {
-    body { 
-        max-width:1920px;
-    }
-}
-
-@media screen and (min-width:1025px) and (max-width:1440px) {
-    body { 
-        max-width:1440px;
-    }
-}
-
-@media screen and (min-width:769px) and (max-width:1024px) {
-    body {
-        max-width: 1024px;
-    }   
-}
-
-@media screen and (min-width:768px) and (max-width:1024px) {
-    body {
-        width: 768px;
-    }
-} */
-
-/* .body-content-wrap {
-    width: 100%;
-}
-
-@media (min-width: 1441px) and (max-width: 1920px) {
-    .body-content-wrap {
-        transform: scale(0.75);
-        transform-origin: 0 0;
-    }
-}
-
-@media (max-width: 1440px), (min-width: 1921px) {
-    .body-content-wrap {
-        transform: scale(1);
-        transform-origin: 0 0;
-    }
-} */
 
 body.lock-scroll {
     overflow: hidden;
@@ -157,22 +110,6 @@ body.lock-scroll {
         top: 888px;
     }
 }
-
-/* @media screen and (max-width:1440px) {
-    .scrollBtn {
-        top: 666px;
-        right: 6px;
-        padding: 16px 16px;
-    }
-}
-
-@media screen and (max-width:1024px) {
-    .scrollBtn {
-        top: 473px;
-        right: 3px;
-        padding: 12px 12px;
-    }
-} */
 
 @media screen and (max-width:768px) {
     .scrollBtn {
@@ -291,7 +228,6 @@ body.lock-scroll {
 .logo-link-mobile {
     display: none;
     width: 30px;
-    /* display: none; */
 }
 
 @media screen and (max-width:768px) {
@@ -340,9 +276,6 @@ body.lock-scroll {
     height: 72px;
     background-color:rgba(64, 64, 64, 0.5);
     border-bottom: 1px solid var(--accent-gold);
-    /* width: 100vw;
-    max-width: 1920px;
-    margin: 0 auto; */
 }
 
 @media screen and (min-width:1025px) and (max-width:1440px) {
@@ -358,7 +291,6 @@ body.lock-scroll {
 
 @media screen and (max-width:768px) {
     .nav-container {
-         /* width: 100%; */
          height: 38px;
     }
 }
@@ -366,16 +298,9 @@ body.lock-scroll {
 .navigation {
     display: flex;
     align-items: center;
-    /* gap: 20px; */
-    /* position: fixed; */
-    /* top: 0;  */
     width: 100vw;
     max-width: 1920px;
     margin: 0 auto;
-    /* height: 72px; */
-    /* z-index: 1000; */
-    /* background-color:rgba(64, 64, 64, 0.5);
-    border-bottom: 1px solid var(--accent-gold); */
 }
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .navigation {
@@ -409,14 +334,11 @@ body.lock-scroll {
     color: var(--accent-gold);
     border: 1px solid var(--accent-gold);
     outline: 2px solid var(--accent-green);
-    /* padding-left: 32px; */
     padding-left: 1.66vw;
-    /* padding-right: 32px; */
     padding-right: 1.66vw;
-    /* margin-left: 169px; */
     margin-left: 8.80vw;
-    /* margin-right: 90px; */
-    margin-right: 4.68vw;
+    /* margin-right: 4.68vw; */
+    margin-right: 5.3vw;
     cursor: pointer;
     box-shadow: var(--shadow);
     transition: var(--transition);
@@ -435,8 +357,6 @@ body.lock-scroll {
         font-size: 18px;
         padding-left: 32px;
         padding-right: 32px;
-        /* margin-left: 169px; */
-        /* margin-right: 86px; */
     }
 }
 
@@ -445,8 +365,6 @@ body.lock-scroll {
     .nav-btn {
         height: 30px;
         font-size: 13px;
-        /* margin-left: 126px; */
-        /* margin-right: 70px; */
         padding-left: 24px;
         padding-right: 24px;
     }
@@ -456,8 +374,6 @@ body.lock-scroll {
     .nav-btn {
         height: 22px;
         font-size: 9px;
-        /* margin-left: 90px; */
-        /* margin-right: 48px; */
         padding-left: 18px;
         padding-right: 18px;
     }
@@ -465,7 +381,6 @@ body.lock-scroll {
 
 @media screen and (max-width:768px) {
     .nav-btn {
-        /* color: transparent; */
         display: flex;
         justify-content: center;
         width: 36px;
@@ -503,15 +418,12 @@ body.lock-scroll {
     align-items: center;
     width: 62.5vw; 
     max-width: 1200px;
-    /* margin: 0 auto; */
-    /* gap: 89px; */
     font-size: 18px;
     letter-spacing: 10%;
 }
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .nav_list {
-        /* gap: 89px; */
         font-size: 18px;
         letter-spacing: 10%;
     }
@@ -519,7 +431,6 @@ body.lock-scroll {
 
 @media screen and (min-width:1025px) and (max-width:1440px) {
     .nav_list {
-        /* gap: 66px; */
         font-size: 13px;
         letter-spacing: 10%;
     }
@@ -527,7 +438,6 @@ body.lock-scroll {
 
 @media screen and (min-width:769px) and (max-width:1024px) {
     .nav_list {
-        /* gap: 47px; */
         font-size: 9px;
         letter-spacing: 10%;
     }
@@ -621,11 +531,9 @@ body.lock-scroll {
     display: flex;
     justify-content: center;
     text-align: center;
-    /* height: 52.08vw; */
     height: 1000px;
     position: relative;
     margin-bottom: 132px;
-    /* min-width: 0; */
 }
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
@@ -782,7 +690,6 @@ body.lock-scroll {
 }
 
 .hero-text-conteiner {
-    /* width: 1920px; */
     width: 100%;
     position: relative;
 }
@@ -832,7 +739,6 @@ body.lock-scroll {
     position: absolute;
     top: 16px;
     left: 0;
-    /* width: 35%; */
     width: calc(50% - 9em);
 
     height: 1px;
@@ -842,7 +748,6 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .hero-text::before {
         top: 12px;
-        /* width: 11%; */
     }
 } 
 
@@ -851,9 +756,7 @@ body.lock-scroll {
     position: absolute;
     top: 16px;
     right: 0;
-    /* width: 35%; */
     width: calc(50% - 9em);
-
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -861,18 +764,8 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .hero-text::after {
         top: 12px;
-        /* width: 11%; */
     }
 } 
-
-/* .hero-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 38px;
-    margin: 0;
-    list-style: none;
-} */
 
 .hero-galery-img {
     border: 1px solid var(--accent-gold);
@@ -913,15 +806,7 @@ body.lock-scroll {
     }
 }
 
-/* @media screen and (max-width:768px) {
-    .swiper {
-        max-height: 400px;
-        max-width: 300px;
-    }
-} */
-
 .swiper-wrap_padding {
-    /* outline: 1px solid red; */
     display: flex;
     align-items: center;
     width: 90vw;
@@ -963,34 +848,6 @@ body.lock-scroll {
     height: 20.83vw;
 }
 
-/* @media screen and (min-width:1441px) and (max-width:1920px) {
-    .swiper-slide-img img {
-        width: 400px;
-        height: 400px;
-    }
-}
-
-@media screen and (min-width:1281px) and (max-width:1440px) {
-    .swiper-slide-img img {
-        width: 300px;
-        height: 300px;
-    }
-} 
-
-@media screen and (min-width:1025px) and (max-width:1280px) {
-    .swiper-slide-img img {
-        width: 266px;
-        height: 266px;
-    }
-}
-
-@media screen and (min-width:769px) and (max-width:1024px) {
-    .swiper-slide-img img {
-        width: 214px;
-        height: 214px;
-    }
-} */
-
 @media screen and (max-width:768px) {
     .swiper-slide-img img {
         width: 278px;
@@ -1009,34 +866,6 @@ body.lock-scroll {
     width: 26.04vw;
     height: 30.20vw;
 }
-
-/* @media screen and (min-width:1441px) and (max-width:1920px) {
-    .swiper-slide-active.active img {
-        width: 500px;
-        height: 560px;
-    }
-}
-
-@media screen and (min-width:1281px) and (max-width:1440px) {
-    .swiper-slide-active.active img {
-        width: 390px;
-        height: 435px;
-    }
-}
-
-@media screen and (min-width:1025px) and (max-width:1280px) {
-    .swiper-slide-active.active img {
-        width: 346px;
-        height: 386px;
-    }
-} */
-
-/* @media screen and (min-width:769px) and (max-width:1024px) {
-    .swiper-slide-active.active img {
-        width: 278px;
-        height: 310px;
-    }
-} */
 
 @media screen and (max-width:768px) {
     .swiper-slide-active.active img {
@@ -1066,7 +895,6 @@ body.lock-scroll {
 }
 
 
-
 /* ПРО НАС */
 
 .about-section {
@@ -1079,30 +907,24 @@ body.lock-scroll {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* outline:  1px solid red; */
     width: 90vw;
     margin: 0 auto;
     justify-content: space-between;
-    /* padding-left: 146px; */
-    /* padding-right: 146px; */
     padding-left: 7.6vw;
     padding-right: 7.6vw;
     max-width: 1728px;
     gap: 60px;
-    /* gap: 198px; */
     margin-bottom: 240px;
 }
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .about-container {
-        /* gap: 198px; */
         margin-bottom: 240px;
     }
 }
 
 @media screen and (min-width:1025px) and (max-width:1440px) {
     .about-container {
-        /* gap: 148px; */
         padding-left: 109px;
         padding-right: 109px;
         margin-bottom: 180px;
@@ -1111,7 +933,6 @@ body.lock-scroll {
 
 @media screen and (min-width: 769px) and (max-width:1024px) {
     .about-container {
-        /* gap: 101px; */
         padding-left: 78px;
         padding-right: 78px;
         margin-bottom: 128px;
@@ -1172,7 +993,6 @@ body.lock-scroll {
     position: absolute;
     top: 40px;
     left: 0;
-    /* width: 42%; */
     width: calc(50% - 2.5em);
     height: 1px;
     background-color: var(--accent-gold);
@@ -1198,7 +1018,6 @@ body.lock-scroll {
 
 @media screen and (max-width:768px) {
     .about-title::before {
-        /* width: 28%; */
         top: 23px;
     }
  }
@@ -1208,9 +1027,7 @@ body.lock-scroll {
     position: absolute;
     top: 40px;
     right: 0;
-    /* width: 42%; */
     width: calc(50% - 2.5em);
-
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -1235,7 +1052,6 @@ body.lock-scroll {
 
 @media screen and (max-width:768px) {
     .about-title::after {
-        /* width: 28%; */
         top: 23px;
     }
  }
@@ -1601,7 +1417,6 @@ body.lock-scroll {
     width: 100%;
     padding-left: 169px;
     padding-right: 169px;
-    /* gap: 320px; */
     max-width: 1582px;
     height: 240px;
     border: 1px solid var(--accent-gold);
@@ -1618,8 +1433,6 @@ body.lock-scroll {
 
 @media screen and (min-width:1025px) and (max-width:1440px) {
     .benefits-card {
-        /* gap: 240px; */
-        /* width: 1186px; */
         height: 180px;
         padding-left: 126px;
         padding-right: 126px;
@@ -1628,8 +1441,6 @@ body.lock-scroll {
 
 @media screen and (min-width:769px) and (max-width:1024px) {
     .benefits-card {
-        /* gap: 170px; */
-        /* width: 842px; */
         height: 128px;
         padding-left: 90px;
         padding-right: 90px;
@@ -1670,7 +1481,6 @@ body.lock-scroll {
 @media screen and (min-width:769px) and (max-width:1024px) {
     .benefits-card::before {
         width: 90px;
-        /* width: calc(50% - 421px); */
     }
 }
 
@@ -1685,7 +1495,6 @@ body.lock-scroll {
     position: absolute;
     right:0;
     width: calc(50% - 791px);
-    /* width: 168px; */
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -1704,7 +1513,6 @@ body.lock-scroll {
 
 @media screen and (min-width:769px) and (max-width:1024px) {
     .benefits-card::after {
-        /* width: calc(50% - 421px); */
         width: 90px;
     }
 }
@@ -1875,9 +1683,7 @@ body.lock-scroll {
     position: absolute;
     top: 40px;
     left: 0;
-    /* width: 40%; */
     width: calc(50% - 3em);
-
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -1903,7 +1709,6 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .catalog-title::before  {
         top: 23px;
-        /* width: 25%; */
     }
 }
 
@@ -1912,9 +1717,7 @@ body.lock-scroll {
     position: absolute;
     top: 40px;
     right: 0;
-    /* width: 40%; */
     width: calc(50% - 3em);
-
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -1940,12 +1743,10 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .catalog-title::after  {
         top: 23px;
-        /* width: 25%; */
     }
 }
 
 .swiper.catalogs {
-    /* outline: 1px solid red; */
     width: 90vw;
     max-width: 1728px;
 }
@@ -1968,7 +1769,6 @@ body.lock-scroll {
     flex-wrap: wrap;
     width: 21.66vw;
     max-width: 416px;
-    /* height: 416px; */
     justify-content: center;
     align-items: center;
     background-color: var(--background-color);
@@ -1980,14 +1780,12 @@ body.lock-scroll {
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .catalog-card {
         padding: 24px;
-        /* width: 416px; */
         min-height: 416px;
     }
 }
 
 @media screen and (min-width:1025px) and (max-width:1440px) {
     .catalog-card {
-        /* background-color: aqua; */
         padding: 18px;
         max-width: 312px;
         height:360px;
@@ -2012,15 +1810,8 @@ body.lock-scroll {
 
 .swiper-wrapper.swiper-wrapper_gap {
     display: flex;
-    /* gap: 168px; */
     margin-bottom: 64px;
 }
-
-/* @media screen and (max-width:1440px) {
-    .swiper-wrapper.swiper-wrapper_gap {
-        margin-bottom: 48px;
-    }
-} */
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .swiper-wrapper.swiper-wrapper_gap {
@@ -2043,27 +1834,6 @@ body.lock-scroll {
     max-height: 160px;
     max-width: 368px;
 }
-
-/* @media screen and (min-width:1441px) and (max-width:1920px) {
-    .catalog-card-img {
-        height: 160px;
-        width: 368px;
-    }
-}
-
-@media screen and (min-width:1025px) and (max-width:1440px) {
-    .catalog-card-img {
-        height: 120px;
-        width: 276px;
-    }
-}
-
-@media screen and (min-width:769px) and (max-width:1024px) {
-    .catalog-card-img {
-        height: 85px;
-        width: 196px;
-    }
-} */
 
 @media screen and (max-width:768px) {
     .catalog-card-img {
@@ -2126,7 +1896,6 @@ body.lock-scroll {
     align-items: center;
     justify-content: center;
     fill: var(--accent-gold);
-    /* перевірити висоту кнопки бо іі нема в макеті */
     max-width: 171px;
     height: 48px;
     padding:2px 32px 6px 32px;
@@ -2142,8 +1911,6 @@ body.lock-scroll {
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .catalog-download-btn {
-        /* max-width: 82px; */
-        /* height: 38px; */
         padding:2px 32px 6px 32px;
         margin-bottom: 24px;
         font-size: 18px;
@@ -2152,7 +1919,6 @@ body.lock-scroll {
 
 @media screen and (min-width:1025px) and (max-width:1440px) {
     .catalog-download-btn {
-        /* max-width: 82px; */
         height: 38px;
         padding: 2px 24px 4px 24px;
         margin-bottom: 18px;
@@ -2162,7 +1928,6 @@ body.lock-scroll {
 
 @media screen and (min-width:769px) and (max-width:1024px) {
     .catalog-download-btn {
-        /* max-width: 82px; */
         height: 28px;
         padding: 2px 17px 4px 17px;
         margin-bottom: 12px;
@@ -2195,11 +1960,9 @@ body.lock-scroll {
 
 .catalog-download-btn:hover,
 .catalog-download-btn:focus {
-    /* background-image: linear-gradient(to bottom, rgb(229, 209, 147), rgb(235, 225, 194)); */
     color: var(--accent-gold);
     background-color: var(--background-color);
     outline:1px solid var(--background-color);
-    /* fill: var(--accent-green); */
 }
 
 .catalog-card-span {
@@ -2315,7 +2078,6 @@ body.lock-scroll {
 /* ФОНМА */
 
 .form-container {
-    /* outline: 1px solid red; */
     width: 90vw;
     margin: 0 auto;
     display: flex;
@@ -2362,14 +2124,12 @@ body.lock-scroll {
     position: absolute;
     left: 0;
     width: calc(50% - 718px);
-    /* width: 242px; */
     height: 1px;
     background-color: var(--accent-gold);
 }
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .form-container::before  {
-        /* width: 242px; */
         width: 146px;
         width: calc(5% + 146px);
     }
@@ -2383,16 +2143,12 @@ body.lock-scroll {
 
 @media screen and (min-width:769px) and (max-width:1024px) {
     .form-container::before  {
-        /* width: 129px; */
-        /* width: calc(50% - 382px); */
         width: calc(5% + 78px);
     }
 }
 
 @media screen and (max-width:768px) {
     .form-container::before  {
-        /* width: calc(50% - 151px); */
-        /* width: 10vw; */
         width: calc(5% + 7.6vw);
     }
 }
@@ -2400,17 +2156,14 @@ body.lock-scroll {
 .form-container::after {
     content: "";
     position: absolute;
-    /* right: 940px; */
     right: 0;
     width: calc(50% - 718px);
-    /* width: 242px; */
     height: 1px;
     background-color: var(--accent-gold);
 }
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .form-container::after {
-        /* width: 242px; */
         width: calc(5% + 146px);
 
     }
@@ -2425,7 +2178,6 @@ body.lock-scroll {
 @media screen and (min-width:769px) and (max-width:1024px) {
     .form-container::after {
         width: calc(5% + 78px);
-        /* width: calc(50% - 382px); */
     }
 }
 
@@ -2439,11 +2191,9 @@ body.lock-scroll {
     position: relative;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     padding-top: 32px;
     padding-bottom: 5vw;
     width: 100%;
-    /* height: 608px; */
     max-width: 1436px;
     padding-left: 5vw;
     padding-right: 5vw;
@@ -2461,32 +2211,24 @@ body.lock-scroll {
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .form-card {
-        /* width: 1436px; */
-        /* height: 608px; */
         padding-top: 32px;
     }
 }
 
 @media screen and (min-width:1025px) and (max-width:1440px) {
     .form-card {
-        /* width: 1077px; */
-        /* height: 516px; */
         padding-top: 24px;
     }
 }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
     .form-card {
-        /* width: 765px; */
-        /* height: 366px; */
         padding-top: 17px;
     }
 }
 
 @media screen and (max-width:768px) {
     .form-card {
-        /* width: 300px; */
-        /* height: 320px; */
         padding-top: 24px;
     }
 }
@@ -2513,53 +2255,20 @@ body.lock-scroll {
 
 .form-card-container {
     display: flex;
-    /* position: relative; */
-    /* justify-content: center; */
     justify-content: space-between;
-    /* gap: 50px; */
-    /* gap: 192px; */
 }
-
-@media screen and (min-width:1441px) and (max-width:1920px) {
-    .form-card-container {
-        /* gap: 192px; */
-    }
-}
-
-@media screen and (min-width:1025px) and (max-width:1440px) {
-    .form-card-container {
-        /* gap: 144px; */
-    }
-}
-
-@media screen and (min-width:769px) and (max-width:1024px) {
-    .form-card-container {
-        /* gap: 102px; */
-    }
-}
-
-/* @media screen and (max-width:768px) {
-    .form-card-container {
-        width: 200px;
-        gap: 40px;
-        flex-direction: column;
-    }
-} */
 
 .form-card-text-container {
-    /* position: relative; */
     display: flex;
     flex-direction: column;
     gap: 32px;
-   
     width: 27.08vw;
-     max-width: 526px;
+    max-width: 526px;
     padding-top: 40px;
 }
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .form-card-text-container {
-        /* width: 526px; */
         gap: 32px;
         padding-top: 40px;
     }
@@ -2593,30 +2302,19 @@ body.lock-scroll {
     width: 1px;
     height: 360px;
     background-color: var(--accent-gold);
-    /* left: 718px; */
-    /* left: 32.39vw; */
     left: 50%;
     top: 180px;
-    /* top: 26px; */
 }
-
-/* @media screen and (min-width:1921px) {
-    .form-card-text-container::after {
-        left: 718px;
-    }
-} */
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .form-card-text-container::after {
         height: 360px;
-        /* left: 622px; */
     }
 }
 
 @media screen and (min-width:1025px) and (max-width:1440px) {
     .form-card-text-container::after {
         height: 270px;
-        /* left: 466px; */
         top: 135px;
     }
 }
@@ -2624,7 +2322,6 @@ body.lock-scroll {
 @media screen and (min-width:769px) and (max-width:1024px) {
     .form-card-text-container::after {
         height: 192px;
-        /* left: 331px; */
         top: 96px;
     }
 }
@@ -2804,12 +2501,9 @@ body.lock-scroll {
 
 .form {
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column;
     padding: 0;
     gap: 32px;
-    /* width: 100%; */
-    
     width: 27.08vw;
     max-width: 526px;
 }
@@ -2817,7 +2511,6 @@ body.lock-scroll {
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .form {
         gap:32px;
-        /* width: 526px; */
     }
 }
 
@@ -2837,13 +2530,11 @@ body.lock-scroll {
 
 @media screen and (max-width:768px) {
     .form {
-        /* width: 260px; */
         width: 100%;
     }
 }
 
 .form-input {
-    /* max-width: 526px; */
     width: 100%;
     height: 46px;
     padding-left: 16px;
@@ -2856,7 +2547,6 @@ body.lock-scroll {
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .form-input {
-        /* width: 526px; */
         height: 46px;
         padding-left: 16px;
     }
@@ -2881,7 +2571,6 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .form-input {
         width: 100%;
-        /* width: 254px; */
         height: 24px;
     }
 }
@@ -2926,7 +2615,6 @@ body.lock-scroll {
 .form-input-request {
     resize: none;
     width: 100%;
-    /* width: 514px; */
     height: 64px;
     overflow-y: scroll;
     padding: 16px;
@@ -2941,7 +2629,6 @@ body.lock-scroll {
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .form-input-request {
-        /* width: 514px; */
         height: 64px;
         padding: 16px;
         font-size: 18px;
@@ -2968,7 +2655,6 @@ body.lock-scroll {
 
 @media screen and (max-width:768px) {
     .form-input-request {
-        /* width: 244px; */
         width: 100%;
         height: 34px;
         padding: 8px;
@@ -3060,15 +2746,11 @@ body.lock-scroll {
     display: flex;
     margin: 0 auto;
     width: 90vw;
-    /* max-width: 1582px; */
-    /* outline: 1px solid red; */
-    /* justify-content: space-between; */
     justify-content: center;
     padding-left: 73px;
     padding-right: 73px;
     margin-bottom: 128px;
     max-width: 1728px;
-    /* gap: 96px; */
 }
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
@@ -3098,25 +2780,11 @@ body.lock-scroll {
 .galery-list-main {
     display: flex;
     width: 90vw;
-    /* max-width: 1582px; */
     justify-content: space-between;
     gap: 20px;
     align-items: center;
     list-style: none;
 }
-
-
-/* @media screen and (min-width:1441px) and (max-width:1920px) {
-    .galery-list-main {
-        gap: 96px;
-    }
-}
-
-@media screen and (min-width:1025px) and (max-width:1440px) {
-    .galery-list-main {
-        gap: 72px;
-    }
-} */
 
 @media screen and (max-width:768px) {
     .galery-list-main {
@@ -3160,7 +2828,6 @@ body.lock-scroll {
     font-size: 64px;
     letter-spacing: 10%;
     background-clip: text;
-    /* color: var(--accent-gold); */
     color: transparent;
     background-image: var(--gold-gradient);
     margin-bottom: 132px;
@@ -3199,7 +2866,6 @@ body.lock-scroll {
     position: absolute;
     top: 40px;
     left: 0;
-    /* width: 40%; */
     width: calc(50% - 2.5em);
     height: 1px;
     background-color: var(--accent-gold);
@@ -3226,7 +2892,6 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .galery-title::before  {
         top: 25px;
-        /* width: 30%; */
     }
 }
 
@@ -3235,7 +2900,6 @@ body.lock-scroll {
     position: absolute;
     top: 40px;
     right: 0;
-    /* width: 40%; */
     width: calc(50% - 2.5em);
     height: 1px;
     background-color: var(--accent-gold);
@@ -3262,7 +2926,6 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .galery-title::after  {
         top: 25px;
-        /* width: 30%; */
     }
 }
 
@@ -3282,39 +2945,6 @@ body.lock-scroll {
     height: 29.16vw;
     max-width: 560px;
     max-height: 560px;
-}
-
-@media screen and (min-width:1441px) and (max-width:1920px) {
-    /* .galery-link-img {
-        width: 400px;
-        height: 400px;
-    } */
-    /* .galery-link-img_central {
-        width: 560px;
-        height: 560px;
-    } */
-}
-
-@media screen and (min-width:1025px) and (max-width:1440px) {
-    /* .galery-link-img {
-        width: 300px;
-        height: 300px;
-    } */
-    /* .galery-link-img_central {
-        width: 420px;
-        height: 420px;
-    } */
-} 
-
-@media screen and (min-width:769px) and (max-width:1024px) {
-    /* .galery-link-img {
-        width: 213px;
-        height: 213px;
-    } */
-    /* .galery-link-img_central {
-        width: 298px;
-        height: 298px;
-    } */
 }
 
 @media screen and (max-width:768px) {
@@ -3399,7 +3029,6 @@ body.lock-scroll {
     font-size: 64px;
     letter-spacing: 10%;
     background-clip: text;
-    /* color: var(--accent-gold); */
     color: transparent;
     background-image: var(--gold-gradient);
     margin-bottom: 132px;
@@ -3438,7 +3067,6 @@ body.lock-scroll {
     position: absolute;
     top: 40px;
     left: 0;
-    /* width: 40%; */
     width: calc(50% - 3em);
     height: 1px;
     background-color: var(--accent-gold);
@@ -3465,7 +3093,6 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .contact-title::before  {
         top: 26px;
-        /* width: 27%; */
     }
 }
 
@@ -3474,7 +3101,6 @@ body.lock-scroll {
     position: absolute;
     top: 40px;
     right: 0;
-    /* width: 40%; */
     width: calc(50% - 3em);
     height: 1px;
     background-color: var(--accent-gold);
@@ -3501,7 +3127,6 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .contact-title::after  {
         top: 25px;
-        /* width: 26%; */
     }
 }
 
@@ -3758,7 +3383,6 @@ body.lock-scroll {
     transition: var(--transition);
 }
 
-/* проблемма з ховером екрани меньше 1920 */
 .contacts-map:hover, 
 .contacts-map:focus {
     border: 1px solid var(--hover);
@@ -3804,7 +3428,6 @@ body.lock-scroll {
     height: 100%;
     background-image: linear-gradient(to right, rgba(25, 47, 45, 0.5), rgba(25, 47, 45, 0.5)), url('./src/img/main_page/map.webp');
     background-size: cover;
-    /* filter: blur(5px); */
     z-index: -1;
     transition: var(--transition);
 }
@@ -3828,7 +3451,6 @@ body.lock-scroll {
     font-size: 64px;
     letter-spacing: 10%;
     background-clip: text;
-    /* color: var(--accent-gold); */
     color: transparent;
     background-image: var(--gold-gradient);
     margin-bottom: 146px;
@@ -3869,7 +3491,6 @@ body.lock-scroll {
     position: absolute;
     top: 40px;
     left: 0;
-    /* width: 33%; */
     width: calc(50% - 5em);
     height: 1px;
     background-color: var(--accent-gold);
@@ -3897,17 +3518,14 @@ body.lock-scroll {
     .delivery-title::before  {
         top: 43px;
         width: calc(50% - 3em);
-        /* width: 28%; */
     }
 }
-
 
 .delivery-title::after {
     content: "";
     position: absolute;
     top: 40px;
     right: 0;
-    /* width: 33%; */
     width: calc(50% - 5em);
     height: 1px;
     background-color: var(--accent-gold);
@@ -3935,8 +3553,6 @@ body.lock-scroll {
     .delivery-title::after  {
         top: 43px;
         width: calc(50% - 3em);
-
-        /* width: 28%; */
     }
 }
 
@@ -3944,13 +3560,10 @@ body.lock-scroll {
     padding-bottom: 230px;
     display: flex;
     max-width: 1730px;
-    /* width: 90vw; */
     margin: 0 auto;
     padding-left:73px;
     padding-right: 73px;
     justify-content: space-between;
-    /* justify-content: center; */
-    /* gap: 168px; */
     list-style: none;
 }
 
@@ -4174,7 +3787,6 @@ body.lock-scroll {
     position: absolute;
     top: 40px;
     left: 0;
-    /* width: 41%; */
     width: calc(50% - 2.5em);
     height: 1px;
     background-color: var(--accent-gold);
@@ -4201,7 +3813,6 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .news-title::before  {
         top: 23px;
-        /* width: 30%; */
     }
 }
 
@@ -4210,7 +3821,6 @@ body.lock-scroll {
     position: absolute;
     top: 40px;
     right: 0;
-    /* width: 41%; */
     width: calc(50% - 2.5em);
     height: 1px;
     background-color: var(--accent-gold);
@@ -4237,7 +3847,6 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .news-title::after  {
         top: 23px;
-        /* width: 30%; */
     }
 }
 
@@ -4248,7 +3857,6 @@ body.lock-scroll {
     border: 1px solid var(--accent-green);
     box-shadow: 4px 12px 24px rgba(0, 0, 0, 0.5);
     max-width: 1440px;
-    /* height: 400px; */
 }
 
 @media screen and (min-width:1441px) and (max-width:1920px){
@@ -4284,7 +3892,6 @@ body.lock-scroll {
     width: 90vw;
     padding-left: 50px;
     padding-right: 50px;
-    /* outline: 1px solid red; */
     margin: 0 auto;
     margin-bottom: 240px;
 }
@@ -4377,10 +3984,8 @@ body.lock-scroll {
 .news-btn {
     display: flex;
     align-items: center;
-    /* text-align: center; */
     justify-content: center;
     gap: 24px;
-    /* white-space: nowrap; */
     max-width: 204px;
     padding: 14px 24px 16px 29px;
     font-size: 18px;
@@ -4396,7 +4001,6 @@ body.lock-scroll {
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .news-btn {
         gap: 24px;
-        /* max-width: 160px; */
         padding: 14px 24px 16px 29px;
         font-size: 18px;
     }
@@ -4459,7 +4063,6 @@ body.lock-scroll {
 .news-card-title {
     color: var(--accent-gold);
     font-size: 32px;
-    /* margin-bottom: 32px; */
     margin-bottom: 1,6vw;
 }
 @media screen and (min-width:1441px) and (max-width:1920px) {
@@ -4492,16 +4095,13 @@ body.lock-scroll {
 .news-card-text {
     font-size: 20px;
     line-height: 38px;
-    /* margin-bottom: 72px; */
     margin-bottom: 3.75vw;
     padding-right: 40px;
-    /* max-width: 952px; */
 }
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .news-card-text {
         font-size: 20px;
         line-height: 38px;
-        /* margin-bottom: 72px; */
     }
 }
 
@@ -4509,14 +4109,12 @@ body.lock-scroll {
     .news-card-text {
         font-size: 15px;
         line-height: 28px;
-        /* margin-bottom: 54px; */
     }
 }
 @media screen and (min-width:769px) and (max-width:1024px)  {
     .news-card-text {
         font-size: 10px;
         line-height: 20px;
-        /* margin-bottom: 38px; */
     }
 }
 
@@ -4535,14 +4133,12 @@ body.lock-scroll {
     right: 0;
     background-color: var(--accent-gold);
     height: 1px;
-    /* width: 856px; */
     width: calc(100% - 594px);
 }
 
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .news-card-text::after {
         top: 236px;
-        /* width: 856px; */
         width: calc(100% - 594px);
         }
 }
@@ -4550,7 +4146,6 @@ body.lock-scroll {
 @media screen and (min-width:1025px) and (max-width:1440px) {
     .news-card-text::after {
         top: 177px;
-        /* width:634px; */
         width: calc(100% - 442px);
     }
 }
@@ -4568,8 +4163,6 @@ body.lock-scroll {
         width: 258px;
     }
 }
-
-
 
 .main {
     display: flex;
@@ -4652,59 +4245,30 @@ body.lock-scroll {
 
 .footer-nav-container {
     display: flex;
-    /* outline: 1px solid red; */
     justify-content: space-between;
     width: 90vw;
     max-width: 1728px;
     margin: 0 auto;
     padding-left: 3.8vw;
     padding-right: 3.8vw;
-    /* margin-left: 168px; */
-    /* height: 50px; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* gap: 90px; */
     font-size: 14px;
 }
 
 @media screen and (min-width:1025px) and (max-width:1440px) {
     .footer-nav-container {
-        /* margin-left: 126px; */
         font-size: 11px;
     }
 }
 @media screen and (min-width:769px) and (max-width:1024px) {
     .footer-nav-container {
-        /* margin-left: 89px; */
         font-size: 8px;
     }
 }
 @media screen and (max-width:768px) {
     .footer-nav-container {
         display: none;
-        /* margin-left: 89px;
-        font-size: 8px; */
     }
 }
-
-
-/* .footer-nav-container_margin-top {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 14px;
-}
-
-@media screen and (min-width:1025px) and (max-width:1440px) {
-    .footer-nav-container_margin-top {
-        margin-top: 10px;
-    }
-}
-@media screen and (min-width:769px) and (max-width:1024px) {
-    .footer-nav-container_margin-top {
-        margin-top: 7px;
-    }
-} */
 
 .footer-furniture-btn {
     display: flex;
@@ -4712,8 +4276,6 @@ body.lock-scroll {
     justify-content: center;
     align-items: center;
     padding: 9px 32px 11px 32px;
-    /* margin-right: 94px; */
-    /* margin-right: 140px; */
     margin-right: 4.68vw;
     height: 46px;
     background-color: var(--accent-green);
@@ -4730,7 +4292,6 @@ body.lock-scroll {
     .footer-furniture-btn {
         gap: 12px;
         padding: 6px 24px 8px 24px;
-        /* margin-right: 105px; */
         height: 34px;
         font-size: 13px;
     }
@@ -4739,7 +4300,6 @@ body.lock-scroll {
     .footer-furniture-btn {
         gap: 8px;
         padding: 4px 17px 6px 17px;
-        /* margin-right: 74px; */
         height: 24px;
         font-size: 9px;
     }
@@ -4760,8 +4320,6 @@ body.lock-scroll {
     justify-content: center;
     align-items: center;
     padding: 4px 18px 6px 18px;
-    /* margin-left: 96px; */
-    /* margin-left: 3.75vw; */
     background-color: var(--accent-green);
     border: 1px solid var(--accent-gold);
     outline: 2px solid var(--accent-green);
@@ -4776,7 +4334,6 @@ body.lock-scroll {
     .footer-call-btn {
         height: 27px;
         padding: 3px 13px 4px 13px;
-        /* margin-left: 72px; */
         font-size: 13px;
     }
 }
@@ -4784,7 +4341,6 @@ body.lock-scroll {
     .footer-call-btn {
         height: 19px;
         padding: 2px 9px 3px 9px;
-        /* margin-left: 51px; */
         font-size: 9px;
     }
 }
@@ -4798,23 +4354,10 @@ body.lock-scroll {
 
 .footer-nav_list {
     display: flex;
-    /* justify-content: center; */
     justify-content: space-between;
     width: 56.5vw;
     max-width: 1084px;
-    /* gap: 94px; */
     list-style: none;
-}
-
-@media screen and (min-width:1025px) and (max-width:1440px) {
-    .footer-nav_list {
-        /* gap: 70px; */
-    }
-}
-@media screen and (min-width:769px) and (max-width:1024px) {
-    .footer-nav_list {
-        /* gap: 50px; */
-    }
 }
 
 .nav-wrap {
@@ -4854,24 +4397,18 @@ body.lock-scroll {
     align-items: center;
     width: 120px;
     height: 120px;
-    /* margin-left: 82px;
-    margin-right: 90px; */
 }
 
 @media screen and (min-width:1025px) and (max-width:1440px) {
     .footer-logo {
         width: 90px;
         height: 90px;
-        /* margin-left: 46px;
-        margin-right: 46px; */
     }
 }
 @media screen and (min-width:769px) and (max-width:1024px) {
     .footer-logo {
         width: 64px;
         height: 64px;
-        /* margin-left: 40px;
-        margin-right: 40px; */
     }
 }
 
@@ -4881,7 +4418,6 @@ body.lock-scroll {
     top: 160px;
     left: 0;
     height: 1px;
-    /* width: 876px; */
     width: calc(50% - 4.37vw);
     background-color: var(--accent-gold); 
 }
@@ -4889,13 +4425,11 @@ body.lock-scroll {
 @media screen and (min-width:1025px) and (max-width:1440px) {
     .footer-logo::before {
         top: 120px;
-        /* width: 657px; */
     }
 }
 @media screen and (min-width:769px) and (max-width:1024px) {
     .footer-logo::before {
         top: 85px;
-        /* width: 467px; */
     }
 }
 
@@ -4905,7 +4439,6 @@ body.lock-scroll {
     top: 160px;
     right: 0;
     height: 1px;
-    /* width: 876px; */
     width: calc(50% - 4.37vw);
 
     background-color: var(--accent-gold); 
@@ -4914,13 +4447,11 @@ body.lock-scroll {
 @media screen and (min-width:1025px) and (max-width:1440px) {
     .footer-logo::after {
         top: 120px;
-        /* width: 657px; */
     }
 }
 @media screen and (min-width:769px) and (max-width:1024px) {
     .footer-logo::after {
         top: 85px;
-        /* width: 467px; */
     }
 }
 
@@ -4952,21 +4483,17 @@ body.lock-scroll {
     .footer-socials-list {
         gap: 42px;
         margin-bottom: 30px;
-        /* margin-top: 18px; */
     }
 }
 @media screen and (min-width:769px) and (max-width:1024px) {
     .footer-socials-list {
         gap: 29px;
         margin-bottom: 21px;
-        /* margin-top: 18px; */
     }
 }
 @media screen and (max-width:768px) {
     .footer-socials-list {
         gap: 20px;
-        /* margin-bottom: 21px; */
-        /* margin-top: 18px; */
     }
 }
 
@@ -4987,7 +4514,6 @@ body.lock-scroll {
     justify-content: center;
     text-align: center;
     font-size: 20px;
-    /* margin-bottom: 100px; */
 }
 
 @media screen and (min-width:1025px) and (max-width:1440px) {
@@ -5011,7 +4537,6 @@ body.lock-scroll {
 }
 
 .footer-socials-link {
-    /* box-sizing: content-box; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -5049,7 +4574,6 @@ body.lock-scroll {
 .footer-socials-link:focus {
     background-color: var(--background-color);
     fill: #fff;
-    /* border:1px solid #fff; */
     outline: 1px solid var(--background-color) ;
 }
 
@@ -5117,7 +4641,6 @@ body.lock-scroll {
 .modal-certificates {
     position: relative;
     width: 100vw;
-    /* width: 1920px; */
     padding-bottom: 180px;
     margin-top: 75px;
     background-color: var(--background-color);
@@ -5138,7 +4661,6 @@ body.lock-scroll {
     }
 }
 
-/* адаптувати під моб поки приховано */
 @media screen and (max-width:768px) {
     .modal-certificates {
        display: none;
@@ -5155,28 +4677,8 @@ body.lock-scroll {
 .line-left-bottom::before {
     top: 0;
     left: 5vw;
-    /* left: 96px; */
     width: 1px;
     height: 100%;
-}
-
-@media screen and (min-width:1025px) and (max-width:1440px) {
-    .line-left-bottom::before {
-        /* left: 78px; */
-    }
-}
-@media screen and (min-width:769px) and (max-width:1024px) {
-    .line-left-bottom::before {
-        /* left: 58px; */
-    }
-}
-
-@media screen and (max-width:768px) {
-    .line-left-bottom::before {
-        /* top: 50px; */
-        /* display: none; */
-        /* left:23px; */
-    }
 }
 
 .line-left-bottom::after {
@@ -5199,7 +4701,6 @@ body.lock-scroll {
 
 @media screen and (max-width:768px) {
     .line-left-bottom::after {
-        /* display: none; */
         bottom: 23px;
     }
 }
@@ -5213,30 +4714,21 @@ body.lock-scroll {
 
 .line-right::before {
     top: 0;
-    /* left: 1824px; */
     right: 5vw;
     width: 1px;
     height: 100%;
 }
 
-@media screen and (min-width:1025px) and (max-width:1440px) {
-    .line-right::before {
-        /* left: 1362px; */
-    }
-}
 @media screen and (min-width:769px) and (max-width:1024px) {
     .line-right::before {
         top: 0px;
-        /* left: 968px; */
     }
 }
 
 @media screen and (max-width:768px) {
     .line-right::before {
-        /* display: none; */
         top: 50px;
         height: calc(100% - 50px);
-        /* left: 966px; */
     }
 }
 
@@ -5246,7 +4738,6 @@ body.lock-scroll {
     background-clip: text;
     color: transparent;
     font-size: 64px;
-    /* margin-top: 40px; */
     padding-top: 40px;
     margin-bottom: 56px;
 }
@@ -5317,20 +4808,8 @@ body.lock-scroll {
    text-align: center;
    justify-content: center;
    gap: 8.85vw;
-   /* gap: 170px; */
    list-style: none;
    color: var(--accent-gold);
-}
-
-@media screen and (min-width:1025px) and (max-width:1440px) {
-    .certificates-list {
-        /* gap: 128px; */
-    }
-}
-@media screen and (min-width:769px) and (max-width:1024px) {
-    .certificates-list {
-        /* gap: 90px; */
-    }
 }
 
 .certificates-card-1 {
@@ -5344,13 +4823,11 @@ body.lock-scroll {
 
 @media screen and (min-width:1025px) and (max-width:1440px) {
     .certificates-card-1 {
-        /* width: 474px; */
         padding-bottom: 48px;
     }
 }
 @media screen and (min-width:769px) and (max-width:1024px) {
     .certificates-card-1 {
-        /* width: 337px; */
         padding-bottom: 34px;
     }
 }
@@ -5418,17 +4895,6 @@ body.lock-scroll {
     max-width: 386px;
 }
 
-@media screen and (min-width:1025px) and (max-width:1440px) {
-    .certificates-img_width1 {
-        /* width: 289px; */
-    }
-}
-@media screen and (min-width:769px) and (max-width:1024px) {
-    .certificates-img_width1 {
-        /* width: 205px; */
-    }
-}
-
 .certificates-img_width2 {
     width: 25vw;
     max-width: 480px;
@@ -5470,9 +4936,7 @@ body.lock-scroll {
 
 .modal-form {
     position: relative;
-    /* width: 1920px; */
     width: 100vw;
-    /* height: 1080px; */
     padding-bottom: 180px;
     margin-top: 75px;
     background-color: var(--background-color);
@@ -5480,19 +4944,16 @@ body.lock-scroll {
 
 @media screen and (max-width:1440px) {
     .modal-form {
-        /* width: 1440px; */
         padding-bottom: 135px;
         margin-top: 51px;
     }
 }
 @media screen and (max-width:1024px) {
     .modal-form {
-        /* width: 1024px; */
         padding-bottom: 96px;
         margin-top: 40px;
     }
 }
-/* адаптувати під моб поки приховано */
 @media screen and (max-width:768px) {
     .modal-form {
        display: none;
@@ -5501,16 +4962,13 @@ body.lock-scroll {
 
 .modal-form-content-wraper {
     display: flex;
-    /* outline: 1px solid red; */
     width: 90vw;
     max-width: 1728px;
     margin: 0 auto;
     justify-content: space-between;
-    /* justify-content: center; */
     padding-left: 3.75vw;
     padding-right: 3.75vw;
     align-items: center;
-    /* gap: 96px; */
     padding-top: 96px;
     padding-bottom: 96px;
 }
@@ -5521,14 +4979,12 @@ body.lock-scroll {
 
 @media screen and (max-width:1440px) {
     .modal-form-content-wraper {
-        /* gap: 72px; */
         padding-top: 72px;
         padding-bottom: 72px;
     }
 }
 @media screen and (max-width:1024px) {
     .modal-form-content-wraper {
-        /* gap: 51px; */
         padding-top: 51px;
         padding-bottom: 51px;
     }
@@ -5537,14 +4993,12 @@ body.lock-scroll {
 .modal-form-text {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     justify-content: space-between;
     text-align: center;
     width: 21.66vw;
     height: 21.66vw;
     max-width: 416px;
     max-height: 416px;
-    /* padding: 32px; */
     padding: 1.66vw;
     padding-bottom: 2.08vw;
     background-color: var(--background-color);
@@ -5561,16 +5015,12 @@ body.lock-scroll {
 
 @media screen and (max-width:1440px) {
     .modal-form-text {
-        /* width: 312px; */
         max-height: 312px;
-        /* padding: 24px; */
     }
 }
 @media screen and (max-width:1024px) {
     .modal-form-text {
-        /* width: 221px; */
         max-height: 221px;
-        /* padding: 17px; */
     }
 }
 
@@ -5579,7 +5029,6 @@ body.lock-scroll {
     justify-content: center;
     align-items: center;
     margin-bottom: 32px;
-    /* font-size: 24px; */
     font-size: 1.25vw;
     gap: 8px;
 }
@@ -5593,22 +5042,18 @@ body.lock-scroll {
 @media screen and (max-width:1440px) {
     .modal-form-link-phone {
         margin-bottom: 30px;
-        /* font-size: 18px; */
         gap: 6px;
     }
 }
 @media screen and (max-width:1024px) {
     .modal-form-link-phone {
         margin-bottom: 16px;
-        /* font-size: 12px; */
         gap: 4px;
     }
 }
 
 .modal-form-text-descriprion {
     text-align: justify;
-    /* margin-bottom: 32px; */
-    /* margin-bottom: 1.6vw; */
     font-size: 0.9375vw;
     letter-spacing: 10%;
     line-height: 1.8vw;
@@ -5618,21 +5063,6 @@ body.lock-scroll {
     .modal-form-text-descriprion {
         font-size: 18px;
         line-height: 34px;
-    }
-}
-
-@media screen and (max-width:1440px) {
-    .modal-form-text-descriprion {
-        /* margin-bottom: 24px; */
-        /* font-size: 13px; */
-        /* line-height: 27px; */
-    }
-}
-@media screen and (max-width:1024px) {
-    .modal-form-text-descriprion {
-        /* margin-bottom: 12px; */
-        /* font-size: 10px; */
-        /* line-height: 18px; */
     }
 }
 
@@ -5682,29 +5112,8 @@ body.lock-scroll {
     } 
 }
 
-/* .moda-form-img {
-    width: 416px;
-    height: 440px;
-    border: 1px solid var(--accent-gold);
-    box-shadow: var(--shadow);
-}
-
-@media screen and (max-width:1440px) {
-    .moda-form-img {
-        width: 312px;
-        height: 330px;
-    }
-}
-@media screen and (max-width:1024px) {
-    .moda-form-img {
-        width: 221px;
-        height: 234px;
-    }
-} */
-
 .form-modal {
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column;
     gap: 2.60vw;
     max-width: 464px;
@@ -5712,13 +5121,11 @@ body.lock-scroll {
 
 @media screen and (max-width:1440px) {
     .form-modal {
-        /* gap: 37px; */
         max-width: 348px;
     }
 }
 @media screen and (max-width:1024px) {
     .form-modal {
-        /* gap: 26px; */
         max-width: 247px;
     }
 }
@@ -5800,7 +5207,6 @@ body.lock-scroll {
 
 @media screen and (max-width:1440px) {
     .form-input-request-modal {
-        /* width: 348px; */
         height: 48px;
         padding: 12px;
         font-size: 13px;
@@ -5808,7 +5214,6 @@ body.lock-scroll {
 }
 @media screen and (max-width:1024px) {
     .form-input-request-modal {
-        /* width: 247px; */
         height: 34px;
         padding: 3px;
         font-size: 9px;
@@ -5869,36 +5274,22 @@ body.lock-scroll {
     border: 1px solid var(--accent-gold);
 }
 
-@media screen and (max-width:1440px) {
-    .modal-form-ing_width {
-        /* width: 312px; */
-        /* height: 330px; */
-    }
-}
-@media screen and (max-width:1024px) {
-    .modal-form-ing_width {
-        /* width: 221px; */
-        /* height: 234px; */
-    }
-}
-
 /* МОДАЛЬНЕ ВІКНО В НАС ВИ МОЖЕТЕ ПРИДБАТИ */
 
 .modal {
-    display: none; /* По умолчанию скрыто */
-    position: fixed; /* Позиция фиксирована, чтобы остаться на месте при прокрутке */
-    z-index: 1; /* Поверх других элементов */
+    display: none; 
+    position: fixed; 
+    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%; /* Заполнение всей высоты */
-    overflow: auto; /* Добавление прокрутки, если содержимое слишком длинное */
-    background-color: rgba(0,0,0,0.5); /* Темный фон */
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); 
   }
 
 .modal-furniture {
     width: 100vw;
-    /* max-width: 1920px; */
     height: 1080px;
     position: relative;
     margin-top: 75px;
@@ -5919,7 +5310,6 @@ body.lock-scroll {
         height: 576px;
     }
 }
-/* поки приховано для моб */
 @media screen and (max-width:768px) {
     .modal-furniture {
         width: 100%;
@@ -5946,9 +5336,6 @@ body.lock-scroll {
 
 .close {
     position: absolute;
-    /* display: flex; */
-    /* align-items: center; */
-    /* right: 1.25vw; */
     right: 24px;
     top: 24px;
     fill: var(--accent-gold);
@@ -5990,7 +5377,6 @@ body.lock-scroll {
     color: transparent;
     font-size: 64px;
     padding-top: 40px;
-    /* margin-top: 40px; */
     margin-bottom: 24px;
 }
 
@@ -6022,7 +5408,6 @@ body.lock-scroll {
     position: absolute;
     top: 96px;
     left: 0;
-    /* width: 30%; */
     width: calc(50% - 6em);
     height: 1px;
     background-color: var(--accent-gold);
@@ -6041,7 +5426,6 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .furniture-title::before {
         top: 59px;
-        /* width: 13%; */
     }
 }
 
@@ -6050,7 +5434,6 @@ body.lock-scroll {
     position: absolute;
     top: 96px;
     right: 0;
-    /* width: 30%; */
     width: calc(50% - 6em);
 
     height: 1px;
@@ -6070,35 +5453,27 @@ body.lock-scroll {
 @media screen and (max-width:768px) {
     .furniture-title::after {
         top: 59px;
-        /* width: 13%; */
     }
 }
 
 .furniture-list-container {
-    /* outline: 1px solid red; */
     display: flex;
     width: 90vw;
     margin: 0 auto;
-    /* justify-content: center;  */
     justify-content: space-between;
-    /* gap: 170px; */
-    /* gap: 8.85vw; */
     padding-left: 3.75vw;
     padding-right: 3.75vw;
     padding-bottom: 120px;
-    /* margin: 0; */
     list-style: none;
 }
 
 @media screen and (max-width:1440px) {
     .furniture-list-container {
-        /* gap: 127px; */
         padding-bottom: 90px;
     }
 }
 @media screen and (max-width:1024px) {
     .furniture-list-container {
-        /* gap: 90px; */
         padding-bottom: 64px;
     }
 }
@@ -6107,7 +5482,6 @@ body.lock-scroll {
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        /* padding-bottom: 64px; */
     }
 }
 
@@ -6118,7 +5492,6 @@ body.lock-scroll {
     justify-content: center;
     gap: 16px;
     width: 21.56vw;
-    /* width: 414px; */
     padding-top: 32px;
     padding-bottom: 32px;
     background-color: var(--background-color);
@@ -6129,7 +5502,6 @@ body.lock-scroll {
 @media screen and (max-width:1440px) {
     .furniture-list-card {
         gap: 12px;
-        /* width: 310px; */
         padding-top: 24px;
         padding-bottom: 24px;
     }
@@ -6137,7 +5509,6 @@ body.lock-scroll {
 @media screen and (max-width:1024px) {
     .furniture-list-card {
         gap: 8px;
-        /* width: 220px; */
         padding-top: 17px;
         padding-bottom: 17px;
     }
