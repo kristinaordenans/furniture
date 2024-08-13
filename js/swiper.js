@@ -10,11 +10,11 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
 
 document.addEventListener('DOMContentLoaded', function() {
     const swiper = new Swiper('.swiper', {
-        lazy: {
-            loadPrevNext: true, 
-            loadPrevNextAmount: 0,
-            loadOnTransitionStart: false,
-        },
+        // lazy: {
+        //     loadPrevNext: true, 
+        //     loadPrevNextAmount: 0,
+        //     loadOnTransitionStart: false,
+        // },
       loop: true,
       centeredSlides: true,
       
