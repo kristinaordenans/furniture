@@ -6,10 +6,14 @@
 
 :root {
     --accent-green: rgb(25, 47, 45);
-    --accent-gold: rgb(229, 209, 147);
+    /* --accent-gold: rgb(229, 209, 147); */
+    /* --accent-gold: #E4BF7B; */
+    --accent-gold: #EBCA8D;
     --background-color:rgb(64, 64, 64);
     --transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-    --gold-gradient: linear-gradient(161deg, #E5D193 41.81%, #EBE1C2 88.05%);
+    /* --gold-gradient: linear-gradient(161deg, #E5D193 41.81%, #EBE1C2 88.05%); */
+    --gold-gradient: linear-gradient(161deg, #EBCA8D 41.81%, #e3d6b1 88.05%);
+
     --shadow: 4px 12px 24px rgba(0, 0, 0, 0.5);
     --hover: #EBE1C2;
 }
@@ -117,6 +121,10 @@ body.lock-scroll {
         right: 0px;
         padding: 9px 9px;
     }
+}
+.scrollBtn:hover {
+    /* border: 1px solid var(--hover); */
+    background-color: var(--background-color);
 }
 
 .scrollToTop_svg {
@@ -4734,9 +4742,12 @@ body.lock-scroll {
 
 .modal-title {
     text-align: center;
-    background-image: linear-gradient(to bottom right, #E5D193, #EBE1C2 );
     background-clip: text;
     color: transparent;
+    background-image: var(--gold-gradient);
+    /* background-image: linear-gradient(to bottom right, #E5D193, #EBE1C2 );
+    background-clip: text;
+    color: transparent; */
     font-size: 64px;
     padding-top: 40px;
     margin-bottom: 56px;
@@ -5372,9 +5383,12 @@ body.lock-scroll {
 
 .furniture-title {
     text-align: center;
-    background-image: linear-gradient(to bottom right, #E5D193, #EBE1C2 );
+    /* background-image: linear-gradient(to bottom right, #E5D193, #EBE1C2 );
+    background-clip: text;
+    color: transparent; */
     background-clip: text;
     color: transparent;
+    background-image: var(--gold-gradient);
     font-size: 64px;
     padding-top: 40px;
     margin-bottom: 24px;
@@ -5661,7 +5675,10 @@ body.lock-scroll {
 
 .manufacturers-title {
     margin-top: 148px;
-    color: var(--accent-gold);
+    /* color: var(--accent-gold); */
+    background-clip: text;
+    color: transparent;
+    background-image: var(--gold-gradient);
     font-size: 64px;
 }
 @media screen and (max-width:1440px) {
@@ -5912,7 +5929,10 @@ body.lock-scroll {
 
 .news-page-title {
     margin-top: 148px;
-    color: var(--accent-gold);
+    /* color: var(--accent-gold); */
+    background-clip: text;
+    color: transparent;
+    background-image: var(--gold-gradient);
     font-size: 64px;
 }
 
@@ -6223,7 +6243,10 @@ body.lock-scroll {
 
 .about-page-title {
     margin-top: 148px;
-    color: var(--accent-gold);
+    /* color: var(--accent-gold); */
+    background-clip: text;
+    color: transparent;
+    background-image: var(--gold-gradient);
     font-size: 64px;
 }
 
@@ -6253,7 +6276,7 @@ body.lock-scroll {
     position: absolute;
     top: 188px;
     left: 0;
-    width: calc(50% - 6em);
+    width: calc(50% - 6.2em);
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -6281,7 +6304,7 @@ body.lock-scroll {
     position: absolute;
     top: 188px;
     right: 0;
-    width: calc(50% - 6em);
+    width: calc(50% - 6.2em);
     height: 1px;
     background-color: var(--accent-gold);
 }
@@ -7246,7 +7269,10 @@ body.lock-scroll {
 
 .galery-advertising-title {
     margin-top: 148px;
-    color: var(--accent-gold);
+    /* color: var(--accent-gold); */
+    background-clip: text;
+    color: transparent;
+    background-image: var(--gold-gradient);
     font-size: 64px;
 }
 
