@@ -1,52 +1,33 @@
-// document.getElementById('contact-form').addEventListener('submit', function(event) {
-//     event.preventDefault(); // Зупиняємо стандартну поведінку форми
-
-//     const formData = new FormData(this);
-
-//     fetch('/send', {
-//         method: 'POST',
-//         body: formData
-//     })
-//     .then(response => response.text())
-//     .then(data => {
-//         console.log("Server Response: ", data);
-//         const responseMessage = document.getElementById('responseMessage');
-//         responseMessage.style.display = 'block';
-//         responseMessage.style.backgroundColor = 'rgba(0, 255, 0, 0.7)';
-//         responseMessage.style.color = 'white';
-//         responseMessage.innerText = 'Ваше повідомлення успішно відправлено.';
-//         this.reset(); // Скидаємо форму
-
-//         // Зникає через 5 секунд
-//         setTimeout(() => {
-//             responseMessage.style.display = 'none';
-//         }, 5000);
-//     })
-//     .catch(error => {
-//         console.error('Error:', error);
-//         const responseMessage = document.getElementById('responseMessage');
-//         responseMessage.style.display = 'block';
-//         responseMessage.style.backgroundColor = 'rgba(255, 0, 0, 0.7)';
-//         responseMessage.style.color = 'white';
-//         responseMessage.innerText = 'Помилка при відправці повідомлення. Спробуйте ще раз.';
-
-//         // Зникає через 5 секунд
-//         setTimeout(() => {
-//             responseMessage.style.display = 'none';
-//         }, 3000);
-//     });
-// });
-
 document.querySelectorAll('.form_submit').forEach(form => {
     form.addEventListener('submit', async function(event) {
         event.preventDefault();
-        
+
         const formData = new FormData(event.target);
         const data = {
-            user_name: formData.get('user_name'),
-            user_contact: formData.get('user_contact'),
-            user_request: formData.get('user_request')
+            user_name: formData.get('user_name').trim(),
+            user_contact: formData.get('user_contact').trim(),
+            user_request: formData.get('user_request').trim()
         };
+
+        if (!data.user_name) {
+            alert('Будь ласка, введіть ваше ім\'я.');
+            return;
+        }
+
+        if (!data.user_contact) {
+            alert('Будь ласка, введіть контактну інформацію.');
+            return;
+        }
+
+        if (!validateEmail(data.user_contact) && !validatePhone(data.user_contact)) {
+            alert('Будь ласка, введіть коректний email або номер телефону.');
+            return;
+        }
+
+        if (!data.user_request) {
+            alert('Будь ласка, введіть ваш запит.');
+            return;
+        }
 
         try {
             const response = await fetch('/send', {
@@ -68,3 +49,13 @@ document.querySelectorAll('.form_submit').forEach(form => {
         }
     });
 });
+
+function validateEmail(email) {
+    const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return re.test(String(email).toLowerCase());
+}
+
+function validatePhone(phone) {
+    const re = /^\+?[0-9]{10,15}$/;
+    return re.test(String(phone));
+}

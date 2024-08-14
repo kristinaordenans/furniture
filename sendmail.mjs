@@ -23,14 +23,12 @@ const nodemailerConfig = {
 
 const transporter = nodemailer.createTransport(nodemailerConfig);
 
-// Get __dirname equivalent in ES module
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// Serve static files from the root directory
 app.use(express.static(__dirname));
 
 app.post('/send', (req, res) => {
@@ -46,7 +44,8 @@ app.post('/send', (req, res) => {
 
     const mailOptions = {
         from: EMAIL,
-        to: "comfortsafetykiev@ukr.net",
+        // to: "comfortsafetykiev@ukr.net",
+        to: "ordenanskristina@gmail.com",
         subject: "New Form Submission",
         html: `<strong>Name:</strong> ${user_name}<br>
                <strong>Contact:</strong> ${user_contact}<br>

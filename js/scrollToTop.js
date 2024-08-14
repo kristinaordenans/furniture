@@ -1,6 +1,5 @@
 let mybutton = document.getElementById("scrollToTopBtn");
 
-// Коли користувач прокручує вниз 20px від верхньої частини документа, покажіть кнопку
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -11,7 +10,6 @@ function scrollFunction() {
     }
 }
 
-// Коли користувач натискає на кнопку, прокрутіть вгору до вершини документа
 mybutton.addEventListener('click', function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
