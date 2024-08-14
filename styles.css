@@ -7312,6 +7312,7 @@ body.lock-scroll {
     flex-wrap: wrap;
     width: 90vw;
     max-width: 1728px;
+    margin: 0 auto;
     margin-bottom: 160px;
 }
 @media screen and (max-width:1440px) {

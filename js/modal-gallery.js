@@ -5,7 +5,6 @@ function openModal(slideIndex) {
 
     swiper.slideTo(slideIndex);
 
-    console.log(slideIndex);
 }
 
 function closeModal() {
